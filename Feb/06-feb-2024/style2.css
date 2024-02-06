@@ -1,12 +1,57 @@
-.BTN2
+.BTN2 
 {
     width: 100px;
-    height: 50px;
-    background-color: black;
-    color: white;
+    height: 35px;
+    background-color: yellow;
+    border-color: yellow;
+    color: black;
+    border-radius: 15px;
 }
 #BTN1
 {
-    background-color: red;
-    border-radius: 10px;
+    width: 100px;
+    height: 35px;
+    color: white;
+    background-color: black;
+}
+.BTN3{
+    width: 100px;
+    height: 45px;
+    background-color: greenyellow;
+    border-color: greenyellow;
+    color: white;
+    border-radius: 5px;
+}
+.BTN4{
+    width: 120px;
+    height: 40px;
+    border-color: blueviolet;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 5px;
+}
+.BTN5{
+    width: 100px;
+    height: 40px;
+    border-color: grey;
+    background-color: #008cba;
+    color: grey;
+    border-radius: 5px;
+}
+.BTN6{
+    width: 230px;
+    height: 40px;
+    border-color:#008cba ;
+    background-color: #008cba;
+    color: white;
+    border-radius: 20px;
+
+}
+.BTN7{
+    width: 75px;
+    height: 40px;
+    border-radius: 20px;
+    border-color: #008cba;
+    background-color: rgb(255, 255, 255);
+    color: #008cba;
 }

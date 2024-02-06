@@ -1,0 +1,22 @@
+.BtnStart{
+    border:none;
+    color: white;
+    padding: 11px 30px;
+    text-align: center;/*The text-align property is used to set the horizontal alignment of a text.*/
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #008cba;
+}
+.BtnExit{
+    padding: 10px 30px;/*10 px is height 30 is width*/
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid #04aa6d;
+}
