@@ -1,0 +1,21 @@
+h3
+{
+    color:black;
+}
+.h3Color{
+    color:gray;
+}
+.Btnseeplans{
+    width: 150px;
+    height: 45px;
+    border-radius:20px;
+    color: white;
+    background-color: black;
+}
+.btnBook{
+    width: 150px;
+    height: 45px;
+    border-radius: 20px;
+    color: black;
+    background-color: grey;
+}
