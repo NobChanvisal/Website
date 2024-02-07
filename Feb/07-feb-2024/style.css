@@ -4,7 +4,10 @@
     background-color: black;
     color: white;
     border: none;
+    cursor: pointer;
+    transition: opacity 0.12s;
 }
+
 .BtnAdd{
     width: 150px;
     height: 35px;
@@ -36,5 +39,22 @@
     border-color: rgb(108,117,125);
     border-radius: 5px;
     color: rgb(108,117,125);
+
+}
+.BtnApply{
+    width: 230px;
+    height: 40px;
+    background-color: rgb(10,102,194);
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+.BtnSave{
+    width: 90px;
+    height: 40px;
+    background-color: none;
+    color: rgb(10,102,194);
+    border-color: rgb(10,102,194);
+    border-radius: 20px;
 
 }

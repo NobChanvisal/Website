@@ -1,0 +1,31 @@
+.PColor{
+    color: green;
+}
+.BtnAdd{
+    width: 150px;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(255,216,20);
+    cursor: pointer;
+}
+.BtnAdd:hover{
+    opacity: 0.4;
+}
+.BtnBuy{
+    width: 150px;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(255,164,28);
+    cursor: pointer;
+}
+.BtnBuy:hover{
+    opacity: 0.4;
+}
+a{
+    color: darkcyan;
+}
+a:hover{
+    color: rgb(255,164,28);
+}

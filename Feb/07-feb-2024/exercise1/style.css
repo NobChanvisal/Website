@@ -1,0 +1,11 @@
+.BtnSpeak{
+    width: 200px;
+    height: 40px;
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+}
+.a{
+    color: blue;
+}

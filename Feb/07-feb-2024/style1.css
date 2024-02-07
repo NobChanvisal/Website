@@ -17,4 +17,9 @@ a{
     background-color: rgb(255,164,28);
     border: none;
     border-radius: 20px;
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+.BtnBuy:hover{
+    opacity: 0.8s;
 }
