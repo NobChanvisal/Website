@@ -1,0 +1,19 @@
+.BtnClick{
+    width: 100px;
+    height: 35px;
+    border:none;
+    background-color: aquamarine;
+    color: white;
+    cursor: pointer;
+}
+.BtnClick:hover{
+    opacity: 0.5;
+}
+#BtnNext{
+    width: 100px;
+    height: 35px;
+    border:none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}

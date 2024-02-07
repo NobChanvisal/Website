@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event on java script</title>
+</head>
+<body>
+    <!--it alert the hello world When click on Showe button -->
+    <button class = "BtnClick" onclick="alert('Hello world')">Showe</button>
+    <button id = "BtnNext">Next</button>
+    <script>
+        document.getElementById("BtnNext").addEventListener("mouseover",Myfunction);
+
+        function Myfunction(){
+            alert("This function will execute !");
+        }
+    </script>
+</body>
+</html>
