@@ -1,0 +1,20 @@
+a{
+    color: rgb(0,113,133);
+}
+.P39{
+    color: rgb(0,118,0);
+}
+.BtnAdd{
+    width: 120px;
+    height: 35px;
+    background-color: rgb(255,216,20);
+    border: none;
+    border-radius: 20px;
+}
+.BtnBuy{
+    width: 120px;
+    height: 35px;
+    background-color: rgb(255,164,28);
+    border: none;
+    border-radius: 20px;
+}
