@@ -1,0 +1,27 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+span{
+    color: rgb(206, 58, 125);
+}
+.BtnStart{
+    width:170px;
+    height: 35px;
+    border: none;
+    background-color: rgb(206, 58, 125);
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.BtnMystart{
+    width: 170px;
+    height: 35px;
+    border: none;
+    background-color: green;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+button:hover{
+    opacity: 0.8;
+}

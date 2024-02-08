@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+body{
+    text-align: center;
+    color: #3c315b;
+    font-family: 'Roboto', sans-serif;
+}
+.pSize{
+    font-size: 13px;
+}
+button{
+    background-color:#5d537a;
+    color: white;
+    border-radius: 20px;
+    font-size: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+    transition: padding-top 1s;
+    padding-bottom: 1s;
+    padding-left: 1s;
+    padding-right: 1s;
+}
+button:hover{
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 36px;
+    padding-right: 36px;
+}

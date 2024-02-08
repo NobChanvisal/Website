@@ -1,0 +1,11 @@
+.BtnShow{
+    width: 100px;
+    height: 35px;
+    color: white;
+    background-color: aquamarine;
+    border: none;
+    cursor: pointer;
+}
+.BtnShow:hover{
+    opacity: 0.8;
+}
