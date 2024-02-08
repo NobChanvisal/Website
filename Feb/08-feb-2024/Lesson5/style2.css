@@ -1,0 +1,14 @@
+body{
+    font-family: Arial;
+    text-align: center;
+}
+h6{
+    color: red;
+}
+button{
+    font-size: 15px;
+    color: white;
+    border-radius: 10px;
+    background-color: blue;
+    border: none;
+}

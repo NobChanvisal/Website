@@ -1,0 +1,53 @@
+.BtnShadow{
+    width: 100px;
+    height: 35px;
+    color: white;
+    background-color: green;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 7px 16px 0px black;
+    transition-duration: 0.10s;
+    /*
+    0px shadow to right left
+    7px shadow to uder down
+    16px blur
+    */
+}
+.BtnShadow:hover{
+    color: white;
+    background-color: green;
+    box-shadow: none;
+}
+.BtnColor{
+    width: 100px;
+    height: 35px;
+    border-color: blue;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.BtnColor:hover{
+    color: white;
+    background-color: blue;
+}
+.BtnOne{
+    width: 50px;
+    height: 25px;
+    background-color: green;
+    border: none;
+    transition-duration: padding 0.15s;
+    padding-left: 15px;
+    padding-right: 15px;
+   
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    margin-left: 10px;
+    margin-right: 10px;
+    margin: 0.15s;
+}
+.BtnOne:hover{
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 0px;
+    margin-right: 0px;
+}

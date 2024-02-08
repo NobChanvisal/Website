@@ -1,0 +1,18 @@
+h3{
+    font-family: tahoma;
+}
+h5{
+    font-family: Verdana;
+    color: gray;
+}
+button{
+    width: 100px;
+    height: 35px;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    opacity: 0.5;
+}
