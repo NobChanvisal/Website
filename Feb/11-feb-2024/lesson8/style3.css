@@ -1,0 +1,31 @@
+.name{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border-color: rgb(213, 213, 213);
+}
+.email{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 183px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border-color: rgb(213, 213, 213);
+}
+button{
+    padding-left: 153px;
+    padding-right: 153px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    background-color: #1d9bf0;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+button:hover{
+    opacity: 0.8;
+}
