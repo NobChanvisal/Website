@@ -1,0 +1,87 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+html{   
+    background-color: #E0c9cb;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+.Background{
+    border-radius: 10px;
+    margin-left: 100px;
+    width: 520px;
+    height: 350px;
+    margin-top: 100px;
+    background-color: white;
+    position: relative;
+}
+.pSize{
+    font-size: 0.6em;
+    color: #ba7e7e;
+    margin-left: 20px;
+}
+.Btn5{
+    margin-left: 20px;
+}
+button{
+    border: 1px solid #ba7e7e;
+    width: 30px;
+    height: 32px;
+    padding: 9px;
+    font-size: 11.2px;
+    color: #ba7e7e;
+    background-color: white;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+button:hover{
+    color: white;
+    background-color: #ba7e7e;
+}
+.shoes{
+    margin-top: 40px;
+    width: 290px;
+}
+.title{
+    color: #ba7e7e;
+    font-size: 9.6px; 
+    margin-bottom: 5px;
+}
+h1{
+    margin-top: 0;
+    font-size: 19.2px;
+    margin-bottom: 10px;
+}
+h2{
+    margin-top: 0;
+    font-size: 24px;
+    color: #ba7e7e;
+}
+.Description{
+    font-size: 11.2px;
+    color: #4e4e4e;
+    width: 183px;
+    text-align: justify; /*= right and left */
+    line-height: 18px;
+}
+.BtnAdd{
+    color: white;
+    background-color: #cda9ad;
+    width: 127px;
+    height: 40px;
+    border: 0px;
+}
+.Btn{
+    width: 46px;
+    height: 40px;
+    background-color: #cda9ad;
+    color: white;
+    border: none;
+}
+.Heading{
+    position: absolute;
+    top: 35px;
+    left: 60%;
+}
+
