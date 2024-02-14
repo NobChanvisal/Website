@@ -1,0 +1,81 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+html{
+    background-color: dimgray;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    font-size: 13px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container{
+    width: 550px;
+    height: 345px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+.description{
+    margin-top: 50px;
+    margin-left: 20px;
+    p{
+        color: #aaaaaa;
+    }
+}
+.ImageSide img{
+    width: 240px;
+    object-fit: fill;
+}
+button
+{
+    transition: 0.3s ease;
+    cursor: pointer;
+    
+}
+/*button:hover
+{
+    background-color: black;
+    color: white;
+}*/
+.btneExclusive
+{
+    cursor: auto;
+    border: none;
+    border-radius: 20px;
+    background-color: #6495ed;
+}
+.Btn115{
+    width: 55px;
+    height: 35px;
+    border: 1px solid #aaa;
+}
+.Btn115:hover
+{
+    width: 55px;
+    height: 35px;
+    background-color: black;
+    color: white;
+    border: 1px solid #aaa;
+    border-end-start-radius: 20px;
+    border-start-start-radius: 20px;
+}
+.BtnAdd
+{
+    width: 125px;
+    height: 35px;
+    border: 1px solid #aaa;
+}
+.BtnAdd:hover
+{
+    width: 125px;
+    height: 35px;
+    background-color: black;
+    color: white;
+    border: 1px solid #aaa;
+    border-start-end-radius: 20px;
+    border-end-end-radius: 20px;
+}
