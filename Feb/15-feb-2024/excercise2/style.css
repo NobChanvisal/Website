@@ -134,6 +134,7 @@ button:hover{
 .Order{
     font-size: 9px;
     position: absolute;
+    color: white;
     background-color: red;
     width: 10px;
     height: 10px;
@@ -144,6 +145,4 @@ button:hover{
     top: .1px;
     right: .3px;
 }
-.Order span:not(){
-    display: none;
-}
+
