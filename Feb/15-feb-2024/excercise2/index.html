@@ -33,19 +33,27 @@
                 </div>
                 <div>
                     <p>Quantity</p>
-                    <div class ="wrapper">   
-                        <span class = "minus">-</span>
-                        <span class = "num">1</span>
-                        <span class = "plus">+</span>
+                    <div class ="wrapper">
+                        <button class="plus">+</button>   
+                        <span class = "num">0</span>
+                        <button class="minus">-</button>   
                     </div>
                 </div>
             </div>
-            <p class = "Price"><b>USD 126.99</b> <span class = "dis">USD 215.11</span></p>
-            <div>
+                <!-- <p class = "Price"><b>USD 126.99</b> <span class = "dis">USD 215.11</span></p> -->
+            <div class="ProductPrice">
+                <p class="Price"></p>
+                <p class="PriceDiscount"></p>
+            </div>
+            <div class = "ProductAdd">
                 <button class = "BTNAdd">ADD TO CART</button>
-                <i class='bx bx-heart'></i>
+                <div class = "AddQTY">
+                    <i class='bx bxs-cart'></i> 
+                    <span class = "Order"  id = "order">0</span>   
+                </div>
             </div>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>

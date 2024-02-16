@@ -5,6 +5,13 @@ html{
     background-color: antiquewhite;
     font-family: Arial, Helvetica, sans-serif;
 }
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
 h2{
     font-family: "Crimson Text", serif;
     font-size: 20px;
@@ -43,18 +50,28 @@ h2{
 .PRO-color{
     margin-right: 20%;
 }
+.PRO-color button
+{
+    width: 15px;
+    height: 15px;
+    transition: 0.2 ease;
+}
+.PRO-color button:focus
+{
+    border: 2px solid black;   
+}
 .BTNGray{
     border: none;
-    width: 10px;
-    height: 12px;
+   /* width: 15px;
+    height: 15px;*/
     border-radius: 50%;
     background-color: gray;
     cursor: pointer;
 }
 .BTNGold{
     border: none;
-    width: 10px;
-    height: 12px;
+   /* width: 15px;
+    height: 15px;*/
     border-radius: 50%;
     background-color: gold;
     cursor: pointer;
@@ -66,18 +83,25 @@ h2{
     align-items: center;
     justify-content: center;
     background-color: white;
-    border: 1px solid darkgrey;
+    border: 1px solid rgb(244, 241, 241);
 }
-.wrapper span{
-    width: 100%;
-    text-align: center;
-   
+.plus, .minus{
+    cursor: pointer;
+    border: none;
+    background-color: white;
+}
+.ProductPrice{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
 }
 .Price{
     font-size: 11px;
 }
-.dis{
+.PriceDiscount{
     text-decoration: line-through;
+    font-size: 9px;
     margin-left: 10px;
     color: darkgray;
 }
@@ -93,6 +117,33 @@ h2{
 button:hover{
     opacity: 0.8;
 }
-i{
-    vertical-align: middle;
+.ProductAdd{
+    display: flex;
+    align-items: center;
+}
+.AddQTY{
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.Order{
+    font-size: 9px;
+    position: absolute;
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: .1px;
+    right: .3px;
+}
+.Order span:not(){
+    display: none;
 }
