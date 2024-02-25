@@ -9,24 +9,34 @@ body{
     justify-content: center;
     width: 100vw;
     height: 100vh;
-}
+} 
 .container{
-    width: 405px;
+    width: 500px;
     height: 95px;
-    margin-top: 5px;
-    display: flex;
-    flex-direction: row;
     cursor: pointer;
+    margin: 5px;
 }
-.image img{
-    padding-right: 10px;
+.image{
+    display: inline-block;
+}
+img{
+    margin-right: 5px;
+    object-fit:cover;
     width: 170px;
     height: 95px;
 }
+.description{
+    vertical-align: top;
+    width: 300px;
+    display: inline-block;
+}
+
 h5{
     font-size: 16px;
+    margin-bottom: 5px;
 }
 p{
+    margin-top: 5px;
     font-size: 14px;
     color: #606060;
 }
