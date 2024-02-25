@@ -1,0 +1,37 @@
+.container-1{
+    display: grid;
+    grid-template-columns: 200px 75px;
+    margin-bottom: 20px;
+}
+.colum-1-ex1{
+    background-color: lightblue;
+}
+.colum-2-ex1{
+    background-color: lightpink;
+}
+/* container2 */
+.container-2{
+    display: grid;
+    grid-template-columns: 50px 1fr 70px; /*fr: free space*/
+    margin-bottom: 50px;
+}
+.colum-1-ex2{
+    background-color: lightblue;
+}
+.colum-2-ex2{
+    background-color: lightpink;
+}
+.colum-3-ex2{
+    background-color: lightblue;
+}
+/* container-3*/
+
+.container-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 10px;
+}
+.colum{
+    background-color: lightpink;
+}

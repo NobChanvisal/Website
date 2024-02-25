@@ -1,8 +1,5 @@
-button{
-    vertical-align: middle;
-}
 p {
-    display: inline block;
+    display: inline-block;
     width: 200px;
-    /*vertical-align: middle;*/
-}
+    vertical-align: middle;
+  }
