@@ -15,8 +15,6 @@ body{
     width: 150px;
     height: 240px;
     display: inline-block;
-    /* display: flex;
-    flex-direction: column; */
     box-shadow: 0px 0px 5px 0px #606060;
 }
 .description{
@@ -26,19 +24,17 @@ body{
     width: 150px;
     height: 150px;
 }
-.friend{
-    display: flex;
-    align-items: center;
-}
 .friend p{
     padding-left: 5px;
     font-size: 11px;
     color: #606060;
+    display: inline-block;
 }
 .friend-profile{
     width: 20px;
     height: 20px;
     border-radius: 50%;
+    display: inline-block;
     vertical-align: middle;
 }
 .BTNAdd button{
