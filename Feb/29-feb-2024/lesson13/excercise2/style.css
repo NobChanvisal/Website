@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    margin: 50px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+}
+.profile{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.name{
+    font-weight: bold;
+    padding-right: 5px;
+}
+.username, .link{
+    color: #606060;
+}
+.tweet-content{
+    flex: 1;
+    margin-left: 10px;
+}
+.tweet-header{
+    display: flex;
+    flex-direction: row;
+}
+.video-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 1px solid rgb(221, 221, 221);
+    overflow: hidden;
+    margin-top: 10px;
+}
+.thumbnail{
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    background-color: rgb(221, 220, 220);
+}
+.describe-section{
+    flex: 1;
+}
