@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 3000px;
+}
+.heading{
+    padding: 10px;
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: lightblue; */
+}
+.profile-name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.profile-name img{
+    margin-right: 10px;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+button{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}
+.BTN .Add-button{
+    color: white;
+    background-color: rgb(100, 149, 237);
+}
+.BTN .message-button{
+
+    background-color: #cecdcd;
+}
