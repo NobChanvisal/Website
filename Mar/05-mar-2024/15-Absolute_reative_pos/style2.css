@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+.box{
+    width: 320px;
+    height: 180px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: grey;
+}
+.close-button {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Corrected property */
+    color: white;
+    background-color: black;
+}
+.timestamp{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    padding: 5px 5px;
+    color: white;
+    background-color: black;
+}

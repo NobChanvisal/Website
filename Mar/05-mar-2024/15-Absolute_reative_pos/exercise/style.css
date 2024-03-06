@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+.cart{
+    position: relative;
+    display: inline-block;
+}
+img{
+    height: 300px;
+    width: 225px;
+    object-fit: cover;
+}
+.discount{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    padding: 5px 5px;
+    color: white;
+    background-color: red;
+}
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    background-color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
