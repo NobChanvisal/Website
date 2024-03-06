@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+.header-bar
+{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 15px;
+    /* background-color: lightgreen; */
+}
+.left-section{
+    width: 170px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.left-section .logo{
+    width: 90px;
+    /* height: 20px; */
+}
+.middle-section{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 715px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.search-bar{
+    flex: 1;
+    height:  40px;
+    padding: 4px 16px;
+    font-size: 16px;
+    border: none;
+    border: 1px solid #606060;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 0;
+}
+.search-button{
+    height: 40px;
+    width: 65px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px 6px;
+    border: 1px solid #606060;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-right: 10px;
+    margin-left: -1px;
+    cursor: pointer;
+    position: relative;
+    
+}
+.tooltip{
+    position: absolute;
+    font-size: 12px;
+    padding: 10px 8px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(171, 178, 185 );
+    bottom: -50px;
+    opacity: 0;
+    transition: opacity 0.15s;
+}
+.search-button:hover .tooltip{
+    opacity: 1;
+}
+#microphone{
+    padding: 8px;
+    font-size: 24px;
+    border-radius: 50%;
+    background-color: rgb(247, 249, 249);
+    cursor: pointer;
+}
+.search-button:hover{
+    background-color: rgb(247, 249, 249);
+}
+.right-section{
+    width: 155px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 20px;
+}
+.right-section .profile{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+#menu-icon, #create-icon, #bell-icon{
+    padding: 8px;
+    font-size: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#menu-icon:hover, #microphone:hover,
+#create-icon:hover, #bell-icon:hover{
+    background-color: rgb(240, 243, 244);
+}
