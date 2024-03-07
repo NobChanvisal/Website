@@ -37,7 +37,6 @@
     justify-content: space-between;
     max-width: 715px;
     margin-left: 40px;
-    margin-right: 40px;
 }
 .search-bar{
     flex: 1;
@@ -62,37 +61,53 @@
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     margin-right: 10px;
-    margin-left: -1px;
+    margin-left: -1px; 
     cursor: pointer;
     position: relative;
-    
 }
-.tooltip{
+.menu,.voice-search,.upload-video, .notification{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    font-size: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+.voice-search{
+    background-color: rgb(247, 249, 249);
+}
+.search-button .tooltip,
+.voice-search .tooltip,
+.upload-video .tooltip,
+.notification .tooltip{
     position: absolute;
+    display: flex;
+    align-items: center;
     font-size: 12px;
-    padding: 10px 8px;
+    padding: 10px 20px;
     border-radius: 5px;
     color: white;
     background-color: rgb(171, 178, 185 );
     bottom: -50px;
     opacity: 0;
     transition: opacity 0.15s;
+    white-space: nowrap;
 }
-.search-button:hover .tooltip{
+.search-button:hover .tooltip,
+.voice-search:hover .tooltip,
+.upload-video:hover .tooltip,
+.notification:hover .tooltip{
     opacity: 1;
-}
-#microphone{
-    padding: 8px;
-    font-size: 24px;
-    border-radius: 50%;
-    background-color: rgb(247, 249, 249);
-    cursor: pointer;
 }
 .search-button:hover{
     background-color: rgb(247, 249, 249);
 }
+
 .right-section{
-    width: 155px;
+    width: 225px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -104,13 +119,15 @@
     height: 30px;
     border-radius: 50%;
 }
-#menu-icon, #create-icon, #bell-icon{
+#menu-icon{
     padding: 8px;
     font-size: 24px;
     border-radius: 50%;
     cursor: pointer;
 }
-#menu-icon:hover, #microphone:hover,
-#create-icon:hover, #bell-icon:hover{
+.menu:hover, 
+.voice-search:hover,
+.upload-video:hover,
+.notification:hover{
     background-color: rgb(240, 243, 244);
 }
