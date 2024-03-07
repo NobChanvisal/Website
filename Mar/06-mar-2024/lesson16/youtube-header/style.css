@@ -16,25 +16,22 @@
     left: 0;
     right: 0;
     padding: 0 15px;
-    /* background-color: lightgreen; */
 }
-.left-section{
-    width: 170px;
+.left-section,.middle-section,.right-section{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+}
+.left-section{
+    width: 170px;
 }
 .left-section .logo{
     width: 90px;
     /* height: 20px; */
 }
 .middle-section{
-    display: flex;
     flex: 1;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
     max-width: 715px;
     margin-left: 40px;
 }
@@ -93,7 +90,7 @@
     background-color: rgb(171, 178, 185 );
     bottom: -50px;
     opacity: 0;
-    transition: opacity 0.15s;
+    transition: opacity 0.4s;
     white-space: nowrap;
 }
 .search-button:hover .tooltip,
@@ -105,14 +102,8 @@
 .search-button:hover{
     background-color: rgb(247, 249, 249);
 }
-
 .right-section{
     width: 225px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    margin-right: 20px;
 }
 .right-section .profile{
     width: 30px;
