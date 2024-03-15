@@ -81,8 +81,6 @@
 .upload-video .tooltip,
 .notification .tooltip{
     position: absolute;
-    display: flex;
-    align-items: center;
     font-size: 12px;
     padding: 10px 20px;
     border-radius: 5px;
@@ -91,9 +89,10 @@
     bottom: -50px;
     opacity: 0;
     transition: opacity 0.4s;
+    pointer-events: none;
     white-space: nowrap;
 }
-.search-button:hover .tooltip,
+.search-icon:hover .tooltip,
 .voice-search:hover .tooltip,
 .upload-video:hover .tooltip,
 .notification:hover .tooltip{
