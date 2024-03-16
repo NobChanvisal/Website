@@ -19,14 +19,14 @@ body{
 }
 .describe{
     display: grid;
-    grid-template-columns: 50px 1fr;
+    grid-template-columns: 35px 1fr;
     column-gap: 10px;
     align-items: start;
     margin-top: 10px;
 }
 .profile{
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
 }
 p{
@@ -41,4 +41,24 @@ p{
 span{
     font-size: 14px;
     color: #606060;
+}
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+@media (min-width: 601px) and (max-width: 750px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 751px) and (max-width: 1000px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (min-width: 1001px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
