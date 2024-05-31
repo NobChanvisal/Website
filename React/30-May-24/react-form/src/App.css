@@ -1,0 +1,78 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.main-container{
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+}
+h1{
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding-bottom: 20px;
+}
+.group-enter{
+  display: flex;
+  flex-direction: column;
+}
+.group-radio div,.group-button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+label{
+  margin: 0 20px;
+}
+label[for="male"] ,label[for="female"]{
+  margin: 0;
+  margin-left: 10px;
+}
+input[type="radio"]{
+  margin: 0;
+  margin-left: 20px;
+  width: 15px;
+}
+input,select{
+  font-size: 16px;
+  padding: 0 10px;
+  margin: 5px 20px;
+  height: 30px;
+}
+textarea {
+  resize: none;
+  padding: 5px 10px;
+  margin: 5px 20px;
+  max-height: 100px;
+}
+.group-button button{
+  padding: 10px 30px;
+  margin: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.group-button button:hover{
+  opacity: 0.8;
+}
+.group-button button:first-child {
+  background-color: red;
+}
+.group-button button:last-child {
+  background-color: green;
+}
+
