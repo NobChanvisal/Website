@@ -1,0 +1,44 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container{
+  margin: 30px;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+h1{
+  text-align: center;
+  text-transform: uppercase;
+}
+.car-data{
+  display: flex;
+  flex-direction: row;
+}
+.car-data p{
+  padding: 20px;
+}
+input{
+  width: 250px;
+  margin: 10px 0;
+  padding: 5px 10px;
+  display: block;
+}
+button{
+  padding: 8px 30px;
+  background-color: transparent;
+  border: 2px solid aquamarine;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover{
+  color: white;
+  background-color: aquamarine;
+}
