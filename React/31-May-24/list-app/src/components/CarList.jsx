@@ -24,7 +24,7 @@ function CarList() {
             <h1>List Of Cars</h1>
             <div>
                 {cars.map((car, index) => 
-                    <p key={index}>
+                    <p key={index} onClick={(e) => setCars(c => c.filter((_,i) => i !== index))}>
                         {car.name} {car.model} {car.year}
                     </p>
                 )}
