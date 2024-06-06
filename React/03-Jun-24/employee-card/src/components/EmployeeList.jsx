@@ -34,15 +34,23 @@ function EmployeeList() {
         setEmployees([...employees, newEmployee]);
     }
 
+    function updateEmployee(updatedEmployee) {
+        setEmployees(employees.map(employee => 
+            employee.id === updatedEmployee.id ? updatedEmployee : employee
+        ));
+    }
+
     return (
         <>
             <div className="flex flex-wrap justify-center">
                 {employees.map((employee) => (
                     <Employee
                         key={employee.id}
+                        id={employee.id}
                         name={employee.name}
                         role={employee.role}
                         profile={employee.profile}
+                        updateEmployee={updateEmployee}
                     />
                 ))}
             </div>
