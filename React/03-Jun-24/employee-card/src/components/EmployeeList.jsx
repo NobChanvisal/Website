@@ -34,10 +34,14 @@ function EmployeeList() {
         setEmployees([...employees, newEmployee]);
     }
 
-    function updateEmployee(updatedEmployee) {
-        setEmployees(employees.map(employee => 
-            employee.id === updatedEmployee.id ? updatedEmployee : employee
-        ));
+    function updateEmployee(id, newName, newRole, newProfile) {
+        const updatedEmployees = employees.map((employee) => {
+            if (employee.id === id) {
+                return { ...employee, name: newName, role: newRole, profile: newProfile };
+            }
+            return employee;
+        });
+        setEmployees(updatedEmployees);
     }
 
     return (

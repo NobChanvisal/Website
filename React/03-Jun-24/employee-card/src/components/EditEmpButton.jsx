@@ -1,25 +1,19 @@
 import React, { useState } from "react";
-import { Modal, Button, Form } from "react-bootstrap";
+import { Modal, Button } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function EditEmpButton({ id, name: initialName, role: initialRole, profile: initialProfile, updateEmployee }) {
+function EditEmpButton(props) {
     const [show, setShow] = useState(false);
-    const [name, setName] = useState(initialName);
-    const [role, setRole] = useState(initialRole);
-    const [imageURL, setImageURL] = useState(initialProfile);
+    const [name, setName] = useState(props.name);
+    const [role, setRole] = useState(props.role);
+    const [profile, setProfile] = useState(props.profile);
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        const updatedEmployee = {
-            id,
-            name,
-            role,
-            profile: imageURL
-        };
-        updateEmployee(updatedEmployee);
+        props.updateEmployee(props.id, name, role, profile);
         handleClose();
     };
 
@@ -62,12 +56,12 @@ function EditEmpButton({ id, name: initialName, role: initialRole, profile: init
                             />
                         </div>
                         <div>
-                            <label className="block pt-2 text-sm font-medium leading-6 text-gray-900">Image URL</label>
+                            <label className="block pt-2 text-sm font-medium leading-6 text-gray-900">Profile</label>
                             <input 
                                 className="block px-1 w-full border rounded-md py-1.5 bg-gray-100 placeholder:text-gray-400 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500"
                                 type="text" 
-                                value={imageURL}
-                                onChange={(e) => setImageURL(e.target.value)}
+                                value={profile}
+                                onChange={(e) => setProfile(e.target.value)}
                             />
                         </div>
                         <button className="px-[20px] py-[8px] mt-[10px] bg-blue-500 rounded-lg text-white hover:bg-blue-600" type="submit">
