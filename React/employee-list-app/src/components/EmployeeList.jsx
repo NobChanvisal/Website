@@ -8,7 +8,7 @@ function EmployeeList() {
             id: 1,
             name: 'Nob Chanvisal',
             role: 'Web Development',
-            profile: './image/anime.jpg'
+            profile: 'https://images.pexels.com/photos/25724464/pexels-photo-25724464/free-photo-of-venice.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
         },
         {
             id: 2,

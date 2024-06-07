@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import './App.css';
 import EmployeeList from './components/EmployeeList';
-import AddEmpButton from './components/AddEmpButton';
 
 
 function App() {
