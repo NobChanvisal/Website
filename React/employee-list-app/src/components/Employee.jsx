@@ -5,7 +5,7 @@ function Employee(props){
     return (
         <div className="flex flex-row items-center max-w-sm bg-white shadow-lg m-[20px] py-[20px] px-[20px] rounded-[10px] ">
             <img className="w-[100px] h-[100px] rounded-full mr-5 object-cover"
-                src={props.profile} alt="anime-image" />
+                src={props.profile} alt="profile" />
             <div className="space-y-2 text-left">   
                 <div>
                     <p className=" font-semibold text-lg">

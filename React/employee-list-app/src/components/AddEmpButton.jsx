@@ -1,26 +1,35 @@
 import React, { useState } from "react";
-import { Modal, Button } from "react-bootstrap";
+import { Modal, Button, Form } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function EditEmpButton(props) {
+function AddEmpButton({ addEmployee }) {
     const [show, setShow] = useState(false);
-    const [name, setName] = useState(props.name);
-    const [role, setRole] = useState(props.role);
-    const [profile, setProfile] = useState(props.profile);
+    const [empName, setEmpName] = useState('');
+    const [empRole, setEmpRole] = useState('');
+    const [empProfile, setEmpProfile] = useState('');
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
-    const handleSubmit = (event) => {
+    const handleFormSubmit = (event) => {
         event.preventDefault();
-        props.updateEmployee(props.id, name, role, profile);
+        const newEmployee = {
+            id: Math.random(), // Generate a unique id
+            name: empName,
+            role: empRole,
+            profile: empProfile
+        };
+        addEmployee(newEmployee);
+        setEmpName('');
+        setEmpRole('');
+        setEmpProfile('');
         handleClose();
     };
 
     return (
         <>
             <button
-                className="uppercase px-[20px] py-[10px] rounded-lg bg-blue-600 text-white hover:bg-blue-500"
+                className="uppercase px-[20px] py-[10px] rounded-lg bg-green-600 text-white hover:bg-green-500"
                 onClick={handleShow}
             >
                 Add New Employee
@@ -33,41 +42,44 @@ function EditEmpButton(props) {
                 keyboard={false}
             >
                 <Modal.Header closeButton>
-                    <Modal.Title>Update Employee Data</Modal.Title>
+                    <Modal.Title>Add New Employee</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <form onSubmit={handleSubmit}>
-                        <div>
-                            <label className="block pt-2 text-sm font-medium leading-6 text-gray-900">Name</label>
-                            <input 
-                                className="block px-1 w-full border rounded-md py-1.5 bg-gray-100 placeholder:text-gray-400 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500"
-                                type="text" 
-                                value={name}
-                                onChange={(e) => setName(e.target.value)}
+                    <Form onSubmit={handleFormSubmit}>
+                        <Form.Group className="mb-3">
+                            <Form.Label>Name</Form.Label>
+                            <Form.Control
+                                type="text"
+                                placeholder="Enter name"
+                                value={empName}
+                                onChange={(e) => setEmpName(e.target.value)}
+                                required
                             />
-                        </div>
-                        <div>
-                            <label className="block pt-2 text-sm font-medium leading-6 text-gray-900">Role</label>
-                            <input 
-                                className="block px-1 w-full border rounded-md py-1.5 bg-gray-100 placeholder:text-gray-400 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500"
-                                type="text" 
-                                value={role}
-                                onChange={(e) => setRole(e.target.value)}
+                        </Form.Group>
+                        <Form.Group className="mb-3">
+                            <Form.Label>Role</Form.Label>
+                            <Form.Control
+                                type="text"
+                                placeholder="Enter role"
+                                value={empRole}
+                                onChange={(e) => setEmpRole(e.target.value)}
+                                required
                             />
-                        </div>
-                        <div>
-                            <label className="block pt-2 text-sm font-medium leading-6 text-gray-900">Profile</label>
-                            <input 
-                                className="block px-1 w-full border rounded-md py-1.5 bg-gray-100 placeholder:text-gray-400 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500"
-                                type="text" 
-                                value={profile}
-                                onChange={(e) => setProfile(e.target.value)}
+                        </Form.Group>
+                        <Form.Group className="mb-3">
+                            <Form.Label>Profile URL</Form.Label>
+                            <Form.Control
+                                type="text"
+                                placeholder="Enter profile URL"
+                                value={empProfile}
+                                onChange={(e) => setEmpProfile(e.target.value)}
+                                required
                             />
-                        </div>
-                        <button className="px-[20px] py-[8px] mt-[10px] bg-blue-500 rounded-lg text-white hover:bg-blue-600" type="submit">
-                            Update
-                        </button>
-                    </form>
+                        </Form.Group>
+                        <Button variant="primary" type="submit">
+                            Add Employee
+                        </Button>
+                    </Form>
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose}>
@@ -79,4 +91,4 @@ function EditEmpButton(props) {
     );
 }
 
-export default EditEmpButton;
+export default AddEmpButton;
