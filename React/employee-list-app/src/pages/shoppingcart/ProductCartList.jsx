@@ -51,9 +51,9 @@ function ProductCartList() {
         <ProductCart
           key={productCart.proId}
           proId={productCart.proId}
+          proImg={productCart.proImg}
           proName={productCart.proName}
           proInfo={productCart.proInfo}
-          proImg={productCart.proImg}
           proPrice={productCart.proPrice}
           proSize={productCart.proSize}
           delays={index * 0.3} // Pass delays as a prop

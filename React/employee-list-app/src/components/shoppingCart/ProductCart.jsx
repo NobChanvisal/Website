@@ -8,21 +8,25 @@ const cardVariants = {
   hover: { scale: 1.05 },
 };
 
-function ProductCart({ proId, proImg, proName, proInfo, proPrice, proSize, delays}) {
-
+function ProductCart(props) {
+  const { proId, proImg, proName, proInfo, proPrice, proSize, delays } = props;
+  
   return (
-    <motion.div className="bg-white w-[250px] mx-5 my-3 place-items-center flex flex-col shadow-lg rounded-3xl"
-        initial={{ x: 0, y: 200, opacity: 0 }}
-        animate={{ x: 0, y: 0, opacity: 1 }}
-        exit={{ x: 0 }}
-        transition={{ duration: 0.3, ease: "easeInOut", delay: delays }}
+    <motion.div
+      className="bg-white w-[250px] mx-5 my-3 place-items-center flex flex-col shadow-lg rounded-3xl"
+      initial={{ x: 0, y: 200, opacity: 0 }}
+      animate={{ x: 0, y: 0, opacity: 1 }}
+      exit={{ x: 0 }}
+      transition={{ duration: 0.3, ease: "easeInOut", delay: delays }}
+      variants={cardVariants}
+      whileHover="hover"
     >
       <img className="mb-2 rounded-t-3xl w-[100%] h-[250px] object-cover" src={proImg} alt={proName} />
       <div>
-        <p className="text-2xl bold mb-2">{proName}</p>
+        <p className="text-2xl font-bold mb-2">{proName}</p>
         <span className="text-slate-500 line-clamp-1">{proInfo}</span>
         <p className="my-2 text-lg">{proPrice}</p>
-        <div className=" flex-1"></div>
+        <div className="flex-1"></div>
         <div className="grid grid-cols-2 gap-1 px-[15px]">
           <select
             className="my-3 py-[10px] px-[30px] rounded-md border border-slate-500 cursor-pointer focus:ring-1 focus:ring-blue-500 focus:outline-none"
@@ -35,9 +39,9 @@ function ProductCart({ proId, proImg, proName, proInfo, proPrice, proSize, delay
               </option>
             ))}
           </select>
-          <button className="flex flex-row my-3 py-[10px] px-[30px] rounded-md bg-blue-500">
+          <button className="flex flex-row items-center my-3 py-[10px] px-[30px] rounded-md bg-blue-500 text-white">
             Add
-            <img className="w-[20px]" src={shoppingCart} alt="shopping cart icon" />
+            <img className="w-[20px] ml-2" src={shoppingCart} alt="shopping cart icon" />
           </button>
         </div>
       </div>
