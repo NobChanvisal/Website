@@ -39,7 +39,7 @@ function ProductCart(props) {
               </option>
             ))}
           </select>
-          <button className="flex flex-row items-center my-3 py-[10px] px-[30px] rounded-md bg-blue-500 text-white">
+          <button className="add-button flex flex-row items-center my-3 py-[10px] px-[30px] rounded-md bg-blue-500 text-white">
             Add
             <img className="w-[20px] ml-2" src={shoppingCart} alt="shopping cart icon" />
           </button>
