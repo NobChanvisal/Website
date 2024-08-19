@@ -2,7 +2,7 @@ import React from "react";
 
 function Home() {
   return (
-    <section className="pt-[70px]">
+    <section className="pt-[70px] w-full">
       <div className="container grid grid-cols-2 gap-16">
         <div className="text-component">
           <p className="heading-text mb-1">Digital Products</p>
@@ -21,8 +21,8 @@ function Home() {
             Get your free account
           </button>
         </div>
-        <div className="home-img">
-          <img
+        <div className="section-img">
+          <img className=" rounded-md"
             src="https://images.ctfassets.net/19dvw6heztyg/3xU9z3jUaXTRdC0ii7hXVb/2ac68a4e2bab8ea98b76e001daf345af/digital_products-hero.png?w=1440&q=75"
             alt=""
           />

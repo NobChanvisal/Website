@@ -1,5 +1,5 @@
 import React from "react";
-import podiaLogo from './image/podialogo.png'
+import podiaLogo from '../image/navImage/podialogo.png'
 import WebsiteButton from "./WebsiteButton";
 import EmailButton from "./EmailButton";
 import SellButton from "./SellButton";
@@ -7,7 +7,7 @@ import ResourcesButton from "./ResourcesButton";
 
 function Header() {
   return (
-    <div className="header flex col justify-between py-3 px-[88px] fixed top-0 left-0 right-0 w-full">
+    <div className="header container bg-white shadow-md flex col justify-between py-3 px-[88px] fixed top-0 right-0 left-0">
         <div className="left-contain flex col flex-none items-center">
             <img className="logo mr-2 w-[75px] h-[25px]" src={podiaLogo} alt="" />
             <WebsiteButton/>

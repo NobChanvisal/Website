@@ -24,6 +24,10 @@ export default {
         '.container':{
           paddingLeft: '88px',
           paddingRight: '88px',
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          marginTop: '0',
+          maringBottom: '0',
         },
         '.sub-navbar-info a:hover': {
           color: '#8a57ea',
@@ -51,12 +55,37 @@ export default {
           letterSpacing: '2px',
         },
         'section':{
-          marginTop: '6rem'
+          marginTop: '6rem',
+          fontFamily: 'Inter, sans-serif',
         },
         '.section-description': {
           marginTop: '10px',
           fontSize: '20px',
           color:'#5c5856'
+        },
+        '.center-card':{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems:'center',
+          textAlign: 'center'
+        },
+        '.stars':{
+          paddingBottom:'14px'
+        },
+        '.review-quote':{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems:'center',
+          maringBottom: '24px',
+        },
+        '.review-quote h2':{
+          fontSize: '20px',
+          color: 'black'
+        },
+        '.review-quote p':{
+          fontSize: '18px',
+          color: '#5c5856',
+          paddingTop: '20px'
         }
       });
     },
