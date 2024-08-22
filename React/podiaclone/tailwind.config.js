@@ -10,6 +10,9 @@ export default {
         inter: ['"Inter"', 'sans-serif'],
         DmSerif:['"DM Serif Text"','serif']
       },
+      listStyleImage: {
+        arrowDow: 'url("./src/components/image/arrowDown.svg")',
+      },
     },
   },
   plugins: [
@@ -29,6 +32,16 @@ export default {
           marginTop: '0',
           maringBottom: '0',
         },
+        '.grid-layout-2':{
+          display: 'grid',
+          gridTemplateColumns: '1fr 1fr',
+          placeItems: 'center',
+          columnGap: '64px'
+        },
+        '.title-section':{
+          fontSize: '36px',
+          fontFamily: 'DM Serif Text, serif',
+        },  
         '.sub-navbar-info a:hover': {
           color: '#8a57ea',
         },
@@ -49,10 +62,15 @@ export default {
         },
         '.heading-text':{
           fontSize: '12px',
-          fontWeight: '500',
+          fontWeight: 'bold',
           color: '#9c8881',
           textTransform: 'uppercase',
           letterSpacing: '2px',
+        },
+        'article':{
+          backgroundColor:'#fdfbf9',
+          width: '100%',
+          height:'100%',
         },
         'section':{
           marginTop: '6rem',
@@ -67,7 +85,7 @@ export default {
           display: 'flex',
           flexDirection: 'column',
           alignItems:'center',
-          textAlign: 'center'
+          textAlign: 'center',
         },
         '.stars':{
           paddingBottom:'14px'
@@ -86,6 +104,46 @@ export default {
           fontSize: '18px',
           color: '#5c5856',
           paddingTop: '20px'
+        },
+        '.row-card':{
+          display:'flex',
+          flexDirection:'row',
+          fontSize:'18px',
+          marginBottom:'20px'
+        },
+        '.row-card p':{
+          fontWeight:'600',
+          marginRight: '16px'
+        },
+        '.row-card ul':{
+          display:'flex',
+          flexDirection:'row',
+        },
+        '.row-card ul li':{
+          marginRight: '16px',
+          color: '#5c5856',
+          fontWeight: '300',
+          borderBottom: 'solid 1px'
+        },
+        '.row-card ul li:hover':{
+          color: '#4b2aad',
+          borderBottom: 'solid 1px #d4b2aad'
+        },
+        '.setOnCol2':{
+          gridColumnStart:'2',
+          gridColumnEnd: '3'
+        },
+        '.list-chil':{
+          display: 'grid',
+          gridTemplateColumns: '32px 1fr',
+          columnGap:'16px',
+          marginBottom: '10px'
+          
+        },
+        '.list-chil a':{
+          color:'#5c5856',
+          borderBottom:'2px solid',
+          fontWeight:'500'
         }
       });
     },

@@ -1,25 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import Header from './components/navbar/Header'
-import Home from './components/homepage/Home'
-import Service from './components/serviceDetail/Service'
-import Courses from './components/onlineCourse/Course'
-import Coaching from './components/coaching/Coaching'
-import Webinars from './components/webinars/Webinars'
-import './App.css'
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import Header from "./components/navbar/Header";
+import Home from "./components/page/Home";
+import Footer from "./components/Footer";
+import OnlineCourses from "./components/articles/OnlineCourses.jsx";
+import "./App.css";
+import ScrollToTop from "./components/ScrollToTop.jsx";
+import DigitalDownload from "./components/articles/DigitalDownload.jsx";
 
 function App() {
-  return(
-    <div className='bg-[#fdfbf9] h-full w-full'>
-      <Header></Header>
-      <Home/>
-      <Service></Service>
-      <Courses/>
-      <Coaching/>
-      <Webinars/>
+  return (
+    <div >
+      <Router>      
+        <ScrollToTop/>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/onlineCourse" element={<OnlineCourses />} />
+          <Route path="/digitalDownload" element={<DigitalDownload/>} />
+        </Routes>
+        <Footer />
+      </Router>
+      {/* <DigitalDownload/>
+      <Footer /> */}
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
