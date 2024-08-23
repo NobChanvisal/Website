@@ -12,8 +12,9 @@ import DigitalDownload from "./components/articles/DigitalDownload.jsx";
 
 function App() {
   return (
-    <div >
-      <Router>      
+    
+    <div>
+      {/* <Router>      
         <ScrollToTop/>
         <Header />
         <Routes>
@@ -22,9 +23,8 @@ function App() {
           <Route path="/digitalDownload" element={<DigitalDownload/>} />
         </Routes>
         <Footer />
-      </Router>
-      {/* <DigitalDownload/>
-      <Footer /> */}
+      </Router> */}
+      <DigitalDownload/>
     </div>
   );
 }

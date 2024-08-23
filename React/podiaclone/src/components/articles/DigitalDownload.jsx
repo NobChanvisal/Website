@@ -1,8 +1,44 @@
 import React from "react";
-import rightArrow from "../image/rightArrow.svg";
 import stars from "../image/stars.svg";
-import whiteIcon from "../image/whiteRightarrow.svg";
+import OnlineBusiness from "../Category/OnlineBusiness";
+import SignUp from "../Category/SignUp";
+import Collapse from "../Category/Faqs"
+
 function DigitalDownload() {
+  // for coaching
+  const sections = [
+    {
+      title: "What features does Podia have?",
+      content:
+        "Podia is an all-in-one platform for running your online business. You get a full website, your own online community, and the ability to sell digital products like courses, downloads, webinars, and any other type of file you like. Podia also includes your checkout cart and email marketing so you don’t have to connect tons of other tools.",
+    },
+    {
+      title: "Does Podia have a free plan?",
+      content:
+        "Yes! Podia has a free forever plan that includes your full website, blogging, one digital download, one coaching product, customer chat messaging, and your online community. Sign up for free today to see for yourself!",
+    },
+    {
+      title: "What kinds of things can I sell with Podia?",
+      content:
+        "You can sell digital downloads, online courses, coaching offers, community plans, webinars, and pretty much any type of file you can think of. Podia handles product hosting and delivery so you can focus on what you do.",
+    },
+    {
+      title: "Does Podia take a percentage of sales?",
+      content:
+        "Podia doesn’t charge any fees on paid plans, though the payment processor (Stripe or PayPal) will charge a standard transaction fee of 2.9% + 30¢, which may vary based on your location. The fees are charged by the processor and not associated with our plans. On our free plan, we charge an 8% fee on all transactions.",
+    },
+    {
+      title: "Does Podia integrate with my existing tools?",
+      content:
+        "Most likely, yes. You can use Podia’s embed feature to display content from over 1,900 sources like YouTube, SoundCloud, Spotify, and Typeform. Podia also has native integrations with tools like Zapier, ConvertKit, MailChimp, Google Analytics, Zoom, Calendly, Sumo, and Deadline Funnel. For payment processing, Podia integrates with Paypal and Stripe."
+    },
+    {
+      title: "I still have questions, HELP!",
+      content:
+        "We’d love to. Podia’s customer support is here for you, seven days a week. Just reach out to us on chat and a real, friendly person will be delighted to help you out."
+    }
+  ];
+
   return (
     <article>
       <section className=" mt-48">
@@ -268,198 +304,9 @@ function DigitalDownload() {
           </div>
         </div>
       </section>
-
-      <section>
-        <div className="container">
-          <div className=" grid-layout-2 p-10 bg-[#f5efeb] rounded-xl place-items-start">
-            <div className="text-component pt-1">
-              <h2 className=" title-section">
-                Build your entire online business with Podia
-              </h2>
-              <div className="section-description">
-                <p>
-                  Podia has everything you need to sell online courses, digital
-                  downloads, webinars, coaching, and community. You can also
-                  build a beautiful website and manage your email marketing all
-                  under one roof.{" "}
-                  <a className=" underline" href="">
-                    {" "}
-                    Sign up for your free Podia account.
-                  </a>
-                </p>
-              </div>
-            </div>
-            <div className=" grid-layout-2 gap-x-4 w-full">
-              <div className=" w-full">
-                <h2 className=" heading-text mb-4">Sell your work</h2>
-                <div className=" row-card justify-between group cursor-pointer">
-                  <a
-                    className=" group-hover:text-[#4b2aad] font-semibold"
-                    href=""
-                  >
-                    Online courses
-                  </a>
-                  <div className="bg-[#fdfbf9] group-hover:bg-[#4b2aad] w-8 h-8 rounded-full center-card justify-center mr-4 relative">
-                    <img className=" z-10" src={rightArrow} alt="" />
-                    <img
-                      className=" absolute group-hover:z-20"
-                      src={whiteIcon}
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div className=" row-card justify-between group cursor-pointer">
-                  <a
-                    className=" group-hover:text-[#4b2aad] font-semibold"
-                    href=""
-                  >
-                    Digital download
-                  </a>
-                  <div className="bg-[#fdfbf9] group-hover:bg-[#4b2aad] w-8 h-8 rounded-full center-card justify-center mr-4 relative">
-                    <img className=" z-10" src={rightArrow} alt="" />
-                    <img
-                      className=" absolute group-hover:z-20"
-                      src={whiteIcon}
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div className=" row-card justify-between group cursor-pointer">
-                  <a
-                    className=" group-hover:text-[#4b2aad] font-semibold"
-                    href=""
-                  >
-                    Community
-                  </a>
-                  <div className="bg-[#fdfbf9] group-hover:bg-[#4b2aad] w-8 h-8 rounded-full center-card justify-center mr-4 relative">
-                    <img className=" z-10" src={rightArrow} alt="" />
-                    <img
-                      className=" absolute group-hover:z-20"
-                      src={whiteIcon}
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div className=" row-card justify-between group cursor-pointer">
-                  <a
-                    className=" group-hover:text-[#4b2aad] font-semibold"
-                    href=""
-                  >
-                    Webinars
-                  </a>
-                  <div className="bg-[#fdfbf9] group-hover:bg-[#4b2aad] w-8 h-8 rounded-full center-card justify-center mr-4 relative">
-                    <img className=" z-10" src={rightArrow} alt="" />
-                    <img
-                      className=" absolute group-hover:z-20"
-                      src={whiteIcon}
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div className=" row-card justify-between group cursor-pointer">
-                  <a
-                    className=" group-hover:text-[#4b2aad] font-semibold"
-                    href=""
-                  >
-                    Coaching
-                  </a>
-                  <div className="bg-[#fdfbf9] group-hover:bg-[#4b2aad] w-8 h-8 rounded-full center-card justify-center mr-4 relative">
-                    <img className=" z-10" src={rightArrow} alt="" />
-                    <img
-                      className=" absolute group-hover:z-20"
-                      src={whiteIcon}
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className=" w-full">
-                <h2 className=" heading-text mb-4">Sell your work</h2>
-                <div className=" row-card justify-between group cursor-pointer">
-                  <a
-                    className=" group-hover:text-[#4b2aad] font-semibold"
-                    href=""
-                  >
-                    Email marketing
-                  </a>
-                  <div className="bg-[#fdfbf9] group-hover:bg-[#4b2aad] w-8 h-8 rounded-full center-card justify-center mr-4 relative">
-                    <img className=" z-10" src={rightArrow} alt="" />
-                    <img
-                      className=" absolute group-hover:z-20"
-                      src={whiteIcon}
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div className=" row-card justify-between group cursor-pointer">
-                  <a
-                    className=" group-hover:text-[#4b2aad] font-semibold"
-                    href=""
-                  >
-                    Custom website
-                  </a>
-                  <div className="bg-[#fdfbf9] group-hover:bg-[#4b2aad] w-8 h-8 rounded-full center-card justify-center mr-4 relative">
-                    <img className=" z-10" src={rightArrow} alt="" />
-                    <img
-                      className=" absolute group-hover:z-20"
-                      src={whiteIcon}
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div className=" row-card justify-between group cursor-pointer">
-                  <a
-                    className=" group-hover:text-[#4b2aad] font-semibold"
-                    href=""
-                  >
-                    Landing pages
-                  </a>
-                  <div className="bg-[#fdfbf9] group-hover:bg-[#4b2aad] w-8 h-8 rounded-full center-card justify-center mr-4 relative">
-                    <img className=" z-10" src={rightArrow} alt="" />
-                    <img
-                      className=" absolute group-hover:z-20"
-                      src={whiteIcon}
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div className=" row-card justify-between group cursor-pointer">
-                  <a
-                    className=" group-hover:text-[#4b2aad] font-semibold"
-                    href=""
-                  >
-                    Link in bio
-                  </a>
-                  <div className="bg-[#fdfbf9] group-hover:bg-[#4b2aad] w-8 h-8 rounded-full center-card justify-center mr-4 relative">
-                    <img className=" z-10" src={rightArrow} alt="" />
-                    <img
-                      className=" absolute group-hover:z-20"
-                      src={whiteIcon}
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div className=" row-card justify-between group cursor-pointer">
-                  <a
-                    className=" group-hover:text-[#4b2aad] font-semibold"
-                    href=""
-                  >
-                    Affiliate marketing
-                  </a>
-                  <div className="bg-[#fdfbf9] group-hover:bg-[#4b2aad] w-8 h-8 rounded-full center-card justify-center mr-4 relative">
-                    <img className=" z-10" src={rightArrow} alt="" />
-                    <img
-                      className=" absolute group-hover:z-20"
-                      src={whiteIcon}
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Collapse sections={sections}/>
+      <SignUp/>
+      <OnlineBusiness/>
     </article>
   );
 }
