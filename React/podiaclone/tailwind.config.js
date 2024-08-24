@@ -103,7 +103,7 @@ export default {
         '.review-quote p':{
           fontSize: '18px',
           color: '#5c5856',
-          paddingTop: '20px'
+          padding: '20px'
         },
         '.row-card':{
           display:'flex',

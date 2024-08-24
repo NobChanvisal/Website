@@ -9,22 +9,27 @@ import OnlineCourses from "./components/articles/OnlineCourses.jsx";
 import "./App.css";
 import ScrollToTop from "./components/ScrollToTop.jsx";
 import DigitalDownload from "./components/articles/DigitalDownload.jsx";
+import Collapse from "./components/Category/Collapse.jsx";
+import Coaching from "./components/articles/Coaching.jsx";
+import Homes from "./components/Category/Homes.jsx";
+import ArticlesChildImgLeft from "./components/Category/ArticlesChildImgLeft.jsx";
+import ArticlesChildImgRight from "./components/Category/ArticlesChildImgRight.jsx";
+import Rate from "./components/Category/Rate.jsx";
 
 function App() {
   return (
-    
     <div>
-      {/* <Router>      
+      <Router>
         <ScrollToTop/>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/onlineCourse" element={<OnlineCourses />} />
           <Route path="/digitalDownload" element={<DigitalDownload/>} />
+          <Route path="/coaching" element={<Coaching/>}/>
         </Routes>
         <Footer />
-      </Router> */}
-      <DigitalDownload/>
+      </Router>
     </div>
   );
 }

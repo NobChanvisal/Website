@@ -2,249 +2,90 @@ import React from "react";
 import stars from "../image/stars.svg";
 import OnlineBusiness from "../Category/OnlineBusiness";
 import SignUp from "../Category/SignUp";
-import Collapse from "../Category/Faqs"
-
+import Faqs from "../Category/Faqs.jsx";
+import ArticlesChildImgRight from "../Category/ArticlesChildImgRight.jsx";
+import Homes from "../Category/Homes.jsx";
+import Rate from "../Category/Rate.jsx";
+import ArticlesChildImgLeft from "../Category/ArticlesChildImgLeft.jsx";
+import ArticleDescrip from "../Category/ArticlesDescrip.jsx";
 function DigitalDownload() {
   // for coaching
-  const sections = [
-    {
-      title: "What features does Podia have?",
-      content:
-        "Podia is an all-in-one platform for running your online business. You get a full website, your own online community, and the ability to sell digital products like courses, downloads, webinars, and any other type of file you like. Podia also includes your checkout cart and email marketing so you don’t have to connect tons of other tools.",
-    },
-    {
-      title: "Does Podia have a free plan?",
-      content:
-        "Yes! Podia has a free forever plan that includes your full website, blogging, one digital download, one coaching product, customer chat messaging, and your online community. Sign up for free today to see for yourself!",
-    },
-    {
-      title: "What kinds of things can I sell with Podia?",
-      content:
-        "You can sell digital downloads, online courses, coaching offers, community plans, webinars, and pretty much any type of file you can think of. Podia handles product hosting and delivery so you can focus on what you do.",
-    },
-    {
-      title: "Does Podia take a percentage of sales?",
-      content:
-        "Podia doesn’t charge any fees on paid plans, though the payment processor (Stripe or PayPal) will charge a standard transaction fee of 2.9% + 30¢, which may vary based on your location. The fees are charged by the processor and not associated with our plans. On our free plan, we charge an 8% fee on all transactions.",
-    },
-    {
-      title: "Does Podia integrate with my existing tools?",
-      content:
-        "Most likely, yes. You can use Podia’s embed feature to display content from over 1,900 sources like YouTube, SoundCloud, Spotify, and Typeform. Podia also has native integrations with tools like Zapier, ConvertKit, MailChimp, Google Analytics, Zoom, Calendly, Sumo, and Deadline Funnel. For payment processing, Podia integrates with Paypal and Stripe."
-    },
-    {
-      title: "I still have questions, HELP!",
-      content:
-        "We’d love to. Podia’s customer support is here for you, seven days a week. Just reach out to us on chat and a real, friendly person will be delighted to help you out."
-    }
-  ];
-
   return (
     <article>
-      <section className=" mt-48">
-        <div className="container">
-          <div className="grid-layout-2">
-            <div className="text-component">
-              <p className="heading-text mb-1">Sell Digital Downloads</p>
-              <h2 className=" title-section">
-                Sell online courses, coaching sessions, webinars, workshops,
-                ebooks, and anything you can think of on Podia
-              </h2>
-              <div className="section-description">
-                <p>
-                  Get everything you need in one place that you own. Podia takes
+      <Homes
+        heading="Sell Digital Downloads"
+        title="Sell online courses, coaching sessions, webinars, workshops,
+                ebooks, and anything you can think of on Podia"
+        description="Get everything you need in one place that you own. Podia takes
                   care of hosting products, taking payments, and getting
                   products to your customers. And you always control your own
-                  work.
-                </p>
-              </div>
-              <button className="mt-4 px-6 py-2 text-[20px] font-bold text-white bg-[#4b2aad] rounded-3xl transition-all hover:bg-[#201445]">
-              Get your free Podia account
-            </button>
-            </div>
-            <div className="section-img">
-              <img
-                className=" rounded-md"
-                src="https://images.ctfassets.net/19dvw6heztyg/6H3F46QjiS5UQlq9xddWm1/e70a3ea9bee0345044e5e05acf954bed/digital_downloads_gif.gif?w=1440"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div className="container center-card">
-          <div className="max-w-[1024px]">
-            <h2 className=" title-section">
-              If your customers can download it, you can likely sell it
-            </h2>
-            <div className="section-description">
-              <p>
-                Podia supports almost every file type and hosts all of the
+                  work."
+        img="https://images.ctfassets.net/19dvw6heztyg/6H3F46QjiS5UQlq9xddWm1/e70a3ea9bee0345044e5e05acf954bed/digital_downloads_gif.gif?w=1440"
+      />
+      <ArticleDescrip
+        title="If your customers can download it, you can likely sell it"
+        description=" Podia supports almost every file type and hosts all of the
                 content. Paid plans never place limits on how much content you
-                can upload and sell to your students.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div className="container">
-          <div className="grid-layout-2">
-            <div className="text-component">
-              <p className="heading-text mb-1">Templates & Presets</p>
-              <h2 className=" title-section">
-                Offer presets and templates for Canva, Notion, and other tools
-              </h2>
-              <div className="section-description">
-                <p>
-                  Create and sell your own social media templates, Lightroom
+                can upload and sell to your students."
+      />
+      <ArticlesChildImgRight
+        heading="Templates & Presets"
+        title="Offer presets and templates for Canva, Notion, and other tools"
+        description=" Create and sell your own social media templates, Lightroom
                   presets, Canva designs, Notion dashboards, or anything else
                   that your audience needs. Your template shop can be up and
-                  running in just a few clicks with Podia.
-                </p>
-              </div>
-              <div className="mt-4 py-2 text-[20px] font-bold  text-[#4b2aad] cursor-pointer transition-all hover:text-[#201445] group">
-                <a>
-                  Learn more about selling templates with Podia<span className="group-hover:ml-2">&#8594;</span> 
-                </a>
-              </div>
-            </div>
-            <div className="section-img">
-              <img
-                className=" rounded-md"
-                src="https://images.ctfassets.net/19dvw6heztyg/4zblp5fJlxwX28mQXIhbYy/2a7e54da80fefbf077aba935c7ee18a9/126.jpg?w=1440&q=75"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div className="container">
-          <div className="grid-layout-2">
-            <div className="text-component">
-              <p className="heading-text mb-1">More file types</p>
-              <h2 className=" title-section">
-                Spreadsheets, videos, audio files, technical diagrams – you can
-                sell those with Podia too
-              </h2>
-              <div className="section-description">
-                <p>
-                  You can sell almost any type of file on Podia, and you can add
+                  running in just a few clicks with Podia."
+        aboutName="selling templates with Podia"
+        img="https://images.ctfassets.net/19dvw6heztyg/4zblp5fJlxwX28mQXIhbYy/2a7e54da80fefbf077aba935c7ee18a9/126.jpg?w=1440&q=75"
+        links="/sellingTemplates"
+      />
+      <ArticlesChildImgRight
+        heading="More file types"
+        title="Spreadsheets, videos, audio files, technical diagrams – you can
+                sell those with Podia too"
+        description="You can sell almost any type of file on Podia, and you can add
                   unlimited files to each digital product. Sell your
                   organizational spreadsheet, or a budget calculator, or a PNG
                   of a wiring diagram or knitting pattern. What you sell is up
-                  to you.
-                </p>
-              </div>
-            </div>
-            <div className="section-img">
-              <img
-                className=" rounded-md"
-                src="https://images.ctfassets.net/19dvw6heztyg/3YK5WMsVQDGnMGzvSi9cAm/7e79b196604e2515ab05cf6be1cdea16/132.jpg?w=1440&q=75"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div className="center-card">
-          <div className="center-card justify-center text-center max-w-[1024px]">
-            <img className="stars" src={stars} alt="" />
-
-            <div className="review-quote">
-              <h2>
-                “Coming from Gumroad, Podia is a breath of fresh air. Their fees
-                are reasonable, and their tech support is fast and top-notch!”
-              </h2>
-              <p>— Gary Friedman,</p>
-              <p className=" text-[#5c5856] text-[18px] font-semibold">
-                Photographer & Writer
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div className="container">
-          <div className="center-card justify-center text-center max-w-[1024px]">
-            <p className=" heading-text">All-in-one- creator platform</p>
-            <h2 className=" title-section">
-              What makes Podia different for selling digital downloads?
-            </h2>
-            <div className="section-description">
-              <p>
-                With big-box marketplaces, you’ll always have to play the
+                  to you."
+        img="https://images.ctfassets.net/19dvw6heztyg/3YK5WMsVQDGnMGzvSi9cAm/7e79b196604e2515ab05cf6be1cdea16/132.jpg?w=1440&q=75"
+      />
+      <Rate
+        description="“Coming from Gumroad, Podia is a breath of fresh air. Their fees
+                are reasonable, and their tech support is fast and top-notch!”"
+        paragraph="— Gary Friedman,"
+      />
+      <p className=" text-[#5c5856] center-card text-[18px] font-inter font-semibold">
+        Photographer & Writer
+      </p>
+      <ArticleDescrip
+        heading="All-in-one- creator platform"
+        title="What makes Podia different for selling digital downloads?"
+        description="With big-box marketplaces, you’ll always have to play the
                 algorithm game. With Podia, you control your customers’
                 experience from start to finish. Design a website, send emails,
                 offer coupons, create an affiliate program – Podia gives you the
-                freedom to build your business the way you want.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div className="container">
-          <div className="grid-layout-2">
-            <div className="text-component">
-              <p className="heading-text mb-1">Free Plan</p>
-              <h2 className=" title-section">
-                No upfront costs to selling your digital download
-              </h2>
-              <div className="section-description">
-                <p>
-                  Make a free Podia account to sell your first digital download.
+                freedom to build your business the way you want."
+      />
+      <ArticlesChildImgRight
+        heading="Free Plan"
+        title="No upfront costs to selling your digital download"
+        description="Make a free Podia account to sell your first digital download.
                   You can also build your website, set up a community, and offer
                   coaching on the free plan. Stick with the free plan for as
-                  long as you need, and upgrade as your business grows.
-                </p>
-              </div>
-            </div>
-            <div className="section-img">
-              <img
-                className=" rounded-md"
-                src="https://images.ctfassets.net/19dvw6heztyg/4pK5BlPqknxBbpxkOEQgtm/45fff8e45b48ad499a2ddcb18984633d/133.jpg?w=1440&q=75"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div className="container">
-          <div className="grid-layout-2">
-            <div className="section-img">
-              <img
-                className=" rounded-md"
-                src="https://images.ctfassets.net/19dvw6heztyg/4QuIMte0o5612HJGFZ9Yaf/11717fd20cec96c6126efab8b23fa7b6/134.jpg?w=1440&q=75"
-                alt=""
-              />
-            </div>
-            <div className="text-component">
-              <p className="heading-text mb-1">Email marketing</p>
-              <h2 className=" title-section">
-                Make your digital products, and grow an audience who can’t wait
-                to buy them
-              </h2>
-              <div className="section-description">
-                <p>
-                  Manage your email marketing in the same place you sell digital
+                  long as you need, and upgrade as your business grows."
+        img="https://images.ctfassets.net/19dvw6heztyg/4pK5BlPqknxBbpxkOEQgtm/45fff8e45b48ad499a2ddcb18984633d/133.jpg?w=1440&q=75"
+      />
+      <ArticlesChildImgLeft
+        heading="Email marketing"
+        title="Make your digital products, and grow an audience who can’t wait
+                to buy them"
+        description="Manage your email marketing in the same place you sell digital
                   downloads. With Podia, you can build your list with free lead
                   magnets, set up automations to engage past customers, and add
-                  email sign-up forms to your Podia site in just a few clicks.
-                </p>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-      </section>
+                  email sign-up forms to your Podia site in just a few clicks."
+        img="https://images.ctfassets.net/19dvw6heztyg/4QuIMte0o5612HJGFZ9Yaf/11717fd20cec96c6126efab8b23fa7b6/134.jpg?w=1440&q=75"
+      />
       <section>
         <div className="container">
           <div className=" grid grid-cols-[34.5%_minmax(0,1fr)] p-10 bg-[#f5efeb] gap-x-11 rounded-xl">
@@ -284,29 +125,18 @@ function DigitalDownload() {
           </div>
         </div>
       </section>
-
-      <section>
-        <div className="center-card">
-          <div className="center-card justify-center text-center max-w-[1024px]">
-            <p className=" heading-text">All-in-one- platform</p>
-            <h2 className=" title-section">
-              Podia has everything you need, right out of the box
-            </h2>
-            <div className="section-description">
-              <p>
-                You should spend time on the work you love — not figuring out
+      <ArticleDescrip
+        heading="All-in-one- platform"
+        title=" Podia has everything you need, right out of the box"
+        description=" You should spend time on the work you love — not figuring out
                 another piece of tech. That’s why Podia puts everything you need
                 in one place. Get all the features you need to sell your digital
                 download products. Plus your website, your community, your email
-                marketing, and everything else.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <Collapse sections={sections}/>
-      <SignUp/>
-      <OnlineBusiness/>
+                marketing, and everything else."
+      />
+      <SignUp />
+      <Faqs />
+      <OnlineBusiness />
     </article>
   );
 }
