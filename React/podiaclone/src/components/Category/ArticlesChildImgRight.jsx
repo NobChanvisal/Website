@@ -22,7 +22,7 @@ function ArticlesChildImgRight(props) {
             )}
           </div>
         </div>
-        <div className="section-img">
+        <div className="section-img rounded-md shadow-md shadow-slate-400">
           <img className=" rounded-md m-0" src={props.img} alt="" />
         </div>
       </div>

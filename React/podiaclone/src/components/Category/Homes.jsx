@@ -16,7 +16,7 @@ function Homes(props) {
             Get your free account
           </button>
         </div>
-        <div className="section-img">
+        <div className="section-img rounded-md shadow-md shadow-slate-400">
           <img className="rounded-md" src={props.img} alt="" />
         </div>
       </div>

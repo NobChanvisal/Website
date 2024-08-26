@@ -15,7 +15,7 @@ import Homes from "./components/Category/Homes.jsx";
 import ArticlesChildImgLeft from "./components/Category/ArticlesChildImgLeft.jsx";
 import ArticlesChildImgRight from "./components/Category/ArticlesChildImgRight.jsx";
 import Rate from "./components/Category/Rate.jsx";
-
+import Webinars from "./components/articles/Webinars.jsx";
 function App() {
   return (
     <div>
@@ -27,10 +27,12 @@ function App() {
           <Route path="/onlineCourse" element={<OnlineCourses />} />
           <Route path="/digitalDownload" element={<DigitalDownload/>} />
           <Route path="/coaching" element={<Coaching/>}/>
+          <Route path="/webinars" element={<Webinars/>}/>
         </Routes>
         <Footer />
       </Router>
     </div>
+    
   );
 }
 
