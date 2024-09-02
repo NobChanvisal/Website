@@ -3,8 +3,8 @@ import React from "react";
 function ArticlesChildImgLeft(props) {
   return (
     <section>
-      <div className="container">
-        <div className="grid-layout-2">
+      <div className="px-4 lg:container">
+        <div className="grid grid-cols-1 gap-16 md:grid-layout-2 items-start">
           <div className="section-img">
             <img
               className=" rounded-md"

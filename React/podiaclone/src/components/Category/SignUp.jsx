@@ -4,7 +4,7 @@ function SignUp() {
   return (
     <>
       <section>
-        <div className=" container">
+        <div className=" px-4 lg:container lg:center-card">
           <div className=" mb-[6rem] text-white">
             <div className="banner-info center-card p-16 bg-[#201445] rounded-lg">
               <h2 className=" text-[34px] mb-1 font-DmSerif">

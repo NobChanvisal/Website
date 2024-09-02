@@ -42,7 +42,7 @@ function Faqs() {
   return (
     <>
     <section>
-      <div className="container">
+      <div className="px-4 lg:container">
         <div className="grid grid-cols-1 gap-y-10">
         <div className="text-component pt-1">
             <h2 className="heading-text">FAQs</h2>

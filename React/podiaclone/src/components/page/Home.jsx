@@ -10,7 +10,7 @@ import ArticlesChildImgRight from "../Category/ArticlesChildImgRight";
 
 function Home() {
   return (
-    <article>
+    <article className=" w-full">
       <Homes
         heading="Digital Products"
         title="Sell online courses, coaching sessions, webinars, workshops,
@@ -21,8 +21,8 @@ function Home() {
         img="https://images.ctfassets.net/19dvw6heztyg/3xU9z3jUaXTRdC0ii7hXVb/2ac68a4e2bab8ea98b76e001daf345af/digital_products-hero.png?w=1440&q=75"
       />
       <section className=" font-inter">
-        <div className="container grid grid-cols-3 gap-x-7 gap-y-16">
-          <div className="item1 center-card col-span-3 justify-self-center text-center max-w-[1024px]">
+        <div className=" px-4 md:grid-cols-1 grid gap-x-7 gap-y-16 lg:grid-cols-3 lg:container">
+          <div className="item1 center-card lg:col-span-3 justify-self-center text-center max-w-[1024px]">
             <h2 className=" text-[34px] font-DmSerif">
               All you have to do is make the product. Podia takes care of the
               details for you.

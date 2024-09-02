@@ -29,7 +29,7 @@ function App() {
           <Route path="/coaching" element={<Coaching/>}/>
           <Route path="/webinars" element={<Webinars/>}/>
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </Router>
     </div>
     

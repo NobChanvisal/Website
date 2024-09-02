@@ -6,8 +6,8 @@ function OnlineBusiness() {
   return(
     <>
     <section>
-      <div className="container">
-        <div className=" grid-layout-2 p-10 bg-[#f5efeb] rounded-xl place-items-start">
+      <div className="px-4 lg:container">
+        <div className="max-mobile:grid-cols-1 lg:grid-layout-2 p-4 lg:p-10 bg-[#f5efeb] rounded-xl place-items-start">
           <div className="text-component pt-1">
             <h2 className=" title-section">
               Build your entire online business with Podia
@@ -25,7 +25,7 @@ function OnlineBusiness() {
               </p>
             </div>
           </div>
-          <div className=" grid-layout-2 gap-x-4 w-full">
+          <div className=" grid-cols-1 max-mobile:mt-6 lg:grid-layout-2 gap-4 w-full">
             <div className=" w-full">
               <h2 className=" heading-text mb-4">Sell your work</h2>
               <div className=" row-card justify-between group cursor-pointer">

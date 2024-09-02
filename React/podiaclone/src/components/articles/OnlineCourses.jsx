@@ -8,7 +8,7 @@ function OnlineCourses() {
   return (
     <article>
       <section className=" text-[#1a1715] mt-48">
-        <div className="container grid grid-cols-[60px_1fr_60px] max-w-[1136px]">
+        <div className="px-4 lg:container grid max-mobile:grid-cols-[25px_1fr_25px] grid-cols-[60px_1fr_60px] max-w-[1136px]">
           <div className=" setOnCol2">
             <div className="online-heading text-[18px] text-[#5c5856] bg-transparent">
               <a className=" py-1 pr-2" href="">
@@ -47,7 +47,7 @@ function OnlineCourses() {
             Find the best online course platforms to build engaging e-learning
             products and grow your online business.
           </div>
-          <div className=" p-10 setOnCol2 bg-[#f5efeb]">
+          <div className=" p-10 max-mobile:p-6 setOnCol2 bg-[#f5efeb]">
             <p className=" heading-text mb-2">Jump Ahead</p>
             <h2 className=" text-[30px] font-DmSerif text-black">
               In this article

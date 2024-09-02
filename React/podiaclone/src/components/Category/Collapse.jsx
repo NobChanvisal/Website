@@ -20,10 +20,10 @@ function Collapse({ sections }) {
                 onClick={() => toggleCollapse(index)}
                 className="w-full m-0 py-3 flex flex-row items-center justify-between group cursor-pointer"
               >
-                <h3 className="group-hover:text-[#4b2aad] p-0">
+                <h3 className="group-hover:text-[#4b2aad] p-0 max-mobile:text-[22px] w-[100%]">
                   {section.title}
                 </h3>
-                <div className="bg-[#f5efeb] group-hover:bg-[#4b2aad] ml-8 w-10 h-10 rounded-full center-card justify-center relative">
+                <div className="bg-[#f5efeb] group-hover:bg-[#4b2aad] ml-8 w-10 h-10 min-h-8 min-w-8 rounded-full flex items-center justify-center relative">
                   <img
                     className="z-10"
                     src={openIndex === index ? minusIcon : plusIcon}
@@ -41,7 +41,7 @@ function Collapse({ sections }) {
                   openIndex === index ? "max-h-96" : "max-h-0"
                 }`}
               >
-                <div className="py- max-w-[840px]">
+                <div className=" max-w-[840px]">
                   <p className="text-[17px] font-inter">{section.content}</p>
                 </div>
               </div>

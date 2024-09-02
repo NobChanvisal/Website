@@ -15,8 +15,8 @@ function ResourcesButton() {
       >
         Resources
       </button>
-      <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start w-[420px]">
-        <div className=" p-6 dropdown-info grid grid-cols-2 gap-[2rem]">
+      <ul class="dropdown-menu dropdown-menu-lg-start w-[420px] max-mobile:w-[300px]">
+        <div className=" p-6 dropdown-info grid grid-cols-2 gap-[2rem] max-mobile:grid-cols-1">
             <div className="sub-navbar-info mb-6">
                 <p className="info-heading text-[12px] text-[#9c8881] uppercase">Free Resources</p>
                 <a href="">Resource center</a>
@@ -24,8 +24,8 @@ function ResourcesButton() {
                 <a href="">Podia demo site</a>
                 
             </div>
-            <div className="sub-navbar-info pl-6 mb-6">
-                <p className="info-heading text-[12px] text-[#9c8881] uppercase opacity-0">Future</p>
+            <div className="sub-navbar-info mb-6">
+                <p className="info-heading text-[12px] text-[#9c8881] uppercase">Future</p>
                 <a href="">Creator stories</a>
                 <a href="">Podia Creator Community</a>
                 <a href="">Help center</a>

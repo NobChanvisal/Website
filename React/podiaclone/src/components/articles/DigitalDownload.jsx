@@ -87,11 +87,11 @@ function DigitalDownload() {
         img="https://images.ctfassets.net/19dvw6heztyg/4QuIMte0o5612HJGFZ9Yaf/11717fd20cec96c6126efab8b23fa7b6/134.jpg?w=1440&q=75"
       />
       <section>
-        <div className="container">
-          <div className=" grid grid-cols-[34.5%_minmax(0,1fr)] p-10 bg-[#f5efeb] gap-x-11 rounded-xl">
+        <div className="px-4 lg:container">
+          <div className=" grid grid-cols-1 lg:grid-cols-[34.5%_minmax(0,1fr)] p-4 lg:p-10 bg-[#f5efeb] gap-11 rounded-xl">
             <div>
               <img
-                className=" rounded-xl max-w-sm w-full h-full"
+                className=" rounded-xl lg:max-w-sm w-full h-full"
                 src="https://images.ctfassets.net/19dvw6heztyg/kHM1UUkfu3bUII3coNzqf/ef5d728667976c39722ccfc9278f1a60/Sara-Cammorata-1.jpg?fit=fill&fm=jpg&w=750&q=75"
                 alt=""
               />
