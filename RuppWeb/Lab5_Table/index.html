@@ -4,6 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lab5_Table</title>
+    <style>
+      .table4 {
+          width: 500px;
+      }
+      .red-cell {
+          background-color: #d9534f;
+          width: 100px;
+          height: 100px;
+      }
+      .green-cell {
+          background-color: #97BE5A;
+          width: 100px;
+          height: 100px;
+      }
+      .blue-cell {
+          background-color: #0275d8;
+          width: 50px;
+          height: 50px;
+      }
+  </style>
   </head>
   <body>
     <h3>Table 1</h3>
@@ -205,5 +225,32 @@
         <td colspan="9">Research</td>
       </tr>
     </table>
+    <br>
+    <h3>Table 4</h3>
+    <table class="table4" border="1">
+      <tr>
+          <td class="green-cell"></td>
+          <td class="red-cell" rowspan="2" colspan="2"></td>
+          <td class="green-cell" colspan="2"></td>
+      </tr>
+      <tr>
+          <td class="green-cell"></td>
+          <td class="green-cell" colspan="2"></td>
+      </tr>
+      <tr>
+          <td class="red-cell" colspan="2" rowspan="3"></td>
+          <td class="green-cell"  rowspan="2"></td>
+          <td class="blue-cell"></td>
+          <td class="blue-cell"></td>
+      </tr>
+      <tr>
+          <td class="blue-cell"></td>
+          <td class="blue-cell"></td>
+      </tr>
+      <tr>
+          <td class="green-cell"></td>
+          <td class="green-cell" colspan="2"></td>
+      </tr>
+  </table>
   </body>
 </html>
