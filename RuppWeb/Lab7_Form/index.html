@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab7-Rigister Form</title>
+  </head>
+  <body>
+    <h3>Biography</h3>
+    <form action="">
+      <label for="name">Full Name</label> <br /><br />
+      <input type="text" size="30" /> <br />
+      <p>Gender</p>
+      <input type="radio" name="gender" value="Male" />
+      <label for="male">Male &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+      <input type="radio" name="gender" value="Female" />
+      <label for="male">Female</label> <br /><br />
+      <label for="familyStatue">Family Statue</label> <br /><br />
+      <select
+        style="width: 90px; height: 25px"
+        name="familyStatue"
+        id="familyStatue"
+      >
+        <option value="">Married</option>
+        <option value="">Single</option>
+      </select>
+      <br /><br />
+      <label for="date">Date Of Birth</label> <br /><br />
+      <input style="width: 100px; height: 25px" type="date" /> <br /><br />
+      <label for="Address">Address</label> <br /><br />
+      <textarea
+        style="width: 230px; height: 70px"
+        name="Address"
+        id="Address"
+      ></textarea>
+      <br /><br /><label for="jobs">Jobs</label> <br /><br /><input
+        type="text"
+        size="30"
+      /><br /><br />
+      <label for="highSchoolyear">High School Year</label>
+      <br /><br /><input
+        style="width: 150px; height: 25px"
+        type="month"
+        value="2023-12"
+        min="2019-01"
+      />
+      <br /><br /><label for="phone">Phone Number</label> <br /><br /><input
+        type="tel"
+        placeholder="123-456-7890"
+        id="phone"
+        name="phone"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        required
+      />
+      <br><br>
+      <input style="width: 100px; height: 20px" type="reset" />
+      <a href="rigister.html">Next</a>
+    </form>
+  </body>
+</html>
