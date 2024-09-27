@@ -1,5 +1,4 @@
 import React from "react";
-import stars from "../image/stars.svg";
 import OnlineBusiness from "../Category/OnlineBusiness";
 import SignUp from "../Category/SignUp";
 import Faqs from "../Category/Faqs.jsx";
