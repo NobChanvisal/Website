@@ -1,16 +1,7 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
-.back-home{
-    font-size: 12px;
-    padding: 10px;
-    border-bottom: 1px solid #d6d6d6;
-}
-.back-home a{
-    display: inline-block;
-    /* font-size: 14px; */
-    text-transform: uppercase;
-}
+
 .about-col-left{
     width: 705px;
 }
@@ -20,9 +11,7 @@
 .content ol a{
     text-transform: uppercase;
 }
-article{
-    padding: 10px
-}
+
 .tb-general{
     width: 100%;
     padding: 5px;
@@ -44,4 +33,60 @@ td{
     border-bottom: 1px dotted #cccccc;
     height: 60px;
     font-size: 12px;
+}article{
+    padding: 10px;
+}
+article h2,
+article p{
+    margin-bottom: 15px;
+}
+article h2{
+    letter-spacing: 1px;
+    margin-top: 25px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+article p{
+    font-size: 12px;
+    line-height: 18px;
+    text-align: justify;
+}
+article img{
+    width: 100%;
+}
+article ul{
+    font-size: 12px;
+    padding-left: 40px;
+    margin: 12px 0;
+}
+ul span{
+    font-weight: bolder;
+}
+.enabling-info-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+}
+.enabling-info-grid p{
+    margin: 0;
+}
+.enabling-info-grid span{
+    font-weight: bolder;
+    color: #006fb7;
+}
+.to-top{
+    margin-top: 15px;
+    font-size: 10px;
+    text-transform: uppercase;
+    float: right;
+    text-align: center;
+    width: 40px;
+    color: white;
+    background-color: #900;
+    border-radius: 5px;
+}
+.to-top:hover{
+    text-decoration: none;
 }
