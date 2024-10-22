@@ -1,0 +1,154 @@
+@font-face {
+    font-family: angkor;
+    src: url("font/khmer/Angkor.ttf");
+}
+@font-face {
+    font-family: angTaso;
+    src: url("font/khmer/AngTaso.ttf");
+}
+@font-face {
+    font-family: bayon;
+    src: url("font/khmer/Bayon.ttf");
+}
+@font-face {
+    font-family: bokor;
+    src: url("font/khmer/Bokor.ttf");
+}
+@font-face {
+    font-family: hanuman;
+    src: url("font/khmer/Hanuman.ttf");
+}
+@font-face {
+    font-family: kh-jrung-thom;
+    src: url("font/khmer/Kh\ Jrung\ Thom.ttf");
+}
+@font-face {
+    font-family: sombor-prey-kok;
+    src: url("font/khmer/Kh\ SomborPreyKok\ -\ Bunly\.ttf");
+}
+@font-face {
+    font-family: Cn-Poipet;
+    src: url("font/khmer/Khmer\ CN\ Poipet.ttf");
+}
+@font-face {
+    font-family: Kh-Moul;
+    src: url("font/khmer/KhmerMoul.ttf");
+}
+@font-face {
+    font-family: Kh-kampot;
+    src: url("font/khmer/KHMKAMPOT.ttf");
+}
+@font-face {
+    font-family: day-later;
+    src: url("font/english/28\ Days\ Later.ttf");
+}   
+@font-face {
+    font-family: badabb;
+    src: url("font/english/BADABB__.TTF");
+}
+@font-face {
+    font-family: candcu;
+    src: url("font/english/Candcu__.ttf");
+}
+@font-face {
+    font-family: caviar-dream;
+    src: url("font/english/CaviarDreams.ttf");
+}
+@font-face {
+    font-family: fragment;
+    src: url("font/english/Fragmentcore.otf");
+}
+@font-face {
+    font-family: long-shot;
+    src: url("font/english/Long_Shot.ttf");
+}
+@font-face {
+    font-family: pretty-dalia;
+    src: url("font/english/Pretty\ Dahlia.otf");
+}
+@font-face {
+    font-family: slugs-racer;
+    src: url("font/english/Slugs\ Racer.ttf");
+}
+@font-face {
+    font-family: universal;
+    src: url("font/english/UniversalExploration_PERSONAL_USE_ONLY.otf");
+}
+@font-face {
+    font-family: varsity-regular;
+    src: url("font/english/varsity_regular.ttf");
+}
+.container{
+    width: 600px;
+    border-bottom: 1px solid silver;
+}
+h1{
+    color: red;
+}
+p{
+    font-size: 26px;
+    margin: 0;
+    padding: 5px 0;
+}
+.angkor-font{
+    font-family: angkor;
+}
+.angTaso-font{
+    font-family: angTaso;
+}
+.bayon-font{
+    font-family: bayon;
+}
+.bokor-font{
+    font-family: bokor;
+}
+.hanuman-font{
+    font-family: hanuman;
+}
+.kh-jrung{
+    font-family: kh-jrung-thom;
+}
+.kh-sombor{
+    font-family: sombor-prey-kok;
+}
+.kh-poipet{
+    font-family: Cn-Poipet;
+}
+.kh-moul{
+    font-family: Kh-Moul;
+}
+.kh-kampot{
+    font-family: Kh-kampot;
+}
+.font-1{
+    font-family: day-later;
+}
+.font-2{
+    font-family: badabb;
+}
+.font-3{
+    font-family: candcu;
+}
+.font-4{
+    font-family: caviar-dream;
+}
+.font-5{
+    font-family: fragment;
+}
+.font-6{
+    font-family: long-shot;
+}
+.font-7{
+    font-family: pretty-dalia;
+}
+.font-8{
+    font-family: slugs-racer;
+}
+.font-9{
+    font-family: universal;
+}
+.font-10{
+    font-family: varsity-regular;
+}
+
+
