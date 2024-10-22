@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.slider-section {
+  width: 100%;
+  margin-top: 10px;
+}
+.flex-layout {
+  width: 100%;
+  margin-top: 5px;
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.row-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.invitation {
+  flex: 1;
+  height: 230px;
+}
+.notice {
+  width: 200px;
+  float: left;
+  margin: 5px;
+  padding: 5px 10px;
+  background-color: #fff0bb;
+  border: 1px solid #c69c0a;
+}
+.notice .image {
+  width: 80px;
+  height: 100px;
+}
+.notice span {
+  text-transform: uppercase;
+  font-size: 11px;
+  display: block;
+}
+.notice span a {
+  text-decoration: none;
+}
+article,
+address {
+  width: 620px;
+}
+.scholarship {
+  height: 230px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.scholarship ul {
+  padding-left: 30px;
+  margin: 12px 0;
+  line-height: 1;
+}
+.scholarship ul li span {
+  font-size: 11px;
+  color: #555555;
+}
+.new-left {
+  width: 370px;
+  padding: 10px 5px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.new-left img,
+.new-feed img {
+  width: 165px;
+}
+.new-row-1,
+.new-row-2 {
+  padding-top: 10px;
+  margin-bottom: 15px;
+}
+.txt-contain-box {
+  font-size: 11px;
+  line-height: 18px;
+}
+.txt-contain-box .heading {
+  color: #990000;
+  display: block;
+}
+.txt-contain-box .date {
+  color: #555555;
+  text-align: justify;
+}
+
+.news-right {
+  width: 210px;
+  padding: 10px 5px;
+}
+.news-right .new-feed {
+  margin-right: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.row-3 {
+  padding: 0 5px;
+}
+.grid-overview {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cards {
+  text-align: center;
+}
+.cards img {
+  width: 110px;
+  height: 110px;
+  border: 1px solid silver;
+}
+.cards p {
+  font-size: 12px;
+}
+.cards p span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #990000;
+}
+address {
+  margin: 5px 0;
+  background-color: #f2f2f2;
+  border: 1px solid #e7e7e7;
+}
+address .flex-layout {
+  gap: 0;
+  margin: 0;
+  height: 150px;
+}
+.label {
+  width: 130px;
+  color: white;
+  background-color: #871717;
+  padding: 20px;
+  height: 100%;
+}
+
+.subscribe {
+  padding: 10px 20px;
+  flex: 1;
+}
+.subscribe label {
+  font-size: 15px;
+  color: #555555;
+}
+
+.subscribe .submit-button {
+  width: 100px;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  background-color: #831717;
+  border: none;
+  color: white;
+}
+.socail {
+  width: 160px;
+  padding: 10px;
+}
+.email-txt {
+  width: 180px;
+  padding: 5px;
+  border: none;
+  font-size: 12px;
+  font-style: italic;
+} 
+.socail a {
+  color: #900;
+  text-decoration: none;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.socail a:hover {
+  text-decoration: underline;
+}
+.hotspot-info {
+  border: 1px solid #c69c0a;
+  background-color: #fff0bb;
+  font-size: 12px;
+  padding: 5px 15px;
+  margin: 15px 5px;
+}
