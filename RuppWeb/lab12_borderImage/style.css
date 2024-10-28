@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+    font-family: khmer-moul;
+    src: url("font/KhmerMoul.ttf");
+}
+@font-face {
+    font-family: kh-bokor;
+    src: url("font/Bokor.ttf");
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.flex-between {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.card {
+  width: 1000px;
+  height: 550px;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url("image/rupp_logo.png");
+  background-size: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  margin: 10px;
+  border: 50px solid transparent;
+  border-image: url("image/border-img.jpg") 70 round;
+}
+.left-title,
+.right-title{
+    text-align: center;
+    font-weight: bold;
+}
+.khmer-heading{
+    font-family: khmer-moul;
+}
+.eng-heading{
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+.right-title{
+    font-size: 16px;
+}
+.left-title{
+    font-size: 12px;
+}
+.title-center{
+    text-align: center;
+    font-weight: bold;
+}
+.title-center p{
+    font-size: 12px;
+}
+.personal-info{
+    padding: 25px 0;
+}
+.eng-info,
+.Kh-info{
+    width: 450px;
+}
+.eng-info h3{
+    font-size: 15px;
+    padding-left: 40px;
+    text-transform: uppercase;
+}
+.personal-info p{
+    padding: 8px 0;
+}
+.personal-info p span{
+    font-weight: bold;
+    padding-left: 70px;
+}
+.Kh-info p{
+    font-family: kh-bokor;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
