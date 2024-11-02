@@ -11,7 +11,7 @@ import "./index.css";
 function App() {
   const [selectedCategory, setSelectedCategory] = useState(null);
 
-  // ----------- Input Filter -----------
+  //Input Filter
   const [query, setQuery] = useState("");
 
   const handleInputChange = (event) => {
@@ -22,12 +22,12 @@ function App() {
     (product) => product.title.toLowerCase().indexOf(query.toLowerCase()) !== -1
   );
 
-  // ----------- Radio Filtering -----------
+  // Radio Filtering
   const handleChange = (event) => {
     setSelectedCategory(event.target.value);
   };
 
-  // ------------ Button Filtering -----------
+  //Button Filtering
   const handleClick = (event) => {
     setSelectedCategory(event.target.value);
   };
