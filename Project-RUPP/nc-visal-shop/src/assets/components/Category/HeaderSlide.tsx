@@ -1,3 +1,8 @@
+import { LiaShippingFastSolid } from "react-icons/lia";
+import { BiSupport } from "react-icons/bi";
+import { MdOutlinePayment } from "react-icons/md";
+import { GiBoxUnpacking } from "react-icons/gi";
+
 function HeaderSlide() {
   return (
     <div className="w-full max-w-[770px]">
@@ -8,19 +13,28 @@ function HeaderSlide() {
       >
         <div className="carousel-inner">
           <div className="carousel-item active " data-bs-interval="5000">
-            <p className=" text-center">
+            <div className=" flex flex-row items-center justify-center">
+              <LiaShippingFastSolid className=" mr-2 text-red-500" />
               Get free delivery on orders over $100
-            </p>
+            </div>
           </div>
-          <div className="carousel-item" data-bs-interval="1000">
-            <p className=" text-center">
+          <div className="carousel-item" data-bs-interval="3000">
+            <div className=" flex flex-row items-center justify-center">
+              <BiSupport className=" mr-2 text-red-500" />
               Online support 24/7
-            </p>
+            </div>
           </div>
-          <div className="carousel-item" data-bs-interval="1000">
-            <p className=" text-center">
+          <div className="carousel-item" data-bs-interval="3000">
+            <div className=" flex flex-row items-center justify-center">
+              <MdOutlinePayment className=" mr-2 text-red-500" />
               Secure payment
-            </p>
+            </div>
+          </div>
+          <div className="carousel-item" data-bs-interval="3000">
+            <div className=" flex flex-row items-center justify-center">
+            <GiBoxUnpacking className=" mr-2 text-red-500"/>
+              7-Days Return
+            </div>
           </div>
         </div>
         <button
@@ -31,9 +45,8 @@ function HeaderSlide() {
         >
           <span
             className="carousel-control-prev-icon"
-            
             aria-hidden="true"
-            style={{ width: "18px", height: "18px",color:"black"}}
+            style={{ width: "18px", height: "18px", color: "black" }}
           ></span>
           <span className="visually-hidden">Previous</span>
         </button>

@@ -34,6 +34,7 @@ import {
   ShoppingBagIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
+
 import HeaderSlide from "./Category/HeaderSlide";
 
 const navigation = {
@@ -46,34 +47,33 @@ const navigation = {
           name: "New Arrivals",
           href: "#",
           imageSrc:
-            "https://tailwindui.com/plus/img/ecommerce-images/mega-menu-category-01.jpg",
+            "https://i.pinimg.com/1200x/48/3d/ec/483decade38b1dc5119677530f9a23ed.jpg",
           imageAlt:
-            "Models sitting back to back, wearing Basic Tee in black and bone.",
+            " Nike Men's Pegasus Plus Running Shoes.",
         },
         {
-          name: "Basic Tees",
+          name: "Super Discount",
           href: "#",
           imageSrc:
-            "https://tailwindui.com/plus/img/ecommerce-images/mega-menu-category-02.jpg",
+            "https://i.pinimg.com/1200x/f5/ae/de/f5aedea64f583baa63995983c26ad490.jpg",
           imageAlt:
-            "Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees.",
+            "Super Discount poster",
         },
       ],
       sections: [
         {
-          id: "nike",
+          id: "Nike",
           name: "Nike",
           items: [
             { name: "All Shoes", href: "#" },
-            { name: "Air Jordan", href: "#" },
+            { name: "Jordan", href: "#" },
+            { name: "Dunk", href: "#" },
+            { name: "Air Force", href: "#" },
+            { name: "Air Max", href: "#" },
             { name: "Nike SB", href: "#" },
-            { name: "Nike Air Fore", href: "#" },
-            { name: "Nike Dunk", href: "#" },
-            { name: "Nike Air Mak", href: "#" },
-            { name: "Slider", href: "#" },
-            { name: "Nike Luna Roam", href: "#" },
-            { name: "Air More Uptempo", href: "#" },
-            { name: "Football"}
+            { name: "Running", href: "#"},
+            { name: "Sandals & Slides", href: "#" },
+            { name: "Football" },
           ],
         },
         {
@@ -81,23 +81,30 @@ const navigation = {
           name: "New Balance",
           items: [
             { name: "All Shoes", href: "#" },
-            { name: "New balance 550", href: "#" },
-            { name: "New balance RC42", href: "#" },
-            { name: "New balance 9060", href: "#" },
-            { name: "New balance 574", href: "#" },
-            { name: "New balance 530", href: "#" },
-            { name: "New balance 990", href: "#" },
+            { name: "550", href: "#" },
+            { name: "327", href: "#" },
+            { name: "574", href: "#" },
+            { name: "530", href: "#" },
+            { name: "990", href: "#" },
+            { name: "327", href: "#"},
+            { name: "Running", href: "#"},
+            { name: "Sandals & Slides", href: "#" },
           ],
         },
         {
-          id: "brands",
-          name: "Brands",
+          id: "Adidas",
+          name: "Adidas",
           items: [
-            { name: "Full Nelson", href: "#" },
-            { name: "My Way", href: "#" },
-            { name: "Re-Arranged", href: "#" },
-            { name: "Counterfeit", href: "#" },
-            { name: "Significant Other", href: "#" },
+            { name: "All Shoes", href: "#" },
+            { name: "Ultraboost", href: "#" },
+            { name: "Samba", href: "#" },
+            { name: "Campus", href: "#" },
+            { name: "Forum", href: "" },
+            { name: "Gazelle", href: "#" },
+            { name: "Cortez", href: "#" },
+            { name: "Colombia", href: "#" },
+            { name: "Slider", href: "#" },
+            { name: "Football" },
           ],
         },
       ],
@@ -110,53 +117,53 @@ const navigation = {
           name: "New Arrivals",
           href: "#",
           imageSrc:
-            "https://tailwindui.com/plus/img/ecommerce-images/product-page-04-detail-product-shot-01.jpg",
+            "https://i.pinimg.com/1200x/2e/42/c4/2e42c40628dccedd714f0adc8c76b2ff.jpg",
           imageAlt:
-            "Drawstring top with elastic loop closure and textured interior padding.",
-        },
-        {
-          name: "Artwork Tees",
-          href: "#",
-          imageSrc:
-            "https://tailwindui.com/plus/img/ecommerce-images/category-page-02-image-card-06.jpg",
-          imageAlt:
-            "Three shirts in gray, white, and blue arranged on table with same line drawing of hands and shapes overlapping on front of shirt.",
+            "adidas FORUM.",
         },
       ],
       sections: [
         {
-          id: "clothing",
-          name: "Clothing",
+          id: "Nike",
+          name: "Nike",
           items: [
-            { name: "Tops", href: "#" },
-            { name: "Pants", href: "#" },
-            { name: "Sweaters", href: "#" },
-            { name: "T-Shirts", href: "#" },
-            { name: "Jackets", href: "#" },
-            { name: "Activewear", href: "#" },
-            { name: "Browse All", href: "#" },
+            { name: "All Shoes", href: "#" },
+            { name: "Jordan", href: "#" },
+            { name: "Dunk", href: "#" },
+            { name: "Air Force", href: "#" },
+            { name: "Air Max", href: "#" },
+            { name: "Nike SB", href: "#" },
+            { name: "Running", href: "#"},
+            { name: "Sandals & Slides", href: "#" },
           ],
         },
         {
-          id: "accessories",
-          name: "Accessories",
+          id: "New Balance",
+          name: "New Balance",
           items: [
-            { name: "Watches", href: "#" },
-            { name: "Wallets", href: "#" },
-            { name: "Bags", href: "#" },
-            { name: "Sunglasses", href: "#" },
-            { name: "Hats", href: "#" },
-            { name: "Belts", href: "#" },
+            { name: "All Shoes", href: "#" },
+            { name: "550", href: "#" },
+            { name: "327", href: "#" },
+            { name: "574", href: "#" },
+            { name: "530", href: "#" },
+            { name: "990", href: "#" },
+            { name: "327", href: "#"},
+            { name: "Running", href: "#"},
+            { name: "Sandals & Slides", href: "#" },
           ],
         },
         {
-          id: "brands",
-          name: "Brands",
+          id: "Adidas",
+          name: "Adidas",
           items: [
-            { name: "Re-Arranged", href: "#" },
-            { name: "Counterfeit", href: "#" },
-            { name: "Full Nelson", href: "#" },
-            { name: "My Way", href: "#" },
+            { name: "All Shoes", href: "#" },
+            { name: "Ultraboost", href: "#" },
+            { name: "Samba", href: "#" },
+            { name: "Forum", href: "#"},
+            { name: "Campus", href: "#" },
+            { name: "Gazelle", href: "#" },
+            { name: "Avryn_X", href: "#" },
+            { name: "Sandals & Slides", href: "#" },
           ],
         },
       ],
@@ -333,7 +340,10 @@ export default function Header() {
           <HeaderSlide />
         </div>
 
-        <nav aria-label="Top" className="mx-auto max-sm:px-2 sm:px-6 md:px-8 sticky top-0 z-10">
+        <nav
+          aria-label="Top"
+          className="mx-auto max-sm:px-2 sm:px-6 md:px-8 sticky top-0 z-10"
+        >
           <div className="border-b border-gray-200">
             <div className="flex h-16 flex-row items-center justify-center">
               {/* Logo */}
