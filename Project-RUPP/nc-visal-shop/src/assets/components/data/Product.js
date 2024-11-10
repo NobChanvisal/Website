@@ -1,16 +1,18 @@
 import star50 from "../category/rating/50.png";
-import star45 from "../category/rating/45.png"
+import star45 from "../category/rating/45.png";
 const data = [
   {
     img: "https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg",
     title: "Nike Air Monarch IV",
     star: star50,
     reviews: "(123 reviews)",
+    shortDes: "Nike, Inc. is an American athletic footwear and apparel corporation headquartered near Beaverton, Oregon, United States.",
+    des: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     prevPrice: 650,
     newPrice: 200,
     company: "Nike",
     category: "men",
-    model: "Air Jordan"
+    model: "Air Jordan",
   },
   {
     img: "https://m.media-amazon.com/images/I/519MRhRKGFL._AC_UX575_.jpg",
