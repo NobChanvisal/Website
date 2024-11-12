@@ -349,7 +349,7 @@ export default function Header() {
               {/* Logo */}
               <div className=" p-0 text-nowrap sm:p-2">
                 <a href="#">
-                  <span className=" font-DM-Serif tracking-[2px] text-[12px] pr-1 sm:pl-2 sm:text-[20px]">
+                  <span className=" font-DM-Serif tracking-[2px] text-[12px] pr-2 sm:pl-2 sm:text-[20px]">
                     NC-VISAL
                   </span>
                 </a>
