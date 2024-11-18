@@ -1,0 +1,25 @@
+
+[
+  {
+    "id": "Nike1",
+    "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/0f0390ab-4274-48ed-ae7f-9192ea202d7a/AIR+JORDAN+1+MID.png",
+    "gallery": [
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/d6573cc7-25d2-4a17-9c11-3f62f03caaae/AIR+JORDAN+1+MID.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/a26ab978-7ec3-4697-aaa3-6a18d5aaaaf4/AIR+JORDAN+1+MID.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/c2e98dc9-dee0-44da-8725-a67434f330a2/AIR+JORDAN+1+MID.png",
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/856fc3ee-a3c3-4678-a539-17a93999894a/AIR+JORDAN+1+MID.png"
+    ],
+    "title": "Air Monarch IV",
+    "stars": "../data/rating/45.png",
+    "reviews": "(123 reviews)",
+    "shortDes": "The Air Jordan 1 Retro High remakes the classic sneaker, giving you a fresh look with a familiar feel. Premium materials with new colors and textures give modern expression to an all-time favorite.",
+    "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "prevPrice": 65000,
+    "salePrice": 20000,
+    "qty": 1,
+    "company": "Nike",
+    "category": "Men's",
+    "model": "Air Jordan",
+    "size": ["40", "41", "42", "43", "44"]
+  }
+]
