@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import './App.css';
 import Navigation from './assets/components/Navigation.jsx';
-import Products from './assets/components/Products.jsx';
 import Recommended from './assets/components/Recommended.jsx';
 import Sidebar from './assets/components/Sidebar/Sidebar.jsx';
-import products from './assets/components/db/data.js' // Import data
+import products from './assets/components/db/data.js' 
 import Card from './assets/components/category/Card.jsx';
 import "./index.css";
+import ProductsList from './assets/components/ProductsList.jsx';
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -74,7 +74,7 @@ function App() {
       <Sidebar handleChange={handleChange} />
       <Navigation query={query} handleInputChange={handleInputChange} />
       <Recommended handleClick={handleClick} />
-      <Products result={result} />
+      <ProductsList result={result} />
     </>
   );
 }

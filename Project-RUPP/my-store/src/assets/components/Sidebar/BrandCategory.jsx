@@ -1,0 +1,61 @@
+import React from "react";
+import Input from "../Category/Input";
+
+function BrandCategory({ brand, handleChange }) {
+  const categories = {
+    Nike: [
+      { value: "", title: "All" },
+      { value: "Air Jordan", title: "Air Jordan" },
+      { value: "Dunk", title: "Dunk" },
+      { value: "Air Force", title: "Air Force" },
+      { value: "Air Max", title: "Air Max" },
+      { value: "Running", title: "Running" },
+    ],
+    "New Balance": [
+      { value: "", title: "All" },
+      { value: "550", title: "550" },
+      { value: "327", title: "327" },
+      { value: "574", title: "574" },
+      { value: "530", title: "530"},
+      { value: "990", title: "990" },
+      { value: "Running", title: "Running" },
+    ],
+    Puma: [
+      { value: "", title: "All" },
+      { value: "Suede", title: "Suede" },
+      { value: "RS", title: "RS" },
+      { value: "Cali", title: "Cali" },
+      { value: "Future Rider", title: "Future Rider" },
+      { value: "Running", title: "Running" },
+    ],
+    Adidas: [
+        { value: "", title: "All" },
+        { value: "Samba", title: "Samba" },
+        { value: "Gazella", title: "Gazella" },
+        { value: "Campus", title: "Cali" },
+        { value: "Forum", title: "Future Rider" },
+        { value: "Running", title: "Running" },
+      ],
+  };
+
+  const brandCategories = categories[brand] || [];
+
+  return (
+    <>
+      <h2 className="sidebar-title tracking-wider uppercase">{brand}</h2>
+      <div className="category-container flex flex-col mt-3 ml-1">
+        {brandCategories.map(({ value, title }) => (
+          <Input
+            key={value || title}
+            handleChange={handleChange}
+            value={value}
+            title={title}
+            name={brand.toLowerCase()}
+          />
+        ))}
+      </div>
+    </>
+  );
+}
+
+export default BrandCategory;
