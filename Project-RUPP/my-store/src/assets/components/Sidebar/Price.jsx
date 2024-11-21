@@ -1,45 +1,54 @@
-import Input from "../Category/Input";
-function Price({handleChange}) {
+import React from "react";
+
+function Price({ handlePriceChange }) {
+  const [min, setMin] = React.useState(0);
+  const [max, setMax] = React.useState(500);
+
+  const handleMinChange = (e) => {
+    const value = Number(e.target.value);
+    setMin(value);
+    handlePriceChange(value, max);
+  };
+
+  const handleMaxChange = (e) => {
+    const value = Number(e.target.value);
+    setMax(value);
+    handlePriceChange(min, value);
+  };
+
   return (
-    <>
-      <h2 className="sidebar-title mt-5 tracking-wider uppercase">Price</h2>
-      <div className="price-container flex flex-col mt-5">
-        {/* <Input
-          handleChange={handleChange}
-          value="all"
-          title="All"
-          name="price"
-        /> */}
-        <label className="label-container text-[13px]">
-          <input onChange={handleChange} type="radio" value="" name="price" />
-          <span className="checkmark "></span>All
+    <div className="price-filter mt-3">
+      <h2 className="sidebar-title tracking-wider uppercase font-semibold">Price Range</h2>
+      <div className="mt-3 ml-1">
+        <label>
+          <div className=" flex flex-row justify-between text-[12px]">
+            <p>Min</p>
+            <span>${min}</span>
+          </div>
+          <input
+            type="range"
+            min="0"
+            max="500"
+            value={min}
+            onChange={handleMinChange}
+          />
         </label>
-        <Input
-          handleChange={handleChange}
-          value={50}
-          title="$0 - $50"
-          name="price"
-        />
-        <Input
-          handleChange={handleChange}
-          value={100}
-          title="$50 - $100"
-          name="price"
-        />
-        <Input
-          handleChange={handleChange}
-          value={150}
-          title="$100 - $150"
-          name="price"
-        />
-        <Input
-          handleChange={handleChange}
-          value={200}
-          title="Over $150"
-          name="price"
-        />
+        <label>
+          <div className=" flex flex-row justify-between text-[12px] mt-2">
+            <p>Max</p>
+            <span>${max}</span>
+          </div>
+          <input
+            type="range"
+            min="0"
+            max="500"
+            value={max}
+            onChange={handleMaxChange}
+          />
+        </label>
       </div>
-    </>
+    </div>
   );
 }
+
 export default Price;

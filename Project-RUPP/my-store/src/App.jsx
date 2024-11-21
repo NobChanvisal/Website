@@ -6,6 +6,8 @@ import Header from "./assets/components/Header";
 import Store from "./assets/components/Page/Store";
 import Nike from "./assets/components/Page/Nike";
 import NewBalance from "./assets/components/Page/Newbalance";
+import Adidas from "./assets/components/Page/Adidas";
+import Puma from "./assets/components/Page/Puma"
 
 function App() {
   return (
@@ -14,10 +16,13 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/store" element={<Store />} />
+        <Route path="/adidas" element={<Adidas />} />
         <Route path="/nike" element={<Nike />} />
+        <Route path="/puma" element={<Puma />} />
         <Route path="/newbalance" element={<NewBalance />} />
         <Route path="/sale-items" element={<OnsaleProduct/>}/>
       </Routes>
+     
     </Router>
   );
 }

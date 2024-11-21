@@ -1,6 +1,28 @@
 
 [
   {
+    "id": "Nike4",
+    "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8ebf8b19386645f7991caf7b00b2f7b3_9366/Campus_00s_Shoes_Blue_H03471_04_standard.jpg",
+    "gallery": [
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8ebf8b19386645f7991caf7b00b2f7b3_9366/Campus_00s_Shoes_Blue_H03471_04_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/f81a93942800473fa6cbaf7b00b2d48b_9366/Campus_00s_Shoes_Blue_H03471_01_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c443c2d3ca4c42cea6dcaf7b00b2eeca_9366/Campus_00s_Shoes_Blue_H03471_03_standard.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/78a1d2f74051437c8ad1af7b00b2e5c6_9366/Campus_00s_Shoes_Blue_H03471_02_standard.jpg"
+    ],
+    "title": "Campus 00s Shoes",
+    "stars": "../data/rating/40.png",
+    "reviews": "(150 reviews)",
+    "shortDes": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+    "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "prevPrice": 0,
+    "salePrice": 11000,
+    "qty": 1,
+    "brand": "Adidas",
+    "category": "Men's",
+    "model": "Campus",
+    "size": ["40", "41", "42", "43", "44"]
+  },
+  {
     "id": "ad2",
     "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8ebf8b19386645f7991caf7b00b2f7b3_9366/Campus_00s_Shoes_Blue_H03471_04_standard.jpg",
     "gallery": [
@@ -154,6 +176,28 @@
     "model": "Running",
     "size": ["40", "41", "42", "43", "44"]
   },
+  {
+    "id": "ad3",
+    "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/a802a9434b954a98813f87bd14f246ee_9366/Adizero_Prime_X_2.0_STRUNG_Shoes_Blue_IF1209_HM1.jpg",
+    "gallery": [
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/a802a9434b954a98813f87bd14f246ee_9366/Adizero_Prime_X_2.0_STRUNG_Shoes_Blue_IF1209_HM1.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/396d0b2fb5f44660bf6f4f1889c1c82d_9366/Adizero_Prime_X_2.0_STRUNG_Shoes_Blue_IF1209_HM3_hover.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d957c6ab90e2489bbf7f59ca84cc9e2c_9366/Adizero_Prime_X_2.0_STRUNG_Shoes_Blue_IF1209_HM4.jpg"
+    ],
+    "title": "Adizero Prime X 2.0",
+    "stars": "../data/rating/45.png",
+    "reviews": "(123 reviews)",
+    "shortDes": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "prevPrice": 0,
+    "salePrice": 30000,
+    "qty": 1,
+    "brand": "Adidas",
+    "category": "Men's",
+    "model": "Running",
+    "size": ["40", "41", "42", "43", "44"]
+  },
+
   {
     "id": "Nike2",
     "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/836fb56c-532a-42d7-97fb-0dfde6f03778/AIR+FORCE+1+LOW+RETRO+QS.png",
