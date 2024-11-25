@@ -53,7 +53,8 @@ export default {
           width: "5px",
           height: "5px",
           borderRadius: "50%",
-          backgroundColor: "white"
+          backgroundColor: "white",
+          border: "1px solid #ddd",
         },
       })
     }

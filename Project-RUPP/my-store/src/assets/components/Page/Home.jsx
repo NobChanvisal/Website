@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import ProductCard from "../Category/ProductCard";
-import OnsaleProduct from "../Category/OnsaleProduct";
 import { SiNike, SiAdidas, SiNewbalance, SiPuma } from "react-icons/si";
 function Home() {
   const [products, setProducts] = useState([]);
@@ -14,7 +13,7 @@ function Home() {
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
   const newArrivals = products.slice(0, 4);
-
+  const productSale = products.filter((product) => product.prevPrice > 0);
   return (
     <>
       <section>
@@ -99,25 +98,25 @@ function Home() {
       <section className="py-10 px-10 mx-auto">
         <div className="brand-content w-full h-24 grid grid-cols-4">
           <a
-            href="#"
+            href="/nike"
             className="brand-profile flex items-center justify-center border hover:border-black transition-all duration-200"
           >
             <SiNike className="text-[80px]" />
           </a>
           <a
-            href="#"
+            href="/adidas"
             className="brand-profile flex items-center justify-center border hover:border-black transition-all duration-200"
           >
             <SiAdidas className="text-[80px]" />
           </a>
           <a
-            href="#"
+            href="/newbalance"
             className="brand-profile flex items-center justify-center border hover:border-black transition-all duration-200"
           >
             <SiNewbalance className="text-[80px]" />
           </a>
           <a
-            href="#"
+            href="/puma"
             className="brand-profile flex items-center justify-center border hover:border-black transition-all duration-200"
           >
             <SiPuma className="text-[80px]" />
@@ -127,8 +126,8 @@ function Home() {
       <section className=" py-10 px-10 mx-auto">
         <div className=" w-full flex justify-between">
           <h2 className="text-2xl font-bold mb-4">New Arrivals</h2>
-          <a className=" " href="/store">
-            Shop all
+          <a className=" hover:underline" href="/store">
+            View all product
           </a>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -161,7 +160,7 @@ function Home() {
           )}
         </div>
       </section>
-      <div className="banner relative my-10">
+      <section className="banner relative my-10">
         <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-50 z-10"></div>
         <img
           className="w-full"
@@ -174,20 +173,69 @@ function Home() {
           </p>
           <a
             className="py-2 px-5 border-none outline outline-1 outline-slate-100 text-white hover:outline-slate-300 rounded-sm"
-            href=""
+            href="/store"
           >
             Shop Now
           </a>
         </div>
-      </div>
+      </section>
       <section className=" py-10 px-10 mx-auto">
         <div className=" w-full flex justify-between">
-          <h2 className="text-2xl font-bold mb-4">Item On Sale</h2>
-          <a href="/sale-items" className="">
-            View all
+          <h2 className="text-2xl font-bold mb-4">Item on sale</h2>
+          <a className=" hover:underline" href="/store">
+            View all product
           </a>
         </div>
-        <OnsaleProduct />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {productSale
+            .slice(0, 4)
+            .map(
+              ({
+                id,
+                img,
+                title,
+                brand,
+                stars,
+                reviews,
+                category,
+                model,
+                prevPrice,
+                salePrice,
+              }) => (
+                <ProductCard
+                  key={id}
+                  img={img}
+                  title={title}
+                  brand={brand}
+                  stars={stars}
+                  reviews={reviews}
+                  category={category}
+                  model={model}
+                  prevPrice={prevPrice}
+                  salePrice={salePrice}
+                />
+              )
+            )}
+        </div>
+      </section>
+      <section className="banner relative my-10">
+        <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-50 z-10"></div>
+        <img
+          className="w-full"
+          src="https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_4338,c_limit/65aa0109-0bff-430d-9008-5078bf90f863/nike-kids-shoes-clothing-and-accessories-nike-com.jpg"
+          alt="Banner"
+        />
+        <div className="text-box absolute top-1/3 px-12 z-20">
+          <p className=" text-[32px] text-white font-semibold uppercase mb-1">
+            Collection for Kids
+          </p>
+          <a
+            className=" text-white"
+            
+          >
+            Comming soon...
+          </a>
+        </div>
       </section>
     </>
   );

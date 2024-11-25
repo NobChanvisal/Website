@@ -1,17 +1,4 @@
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/aspect-ratio'),
-    ],
-  }
-  ```
-*/
+
 "use client";
 
 import { Fragment, useState, useEffect } from "react";
@@ -66,14 +53,11 @@ const navigation = {
           name: "Nike",
           items: [
             { name: "All Shoes", href: "#" },
-            { name: "Jordan", href: "#" },
+            { name: "Air Jordan", href: "#" },
             { name: "Dunk", href: "#" },
             { name: "Air Force", href: "#" },
             { name: "Air Max", href: "#" },
-            { name: "Nike SB", href: "#" },
-            { name: "Running", href: "#"},
-            { name: "Sandals & Slides", href: "#" },
-            { name: "Football" },
+            { name: "Running", href: "#"},  
           ],
         },
         {
@@ -86,9 +70,7 @@ const navigation = {
             { name: "574", href: "#" },
             { name: "530", href: "#" },
             { name: "990", href: "#" },
-            { name: "327", href: "#"},
             { name: "Running", href: "#"},
-            { name: "Sandals & Slides", href: "#" },
           ],
         },
         {
@@ -96,15 +78,23 @@ const navigation = {
           name: "Adidas",
           items: [
             { name: "All Shoes", href: "#" },
-            { name: "Ultraboost", href: "#" },
             { name: "Samba", href: "#" },
             { name: "Campus", href: "#" },
             { name: "Forum", href: "" },
             { name: "Gazelle", href: "#" },
-            { name: "Cortez", href: "#" },
-            { name: "Colombia", href: "#" },
-            { name: "Slider", href: "#" },
-            { name: "Football" },
+            { name: "Running", href: "#"},
+          ],
+        },
+        {
+          id: "Puma",
+          name: "Puma",
+          items: [
+            { name: "All Shoes", href: "#" },
+            { name: "Suede", href: "#" },
+            { name: "RS", href: "#" },
+            { name: "Rider", href: "" },
+            { name: "Palermo", href: "#" },
+            { name: "Running", href: "#"},
           ],
         },
       ],
@@ -177,20 +167,20 @@ const navigation = {
 
 export default function Header() {
   const [open, setOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
+  // const [isScrolled, setIsScrolled] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (window.scrollY > 0) {
+  //       setIsScrolled(true);
+  //     } else {
+  //       setIsScrolled(false);
+  //     }
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
 
   return (
     <div className="bg-white">
@@ -200,7 +190,7 @@ export default function Header() {
         <AnimatePresence>
           {open && (
             <motion.div
-              className="fixed  bg-black bg-opacity-25"
+              className="relative flex w-full max-w-xs transform flex-col bg-white pb-12 shadow-xl overflow-y-auto h-full"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
@@ -211,7 +201,7 @@ export default function Header() {
         </AnimatePresence>
 
         {/* Dialog */}
-        <div className="fixed w-[320px] top-0 right-0 z-40 flex">
+        <div className="fixed pt-4 inset-y-0 right-0 z-40 flex h-full w-[320px]">
           <AnimatePresence>
             {open && (
               <motion.div
@@ -251,7 +241,7 @@ export default function Header() {
                     {navigation.categories.map((category) => (
                       <TabPanel
                         key={category.name}
-                        className="space-y-10 px-4 pb-8 pt-10"
+                        className="space-y-10 px-4 pb-8 pt-10 overflow-y-auto max-h-[calc(100vh-100px)]"
                       >
                         <div className="grid grid-cols-2 gap-x-4">
                           {category.featured.map((item) => (
@@ -333,9 +323,7 @@ export default function Header() {
 
       <header className=" fixed-top bg-white">
         <div
-          className={`h-14 bg-[#f7f7f7] flex items-center justify-center md:px-6 lg:px-8 ${
-            isScrolled ? "hidden" : "block"
-          }`}
+          className={`h-14 bg-[#f7f7f7] flex items-center justify-center md:px-6 lg:px-8 `}
         >
           <HeaderSlide />
         </div>
@@ -408,7 +396,7 @@ export default function Header() {
                                   </div>
                                 ))}
                               </div>
-                              <div className="row-start-1 grid grid-cols-3 gap-x-8 gap-y-10 text-sm">
+                              <div className="row-start-1 grid grid-cols-4 gap-x-8 gap-y-10 text-sm">
                                 {category.sections.map((section) => (
                                   <div key={section.name}>
                                     <p

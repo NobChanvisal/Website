@@ -24,8 +24,8 @@ function BrandCategory({ brand, handleChange }) {
       { value: "", title: "All" },
       { value: "Suede", title: "Suede" },
       { value: "RS", title: "RS" },
-      { value: "Cali", title: "Cali" },
-      { value: "Future Rider", title: "Future Rider" },
+      { value: "Rider", title: "Rider" },
+      { value: "Palermo", title: "Palermo" },
       { value: "Running", title: "Running" },
     ],
     Adidas: [
@@ -42,8 +42,8 @@ function BrandCategory({ brand, handleChange }) {
 
   return (
     <>
-      <h2 className="sidebar-title tracking-wider uppercase font-semibold">Collection</h2>
-      <div className="category-container flex flex-col mt-3 ml-1">
+      <h2 className="sidebar-title tracking-wider uppercase font-semibold mt-3">Collection</h2>
+      <div className="category-container flex flex-col ml-1 mt-3">
         {brandCategories.map(({ value, title }) => (
           <Input
             key={value || title}
