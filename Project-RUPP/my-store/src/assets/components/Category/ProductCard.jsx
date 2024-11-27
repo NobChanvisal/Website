@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const ProductCard = ({ id, img, title, brand, stars, reviews, category, model, prevPrice, salePrice }) => {
+const ProductCard = ({ id, img, title, brand, stars, reviews,qty, category, model,colors, prevPrice, salePrice }) => {
   return (
     <Link to={`/product/${id}`} className="block">
       <div className="productprops-card w-full relative outline outline-transparent hover:outline-1 hover:outline-slate-500">

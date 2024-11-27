@@ -136,16 +136,21 @@ function Home() {
               id,
               img,
               title,
+              qty,
               brand,
               stars,
               reviews,
               category,
+              colors,
               model,
               prevPrice,
               salePrice,
             }) => (
               <ProductCard
                 key={id}
+                id={id}
+                qty={qty}
+                colors={colors}
                 img={img}
                 title={title}
                 brand={brand}
@@ -194,6 +199,8 @@ function Home() {
                 id,
                 img,
                 title,
+                qty,
+                colors,
                 brand,
                 stars,
                 reviews,
@@ -204,8 +211,11 @@ function Home() {
               }) => (
                 <ProductCard
                   key={id}
+                  id={id}
                   img={img}
                   title={title}
+                  qty={qty}
+                colors={colors}
                   brand={brand}
                   stars={stars}
                   reviews={reviews}

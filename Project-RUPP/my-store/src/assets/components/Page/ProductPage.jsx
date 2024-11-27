@@ -1,11 +1,14 @@
+import { useState, useEffect, useContext } from "react";
 import { useParams } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../redux/cartSlice";
 import ProductPageFooter from "../Category/ProductPageFooter";
-import { useState, useEffect } from "react";
 import { ProductDetail } from "../Category/ProductDetail";
 
 const ProductPage = () => {
-  const { id } = useParams(); // Get the product ID from the URL
-  const [product, setProduct] = useState(null); // State to store the product details
+  const { id } = useParams();
+  const [product, setProduct] = useState(null);
+  const dispatch = useDispatch();
 
   useEffect(() => {
     fetch(`/data/products.json`)
@@ -21,7 +24,38 @@ const ProductPage = () => {
     return <div>Loading...</div>;
   }
 
-  const { title, brand, category, model, gallery, stars, reviews, salePrice, prevPrice, shortDes,des, size } = product;
+  const {
+    title,
+    brand,
+    category,
+    model,
+    gallery = [],
+    stars,
+    reviews,
+    salePrice,
+    prevPrice,
+    qty,
+    colors,
+    shortDes,
+    des,
+    size = [],
+  } = product;
+
+  const handleAddToCart = () => {
+    console.log("Product data:", product);
+    const cartItem = {
+      id: product.id,
+      title: product.title,
+      brand: product.brand,
+      colors: product.colors,
+      salePrice: product.salePrice,
+      image: product.gallery[0], // Ensure this exists
+      qty: 1,
+    };
+    console.log("Dispatching item:", cartItem); 
+    dispatch(addToCart(cartItem));
+  };
+  
 
   return (
     <section className="product-list container-xl mx-auto pt-36 px-20">
@@ -105,7 +139,7 @@ const ProductPage = () => {
             {shortDes}
           </div>
           <div>
-            <ProductDetail title={title}/>
+            <ProductDetail title={title} />
           </div>
           <div className="size-content pt-3">
             <p className="font-semibold">Select Size</p>
@@ -120,43 +154,29 @@ const ProductPage = () => {
               ))}
             </div>
           </div>
-
-          {/* Quantity Selector */}
-          <form className="pt-3">
-            <label className="block mb-2 text-sm font-medium text-gray-900">
-              Choose quantity:
-            </label>
-            <div className="relative flex items-center max-w-[8rem]">
-              <button
-                type="button"
-                className="bg-gray-100 border rounded-l-lg p-3 h-11 hover:bg-gray-200"
-              >
-                −
-              </button>
-              <input
-                type="text"
-                className="bg-gray-50 border-x-0 border-gray-300 h-11 text-center w-full"
-                defaultValue="1"
-              />
-              <button
-                type="button"
-                className="bg-gray-100 border rounded-r-lg p-3 h-11 hover:bg-gray-200"
-              >
-                +
-              </button>
+          <div className="pt-3">
+            <div className="block mb-2 text-sm font-medium text-gray-900">
+              Quantity:
+              <span className=" pl-5">{qty}</span>
             </div>
-          </form>
+          </div>
+          <div className="pt-3">
+            <div className="block mb-2 text-sm font-medium text-gray-900">
+              Color:
+              <span className=" pl-5">{colors}</span>
+            </div>
+          </div>
 
-          {/* Add to Cart Button */}
-          <button className="w-full max-w-96 text-white bg-black hover:bg-gray-800 focus:ring-4 rounded-lg text-sm mt-3 px-5 py-2.5">
+          <button
+            onClick={handleAddToCart}
+            className="w-full max-w-96 text-white bg-black hover:bg-gray-800 focus:ring-4 rounded-lg text-sm mt-3 px-5 py-2.5"
+          >
             Add to Cart
           </button>
         </div>
       </div>
       <div className="mt-20">
-        <ProductPageFooter
-            desc={des}
-        />
+        <ProductPageFooter desc={des} />
       </div>
     </section>
   );

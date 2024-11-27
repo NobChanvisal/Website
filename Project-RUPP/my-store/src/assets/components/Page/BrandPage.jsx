@@ -62,6 +62,7 @@ function BrandPage({ brand }) {
       title,
       brand,
       stars,
+      colors,
       reviews,
       category,
       model,
@@ -76,6 +77,7 @@ function BrandPage({ brand }) {
         brand={brand}
         stars={stars}
         reviews={reviews}
+        colors={colors}
         category={category}
         model={model}
         prevPrice={prevPrice}
@@ -93,7 +95,7 @@ function BrandPage({ brand }) {
   return (
     <section className="pt-[120px] flex flex-row">
       <aside
-        className=" px-4 pb-2 w-[230px] h-screen overflow-y-auto md:hidden lg:flex flex-col border-solid border-r-2 border-[#e5e5e5] [&::-webkit-scrollbar]:w-2
+        className=" px-4 pb-2 w-[230px] h-screen overflow-y-auto hidden lg:flex flex-col border-solid border-r-2 border-[#e5e5e5] [&::-webkit-scrollbar]:w-2
         [&::-webkit-scrollbar-track]:rounded-full
         [&::-webkit-scrollbar-track]:bg-gray-100
         [&::-webkit-scrollbar-thumb]:rounded-full
@@ -110,11 +112,11 @@ function BrandPage({ brand }) {
               id="default-checkbox"
               type="checkbox"
               onChange={handleOnSaleChange}
-              class="w-4 h-4 ml-1 cursor-pointer text-blue-600 bg-gray-100 border-gray-300 rounded"
+              className="w-4 h-4 ml-1 cursor-pointer text-blue-600 bg-gray-100 border-gray-300 rounded"
             />
             <label
               for="default-checkbox"
-              class="ms-2 pl-3 text-sm text-gray-900 dark:text-gray-300"
+              className="ms-2 pl-3 text-sm text-gray-900 dark:text-gray-300"
             >
               Sale
             </label>

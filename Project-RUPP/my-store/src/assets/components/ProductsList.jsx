@@ -4,7 +4,7 @@ function ProductsList({ result }) {
   return (
     <div>
       {result.length > 0 ? (
-        <section className=" ml-10 pr-5 gap-3 grid md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+        <section className=" ml-10 pr-5 gap-3 grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
           {result}
         </section>
       ) : (

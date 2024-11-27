@@ -1,6 +1,7 @@
-
 "use client";
 
+import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 import { Fragment, useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -35,16 +36,14 @@ const navigation = {
           href: "#",
           imageSrc:
             "https://i.pinimg.com/1200x/48/3d/ec/483decade38b1dc5119677530f9a23ed.jpg",
-          imageAlt:
-            " Nike Men's Pegasus Plus Running Shoes.",
+          imageAlt: " Nike Men's Pegasus Plus Running Shoes.",
         },
         {
           name: "Super Discount",
           href: "#",
           imageSrc:
             "https://i.pinimg.com/1200x/f5/ae/de/f5aedea64f583baa63995983c26ad490.jpg",
-          imageAlt:
-            "Super Discount poster",
+          imageAlt: "Super Discount poster",
         },
       ],
       sections: [
@@ -52,49 +51,49 @@ const navigation = {
           id: "Nike",
           name: "Nike",
           items: [
-            { name: "All Shoes", href: "#" },
+            { name: "All Shoes", href: "/nike" },
             { name: "Air Jordan", href: "#" },
             { name: "Dunk", href: "#" },
             { name: "Air Force", href: "#" },
             { name: "Air Max", href: "#" },
-            { name: "Running", href: "#"},  
+            { name: "Running", href: "#" },
           ],
         },
         {
           id: "New Balance",
           name: "New Balance",
           items: [
-            { name: "All Shoes", href: "#" },
+            { name: "All Shoes", href: "/newbalance" },
             { name: "550", href: "#" },
             { name: "327", href: "#" },
             { name: "574", href: "#" },
             { name: "530", href: "#" },
             { name: "990", href: "#" },
-            { name: "Running", href: "#"},
+            { name: "Running", href: "#" },
           ],
         },
         {
           id: "Adidas",
           name: "Adidas",
           items: [
-            { name: "All Shoes", href: "#" },
+            { name: "All Shoes", href: "/adidas" },
             { name: "Samba", href: "#" },
             { name: "Campus", href: "#" },
             { name: "Forum", href: "" },
             { name: "Gazelle", href: "#" },
-            { name: "Running", href: "#"},
+            { name: "Running", href: "#" },
           ],
         },
         {
           id: "Puma",
           name: "Puma",
           items: [
-            { name: "All Shoes", href: "#" },
+            { name: "All Shoes", href: "/puma" },
             { name: "Suede", href: "#" },
             { name: "RS", href: "#" },
             { name: "Rider", href: "" },
             { name: "Palermo", href: "#" },
-            { name: "Running", href: "#"},
+            { name: "Running", href: "#" },
           ],
         },
       ],
@@ -108,8 +107,7 @@ const navigation = {
           href: "#",
           imageSrc:
             "https://i.pinimg.com/1200x/2e/42/c4/2e42c40628dccedd714f0adc8c76b2ff.jpg",
-          imageAlt:
-            "adidas FORUM.",
+          imageAlt: "adidas FORUM.",
         },
       ],
       sections: [
@@ -123,7 +121,7 @@ const navigation = {
             { name: "Air Force", href: "#" },
             { name: "Air Max", href: "#" },
             { name: "Nike SB", href: "#" },
-            { name: "Running", href: "#"},
+            { name: "Running", href: "#" },
             { name: "Sandals & Slides", href: "#" },
           ],
         },
@@ -137,8 +135,8 @@ const navigation = {
             { name: "574", href: "#" },
             { name: "530", href: "#" },
             { name: "990", href: "#" },
-            { name: "327", href: "#"},
-            { name: "Running", href: "#"},
+            { name: "327", href: "#" },
+            { name: "Running", href: "#" },
             { name: "Sandals & Slides", href: "#" },
           ],
         },
@@ -149,7 +147,7 @@ const navigation = {
             { name: "All Shoes", href: "#" },
             { name: "Ultraboost", href: "#" },
             { name: "Samba", href: "#" },
-            { name: "Forum", href: "#"},
+            { name: "Forum", href: "#" },
             { name: "Campus", href: "#" },
             { name: "Gazelle", href: "#" },
             { name: "Avryn_X", href: "#" },
@@ -161,7 +159,7 @@ const navigation = {
   ],
   pages: [
     { name: "Company", href: "#" },
-    { name: "Stores", href: "#" },
+    { name: "Stores", href: "/store" },
   ],
 };
 
@@ -181,7 +179,10 @@ export default function Header() {
   //   window.addEventListener("scroll", handleScroll);
   //   return () => window.removeEventListener("scroll", handleScroll);
   // }, []);
+  const cartItems = useSelector((state) => state.cart.cartItems);
 
+  // Calculate the total number of items in the cart
+  const totalItems = cartItems.reduce((total, item) => total + item.qty, 0);
   return (
     <div className="bg-white">
       {/* Mobile menu */}
@@ -482,17 +483,23 @@ export default function Header() {
                 </div>
 
                 {/* Cart */}
-                <div className="ml-4 flow-root lg:ml-6">
-                  <a href="#" className="group -m-2 flex items-center p-2">
+                <div className="ml-4 flow-root lg:ml-6 relative">
+                  <Link
+                    to="/shoppingcart"
+                    className="group -m-2 flex items-center p-2"
+                  >
                     <ShoppingBagIcon
                       aria-hidden="true"
                       className=" h-5 w-5 sm:h-6 sm:w-6 shrink-0 text-gray-800 group-hover:text-gray-500"
                     />
-                    {/* <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">
-                      0
-                    </span> */}
+
                     <span className="sr-only">items in cart, view bag</span>
-                  </a>
+                  </Link>
+                  {totalItems > 0 && (
+                    <span className="absolute top-[-3px] right-[-4px] h-4 w-4 text-xs font-semibold text-white bg-red-600 rounded-full flex items-center justify-center">
+                      {totalItems}
+                    </span>
+                  )}
                 </div>
                 {/* mobile menu button */}
                 <button
