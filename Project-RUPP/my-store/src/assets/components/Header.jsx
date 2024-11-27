@@ -202,7 +202,7 @@ export default function Header() {
         </AnimatePresence>
 
         {/* Dialog */}
-        <div className="fixed pt-4 inset-y-0 right-0 z-40 flex h-full w-[320px]">
+        <div className="fixed pt-4 inset-y-0 right-0 z-50 flex h-full w-[320px]">
           <AnimatePresence>
             {open && (
               <motion.div
@@ -216,7 +216,7 @@ export default function Header() {
                   <button
                     type="button"
                     onClick={() => setOpen(false)}
-                    className="relative -m-2 inline-flex items-center justify-center rounded-md p-2 text-gray-400"
+                    className="relative -m-2 inline-flex bg-transparent items-center justify-center rounded-md text-gray-400"
                   >
                     <span className="absolute -inset-0.5" />
                     <span className="sr-only">Close menu</span>
@@ -505,7 +505,7 @@ export default function Header() {
                 <button
                   type="button"
                   onClick={() => setOpen(true)}
-                  className="relative rounded-md bg-white pl-2 sm:p-2 text-gray-400 lg:hidden"
+                  className="relative rounded-md pl-2 sm:p-2 text-gray-400 lg:hidden"
                 >
                   <span className="absolute" />
                   <span className="sr-only">Open menu</span>

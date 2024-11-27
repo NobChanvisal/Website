@@ -96,7 +96,7 @@ function Home() {
 
       {/* Brand section */}
       <section className="py-10 px-10 mx-auto">
-        <div className="brand-content w-full h-24 grid grid-cols-4">
+        <div className="brand-content w-full h-24 grid grid-cols-2 md:grid-cols-4">
           <a
             href="/nike"
             className="brand-profile flex items-center justify-center border hover:border-black transition-all duration-200"
