@@ -7,7 +7,7 @@ import {
   DialogFooter,
 } from "@material-tailwind/react";
 
-export function ProductDetail({ title }) {
+export function ProductDetail({ title, salePrice, brand, gallery }) {
   const [open, setOpen] = React.useState(false);
 
   const handleOpen = () => setOpen(!open);
@@ -35,8 +35,19 @@ export function ProductDetail({ title }) {
         <div className="p-4 bg-white rounded-lg shadow-xl max-w-screen-md w-full">
           {" "}
           {/* Set max width to "md" */}
-          <DialogHeader className="text-center p-0 mb-3 justify-between">
-            <p>{title}</p>
+          <DialogHeader className="text-center p-0 mb-3 justify-between items-start">
+            <div className=" flex flex-row mt-3">
+              <div className=" max-w-[120px] border">
+                <img className=" h-fit w-fit" src={gallery[0]} alt="" />
+              </div>
+              <div className=" pl-2 text-start">
+                <p className=" text-[14px] text-slate-500">{brand}</p>
+                <p>{title}</p>
+                <p className=" pt-1 text-green-500">
+                  ${(salePrice / 100).toFixed(2)}
+                </p>
+              </div>
+            </div>
             <Button className=" p-0" variant="text" onClick={handleOpen}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -62,39 +73,25 @@ export function ProductDetail({ title }) {
             <h2 className=" mt-2 mb-1 font-semibold">Benefits</h2>
             <ul className="list-disc list-inside">
               <li>
-               
-                  From tough stitching to pristine materials to cupsole design,
-                  these kicks deliver durable style that's smoother than
-                  backboard glass.
-               
+                From tough stitching to pristine materials to cupsole design,
+                these kicks deliver durable style that's smoother than backboard
+                glass.
               </li>
               <li>
-               
-                  Originally designed for performance hoops, Nike Air cushioning
-                  delivers lasting comfort.
-                
+                Originally designed for performance hoops, Nike Air cushioning
+                delivers lasting comfort.
               </li>
+              <li>Low-cut, padded collar looks sleek and feels comfortable.</li>
               <li>
-                Low-cut, padded collar looks sleek and feels comfortable.
-              </li>
-              <li>
-              
-                  Rubber outsole with our heritage hoops pivot circles adds
-                  traction and durability.
-               
+                Rubber outsole with our heritage hoops pivot circles adds
+                traction and durability.
               </li>
             </ul>
             <h2 className=" mt-2 mb-1 font-semibold">Product Details</h2>
             <ul className=" list-disc list-inside">
-              <li>
-                Foam in midsole
-              </li>
-              <li>
-                Perforations on toe
-              </li>
-              <li>
-                Style: HJ9201-400
-              </li>
+              <li>Foam in midsole</li>
+              <li>Perforations on toe</li>
+              <li>Style: HJ9201-400</li>
             </ul>
           </DialogBody>
         </div>
