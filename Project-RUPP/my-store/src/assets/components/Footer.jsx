@@ -8,7 +8,7 @@ function Footer() {
               NC-VISAL
             </span>
           </h5>
-          <div className="grid justify-between grid-cols-3 gap-4">
+          <div className="grid justify-between grid-cols-1 sm:grid-cols-3 gap-4">
             <ul>
               <p className="block mb-1 text-base font-semibold  text-slate-800">
                 Brand

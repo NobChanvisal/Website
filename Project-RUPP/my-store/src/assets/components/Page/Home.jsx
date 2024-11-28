@@ -65,38 +65,14 @@ function Home() {
                   />
                 </div>
               </div>
-              <button
-                className="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="prev"
-              >
-                <span
-                  className="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span className="visually-hidden">Previous</span>
-              </button>
-              <button
-                className="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="next"
-              >
-                <span
-                  className="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span className="visually-hidden">Next</span>
-              </button>
             </div>
           </div>
         </div>
       </section>
 
       {/* Brand section */}
-      <section className="py-10 px-10 mx-auto">
-        <div className="brand-content w-full h-24 grid grid-cols-2 md:grid-cols-4">
+      <section className="pt-10 pb-5 px-10 mx-auto">
+        <div className="brand-content w-full grid grid-cols-2 md:grid-cols-4">
           <a
             href="/nike"
             className="brand-profile flex items-center justify-center border hover:border-black transition-all duration-200"
@@ -123,10 +99,10 @@ function Home() {
           </a>
         </div>
       </section>
-      <section className=" py-10 px-10 mx-auto">
-        <div className=" w-full flex justify-between">
-          <h2 className="text-2xl font-bold mb-4">New Arrivals</h2>
-          <a className=" hover:underline" href="/store">
+      <section className=" py-5 px-10 mx-auto">
+        <div className=" sm:mb-4  mb-2 w-full flex justify-between items-end">
+          <h2 className="sm:text-2xl font-bold">New Arrivals</h2>
+          <a className=" hover:underline max-sm:text-[12px]" href="/store">
             View all product
           </a>
         </div>
@@ -165,7 +141,7 @@ function Home() {
           )}
         </div>
       </section>
-      <section className="banner relative my-10">
+      <section className="banner relative my-5">
         <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-50 z-10"></div>
         <img
           className="w-full"
@@ -173,20 +149,20 @@ function Home() {
           alt="Banner"
         />
         <div className="text-box absolute top-1/3 px-12 z-20">
-          <p className=" text-[32px] text-white font-semibold mb-4">
+          <p className=" sm:text-[32px] text-white font-semibold sm:mb-4 mb-2">
             STYLES EVERYONE WILL LOVE
           </p>
           <a
-            className="py-2 px-5 border-none outline outline-1 outline-slate-100 text-white hover:outline-slate-300 rounded-sm"
+            className="sm:py-2 sm:px-5 py-1 px-2 text-[10px] sm:text-[14px] border-none outline outline-1 outline-slate-100 text-white hover:outline-slate-300 rounded-sm"
             href="/store"
           >
             Shop Now
           </a>
         </div>
       </section>
-      <section className=" py-10 px-10 mx-auto">
-        <div className=" w-full flex justify-between">
-          <h2 className="text-2xl font-bold mb-4">Item on sale</h2>
+      <section className=" py-5 sm:px-10 px-4 mx-auto">
+        <div className=" sm:mb-4 mb-2 w-full flex justify-between">
+          <h2 className="sm:text-2xl font-bold">Item on sale</h2>
           <a className=" hover:underline" href="/store">
             View all product
           </a>
@@ -236,11 +212,11 @@ function Home() {
           alt="Banner"
         />
         <div className="text-box absolute top-1/3 px-12 z-20">
-          <p className=" text-[32px] text-white font-semibold uppercase mb-1">
+          <p className=" sm:text-[32px] text-white font-semibold uppercase mb-1">
             Collection for Kids
           </p>
           <a
-            className=" text-white"
+            className=" text-white text-[10px] sm:text-[14px]"
             
           >
             Comming soon...
