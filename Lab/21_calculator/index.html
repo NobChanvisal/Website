@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Simple Calculator</title>
+  </head>
+  <body
+    class="w-[100vw] h-[100vh] flex items-center justify-center bg-gray-800"
+  >
+    <div class="bg-[#181C14] rounded-xl shadow-lg w-[300px]">
+      <input
+        type="text"
+        id="display"
+        class="px-2 pb-1 mb-4 pt-[150px] bg-black w-full text-right text-white text-xl rounded-md"
+        readonly
+        value="0"
+      />
+
+      <div class="grid grid-cols-4 gap-3 p-4">
+        <button
+          class="bg-orange-500 text-white py-2 rounded"
+          onclick="addData('*')"
+        >
+          *
+        </button>
+        <button
+          class="bg-orange-500 text-white py-2 rounded"
+          onclick="addData('/')"
+        >
+          /
+        </button>
+        <button
+          class="bg-orange-500 text-white py-2 rounded"
+          onclick="addData('-')"
+        >
+          -
+        </button>
+        <button
+          class="bg-orange-500 text-white py-2 rounded"
+          onclick="addData('+')"
+        >
+          +
+        </button>
+
+        <button class="bg-[#dddddd] py-2 rounded" onclick="addData(9)">9</button>
+        <button class="bg-[#dddddd] py-2 rounded" onclick="addData(8)">8</button>
+        <button class="bg-[#dddddd] py-2 rounded" onclick="addData(7)">7</button>
+        <button class="bg-[#dddddd] py-2 rounded" onclick="addData(6)">6</button>
+        <button class="bg-[#dddddd] py-2 rounded" onclick="addData(5)">5</button>
+        <button class="bg-[#dddddd] py-2 rounded" onclick="addData(4)">4</button>
+        <button class="bg-[#dddddd] py-2 rounded" onclick="addData(3)">3</button>
+        <button class="bg-[#dddddd] py-2 rounded" onclick="addData(2)">2</button>
+        <button class="bg-[#dddddd] py-2 rounded" onclick="addData(1)">1</button>
+        <button class="bg-[#dddddd] py-2 rounded" onclick="addData(0)">0</button>
+        <button class="bg-[#dddddd] py-2 rounded" onclick="addData('.')">
+          .
+        </button>
+        <button
+          class="bg-[#00712D] text-white py-2 rounded"
+          onclick="calculator()"
+        >
+          =
+        </button>
+        <button
+          class="bg-[#B80000] text-white py-2 rounded col-span-2"
+          onclick="clearData()"
+        >
+          C
+        </button>
+      </div>
+    </div>
+
+    <script>
+      const displays = document.querySelector("input");
+
+      function addData(key) {
+        if (displays.value === "0") {
+          displays.value = key.toString();
+        } else {
+          displays.value += key.toString();
+        }
+      }
+
+      function clearData() {
+        displays.value = "0";
+      }
+
+      function calculator() {
+        const current = displays.value;
+        const last = current[current.length - 1];
+        if (last === "*" || last === "/" || last === "+" || last === "-") {
+          displays.value = "Error";
+        } else {
+          displays.value = eval(displays.value);
+        }
+      }
+    </script>
+  </body>
+</html>
