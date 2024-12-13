@@ -1,4 +1,11 @@
-$secondary: #C0EBA6;
+$secondary: #705c53;
+$primary: #81bfda;
+$success: #c0eba6;
+$info: #a6aebf;
+$warning: #ff6600;
+$danger: #b43f3f;
+$light: #f5f7f8;
+$dark: #161a30;
 $spacer: 4px;
 $spacers: (
   0: 0,
@@ -8,27 +15,16 @@ $spacers: (
   4: $spacer * 4,
   5: $spacer * 5,
 );
-$container-max-widths: (
-  sm: 540px,
-  md: 768px,
-  lg: 960px,
-  xl: 1280px,
-  xxl: 1536px
-);
+$font-size-base: 1.5rem;
+$breadcrumb-divider: quote("|");
+$carousel-control-color: red;
+$carousel-indicator-width:           15px;
+$carousel-indicator-height:          2px;
+$carousel-indicator-hit-area-height: 15px;
+$carousel-indicator-spacer:          2px;
+$carousel-indicator-opacity:         .6;
+$carousel-indicator-active-bg:       #FF8000;
+$carousel-indicator-active-opacity:  1;
+$carousel-indicator-transition:      opacity .3s ease;
 $box-shadow-sm: 0px 8px 24px rgba(149, 157, 165, 0.2);
-
-$rounded: (
-  property: border-radius,
-  class: rounded,
-  values: (
-    0: 0,
-    1: 30px,
-    2: 8px,
-    3: 12px,
-    4: 16px,
-    5: 20px,
-    circle: 50%
-  )
-);
-
 @import "../node_modules/bootstrap/scss/bootstrap";

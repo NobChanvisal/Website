@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EDC</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kalnia+Glaze:wght@100..700&family=Kode+Mono:wght@400..700&family=Koh+Santepheap:wght@100;300;400;700;900&family=Moul&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kalnia+Glaze:wght@100..700&family=Kode+Mono:wght@400..700&family=Moul&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+      .font-Moul {
+        font-family: "Moul", serif;
+      }
+      .font-koh-santepheap {
+        font-family: "Koh Santepheap", serif;
+      }
+    </style>
+  </head>
+  <body class="container-fluid d-flex flex-column align-items-center pt-2">
+    <header>
+      <div class="d-flex align-items-center p-3">
+        <div class="logo">
+          <img
+            style="width: 200px"
+            src="https://www.powercom-group.com/wp-content/uploads/2023/06/4A27D5E6-24F3-4562-9D33-2AC5F5FCEC6C.jpeg.png"
+            alt=""
+          />
+        </div>
+        <div class="text">
+          <p class="font-Moul fs-4">អគ្គីសនីកម្ពុជា</p>
+          <p class="text-uppercase">Electricite du cambodge</p>
+        </div>
+      </div>
+    </header>
+    <div class="container-sm px-3 row font-koh-santepheap">
+      <form class="col-sm-6">
+        <div class="form-group row">
+          <label for="inputId" class="col-sm-4 fs-5 col-form-label"
+            >លេខសំគាល់អតិថិជន</label
+          >
+          <div class="col-sm-8">
+            <input type="text" class="form-control" id="inputId" />
+          </div>
+        </div>
+        <div class="form-group pt-2 row">
+          <label for="inputName" class="col-sm-4 fs-5 col-form-label"
+            >ឈ្មោះអតិថិជន</label
+          >
+          <div class="col-sm-8">
+            <input type="text" class="form-control" id="inputName" />
+          </div>
+        </div>
+        <div class="form-group pt-2 row">
+          <label for="inputLastmonth" class="col-sm-4 fs-5 col-form-label"
+            >អំណានចាស់</label
+          >
+          <div class="col-sm-8">
+            <input type="number" class="form-control" id="inputLastmonth" />
+          </div>
+        </div>
+        <div class="form-group pt-2 row">
+          <label for="inputNewmonth" class="col-sm-4 fs-5 col-form-label"
+            >អំណានថ្មី</label
+          >
+          <div class="col-sm-8">
+            <input type="number" class="form-control" id="inputNewmonth" />
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-4">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="toggleDropdown"
+              />
+              <label class="form-check-label" for="toggleDropdown">
+                បង់ថ្លៃសំរាម
+              </label>
+            </div>
+          </div>
+          <div class="col-8">
+            <select
+              class="form-select"
+              id="dropdownMenu"
+              aria-label="Dropdown menu"
+              disabled
+            >
+              <option value="10000" selected>១០០០០ ៛</option>
+              <option value="20000">២០០០០​ ៛</option>
+              <option value="30000">៣០០០០​ ៛</option>
+            </select>
+          </div>
+          <div class="pt-4">
+            <button
+              type="button"
+              id="calculate-button"
+              class="btn btn-secondary me-4"
+            >
+              គណនា
+            </button>
+            <button type="button" id="show-button" class="btn btn-success">
+              បង្ហាញទិន្នន័យ
+            </button>
+          </div>
+        </div>
+      </form>
+      <div class="col-sm-6">
+        <div class="mb-3 fs-5">
+          <label for="Textarea1" class="form-label">ទិន្នន័យ</label>
+          <textarea
+            class="form-control"
+            readonly
+            id="Textarea"
+            rows="3"
+          ></textarea>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      let inputId = document.getElementById("inputId");
+      let inputName = document.getElementById("inputName");
+      let inputLastmonth = document.getElementById("inputLastmonth");
+      let inputNewmonth = document.getElementById("inputNewmonth");
+
+      const checkbox = document.getElementById("toggleDropdown");
+      const dropdown = document.getElementById("dropdownMenu");
+      const calculateBtn = document.getElementById("calculate-button");
+      const showButtons = document.getElementById("show-button");
+      const resultTextarea = document.getElementById("Textarea");
+     
+
+      function clears() {
+        inputId.value = "";
+        inputName.value = "";
+        inputLastmonth.value = "";
+        inputNewmonth.value = "";
+      }
+
+      checkbox.addEventListener("change", () => {
+        dropdown.disabled = !checkbox.checked;
+      });
+
+      function calculate() {
+        const news = parseFloat(inputNewmonth.value);
+        const old = parseFloat(inputLastmonth.value);
+        const dropdownValue = parseFloat(dropdown.value);
+
+        const use = news - old;
+        let total = 0;
+
+        if (use <= 50) {
+          total = use * 500;
+        } else if (use <= 100) {
+          total = 50 * 500 + (use - 50) * 1000;
+        } else if (use <= 150) {
+          total = 50 * 500 + 50 * 1000 + (use - 100) * 1500;
+        } else if (use <= 200) {
+          total = 50 * 500 + 50 * 1000 + 50 * 1500 + (use - 150) * 2000;
+        } else {
+          total =
+            50 * 500 + 50 * 1000 + 50 * 1500 + 50 * 2000 + (use - 200) * 2500;
+        }
+
+        if (checkbox.checked) {
+          total += dropdownValue;
+        }
+
+        return total;
+      }
+
+      function updateTextarea(data) {
+        const id = inputId.value;
+        const name = inputName.value;
+        const old = inputLastmonth.value;
+        const news = inputNewmonth.value;
+
+        if (data !== null && id && name && old && news) {
+          resultTextarea.value = `លេខសំគាល់: ${id}\nឈ្មោះ: ${name}\nអំណានចាស់: ${old}\nអំណានថ្មី: ${news}\nប្រាក់ត្រូវបង់: ${data}`;
+        } else {
+          resultTextarea.value = "សូមបញ្ជូលទិន្នន័យ";
+        }
+        clears();
+      }
+      calculateBtn.addEventListener("click", () => {
+        const data = calculate();
+        if (data !== null) {
+          console.log("Calculated :", data);
+        }
+      });
+
+      showButtons.addEventListener("click", () => {
+          const data = calculate();
+          if (data !== null) {
+            updateTextarea(data);
+            console.log("Calculated:", data);
+          }
+        });
+
+    </script>
+  </body>
+</html>
+
