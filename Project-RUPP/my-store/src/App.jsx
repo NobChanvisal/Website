@@ -15,7 +15,7 @@ import { ShoppingCart } from "./assets/components/Page/ShoppingCart";
 
 function App() {
   return (
-    <Router future={{ v7_relativeSplatPath: true, v7_startTransition: true }}> {/* Add future flags */}
+    <Router future={{ v7_relativeSplatPath: true, v7_startTransition: true }}> 
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />

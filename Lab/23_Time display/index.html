@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formatted Date and Time</title>
+    
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f9f9f9;
+      }
+
+      .datetime {
+        font-size: 40px;
+        font-weight: bold;
+        color: #000;
+      }
+      @media (max-width: 575px) {
+            .datetime{
+                font-size: 18px;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <div class="datetime">
+      <div id="date-time"></div>
+    </div>
+
+    <script>
+      var dname = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+      var mname = [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+      ];
+
+     
+      function getOrdinalSuffix(date) {
+        if (date > 3 && date < 21) return "th"; 
+        switch (date % 10) {
+          case 1:
+            return "st";
+          case 2:
+            return "nd";
+          case 3:
+            return "rd";
+          default:
+            return "th";
+        }
+      }
+
+      function updateDateTime() {
+        const now = new Date();
+
+        const day = dname[now.getDay()];
+        const date = now.getDate();
+        const month = mname[now.getMonth()];
+        const year = now.getFullYear();
+
+        let hours = now.getHours();
+        const ampm = hours >= 12 ? "PM" : "AM";
+        hours = hours % 12 || 12; 
+
+        let minutes = now.getMinutes();
+        let seconds = now.getSeconds();
+       
+        if (date < 10) date = "0"+date;
+        if (minutes < 10) minutes = "0" + minutes;
+        if (seconds < 10) seconds = "0" + seconds;
+        
+        const suffix = getOrdinalSuffix(date);
+
+
+        const formattedDate = `${day} ${date}${suffix} ${month},${year} ${hours}:${minutes}:${seconds}${ampm}`;
+        document.getElementById("date-time").innerText = formattedDate;
+      }
+
+
+      setInterval(updateDateTime, 1000);
+
+      updateDateTime();
+    </script>
+  </body>
+</html>
