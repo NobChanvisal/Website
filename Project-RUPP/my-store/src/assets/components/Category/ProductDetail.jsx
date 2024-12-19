@@ -1,4 +1,4 @@
-
+import { useState } from "react";
 import {
   Button,
   Dialog,
@@ -8,13 +8,13 @@ import {
 } from "@material-tailwind/react";
 
 export function ProductDetail({ title, salePrice, brand, gallery }) {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
 
   const handleOpen = () => setOpen(!open);
 
   return (
     <section>
-      {/* Normal button without centering */}
+      
       <div className=" pt-2">
         <a
           className=" cursor-pointer text-sm underline hover:text-slate-500"
@@ -25,7 +25,7 @@ export function ProductDetail({ title, salePrice, brand, gallery }) {
         </a>
       </div>
 
-      {/* Center the modal with overlay */}
+      
       <Dialog
         open={open}
         handler={handleOpen}

@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext } from "react";
+import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../redux/cartSlice";
@@ -21,7 +21,12 @@ const ProductPage = () => {
       })
       .catch((error) => console.error("Error fetching data:", error));
   }, [id]);
-
+  useEffect(() => {
+    if (open) {
+      const timer = setTimeout(() => setOpen(false), 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [open]);
   if (!product) {
     return <div>Loading...</div>;
   }
@@ -51,7 +56,7 @@ const ProductPage = () => {
       brand: product.brand,
       colors: product.colors,
       salePrice: product.salePrice,
-      image: product.gallery[0], // Ensure this exists
+      image: product.gallery[0],
       qty: 1,
     };
     console.log("Dispatching item:", cartItem);
@@ -62,20 +67,20 @@ const ProductPage = () => {
   return (
     <section className="product-list container-xl mx-auto pt-36 px-20">
       {open && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-30">
-          <div className="bg-white w-full max-w-sm relative p-3 rounded shadow-lg">
-            <p className=" mt-2 ">Product added to cart successfully!</p>
-            <div className=" flex flex-row mt-3">
-              <div className=" max-w-[120px] border">
-                <img className=" h-fit w-fit" src={gallery[0]} alt="" />
+        <div className="fixed inset-0 flex items-end justify-end bg-black bg-opacity-50 z-30">
+          <div className="bg-white w-full max-w-sm m-4 relative p-3 rounded shadow-lg">
+            <p className="mt-2">Product added to cart successfully!</p>
+            <div className="flex flex-row mt-3">
+              <div className="max-w-[120px] border">
+                <img className="h-fit w-fit" src={gallery[0]} alt="" />
               </div>
-              <div className=" pl-2">
-                <p className=" text-[14px] text-slate-500">{brand}</p>
+              <div className="pl-2">
+                <p className="text-[14px] text-slate-500">{brand}</p>
                 <p>{title}</p>
-                <p className=" pt-1 text-green-500">
+                <p className="pt-1 text-green-500">
                   ${(salePrice / 100).toFixed(2)}
                 </p>
-                <div className=" pt-2 hover:opacity-80 ">
+                <div className="pt-2 hover:opacity-80">
                   <Link
                     to="/shoppingcart"
                     className="text-sm uppercase underline"
@@ -85,17 +90,16 @@ const ProductPage = () => {
                 </div>
               </div>
             </div>
-
             <button
               onClick={() => setOpen(false)}
-              className=" absolute top-0 right-0 p-2"
+              className="absolute top-2 right-2 p-2"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
                 fill="currentColor"
-                class="bi bi-x-square"
+                className="bi bi-x-square"
                 viewBox="0 0 16 16"
               >
                 <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
@@ -105,6 +109,7 @@ const ProductPage = () => {
           </div>
         </div>
       )}
+
       <div className="product-card grid grid-cols-2">
         {/* Image Carousel */}
         <div className="product-image self-start">
@@ -185,7 +190,8 @@ const ProductPage = () => {
             {shortDes}
           </div>
           <div>
-            <ProductDetail title={title}
+            <ProductDetail
+              title={title}
               salePrice={salePrice}
               brand={brand}
               gallery={gallery}

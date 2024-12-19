@@ -13,7 +13,7 @@ function Color({ handleChange }) {
 
   return (
     <>
-      <h2 className="sidebar-title mt-3 tracking-wider uppercase font-semibold">Color</h2>
+      
       <div className="color-container flex flex-col mt-3 ml-1">
         {Color.map(({ title, value, color }) => (
           <Input

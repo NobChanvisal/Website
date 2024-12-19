@@ -18,7 +18,7 @@ function Price({ handlePriceChange }) {
 
   return (
     <div className="price-filter mt-3">
-      <h2 className="sidebar-title tracking-wider uppercase font-semibold">Price Range</h2>
+      
       <div className="mt-3 ml-1">
         <label>
           <div className=" flex flex-row justify-between text-[12px]">

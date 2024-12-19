@@ -5,6 +5,11 @@ import BrandCategory from "../Sidebar/BrandCategory.jsx";
 import Price from "../Sidebar/Price.jsx";
 import Color from "../Sidebar/Color.jsx";
 import Breadcrumb from "../Category/Breadcrumb";
+import {
+  Accordion,
+  AccordionHeader,
+  AccordionBody,
+} from "@material-tailwind/react";
 
 function BrandPage({ brand }) {
   const [products, setProducts] = useState([]);
@@ -12,7 +17,29 @@ function BrandPage({ brand }) {
   const [priceRange, setPriceRange] = useState({ min: 0, max: 1000 });
   const [filteredData, setFilteredData] = useState([]);
   const [onSale, setOnSale] = useState(false); // State for sale filter
+  const [open, setOpen] = useState(0);
+  const handleOpen = (value) => setOpen(open === value ? 0 : value);
 
+  function Icon({ id, open }) {
+    return (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth={2}
+        stroke="currentColor"
+        className={`${
+          id === open ? "rotate-180" : ""
+        } h-5 w-5 transition-transform`}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+        />
+      </svg>
+    );
+  }
   useEffect(() => {
     fetch("/data/products.json")
       .then((response) => response.json())
@@ -98,7 +125,7 @@ function BrandPage({ brand }) {
       {/* Toggle Button for Mobile */}
       <button
         onClick={() => setSidebarOpen(true)}
-        className="lg:hidden absolute flex items-center top-4 right-4 z-30 bg-transparent text-black py-2 px-4 justify-center border rounded-full"
+        className="lg:hidden text-[14px] absolute flex items-center top-4 right-4 z-30 bg-transparent text-black py-1 px-4 justify-center border rounded-full"
       >
         <span className=" pr-2">Filters</span>
         <svg
@@ -123,7 +150,7 @@ function BrandPage({ brand }) {
 
       {/* Sidebar */}
       <aside
-        className={`px-4 pb-2 w-[230px] h-screen overflow-y-auto fixed lg:relative right-0 top-0 bg-white z-30 transform ${
+        className={`px-4 pb-2 w-[20%] h-screen overflow-y-auto fixed lg:relative right-0 top-0 bg-white z-30 transform ${
           isSidebarOpen ? "translate-x-0 pt-[120px]" : "translate-x-full"
         } transition-transform duration-300 ease-in-out lg:translate-x-0 lg:flex flex-col border-solid border-r-2 border-[#e5e5e5] 
         [&::-webkit-scrollbar]:w-2
@@ -134,10 +161,11 @@ function BrandPage({ brand }) {
         dark:[&::-webkit-scrollbar-track]:bg-neutral-700
         dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500`}
       >
-        <h1 className="pb-2 pt-3 mb-4 font-semibold text-xl border-b">
+        <h1 className="pb-2 pt-3 font-semibold text-xl border-b">
           Filter
         </h1>
-        {/* Sale Filter */}
+        {/* 
+        
         <div className="">
           <div className="flex items-center">
             <input
@@ -155,7 +183,7 @@ function BrandPage({ brand }) {
           </div>
         </div>
 
-        {/* Brand Filters */}
+        
         {!brand && (
           <div>
             <h2 className="tracking-wider uppercase font-semibold mt-3">
@@ -190,15 +218,77 @@ function BrandPage({ brand }) {
           </div>
         )}
 
-        {/* Conditional Rendering */}
+        
         {brand && (
           <BrandCategory brand={brand} handleChange={handleCategoryChange} />
         )}
         <Price handlePriceChange={handlePriceChange} />
         <Color handleChange={handleCategoryChange} />
+        */}
+        <section className=" flex flex-column w-full">
+          <Accordion open={open === 1} icon={<Icon id={1} open={open} />}>
+            <AccordionHeader className=" text-[17px] tracking-wider font-normal" onClick={() => handleOpen(1)}>
+              {!brand &&("Brand")}
+              {brand && ("Collection")}
+            </AccordionHeader>
+            <AccordionBody>
+              {!brand && (
+                  <div className="ml-1 w-full flex flex-col">
+                    <a
+                      href="/nike"
+                      className="border-1 mr-1 w-[50%] text-center py-1.5  rounded-sm my-2 hover:border-slate-800"
+                    >
+                      Nike
+                    </a>
+                    <a
+                      href="/newbalance"
+                      className="border-1 mr-1 w-[50%] text-center py-1.5  rounded-sm my-2 hover:border-slate-800"
+                    >
+                      New Balance
+                    </a>
+                    <a
+                      href="/puma"
+                      className="border-1 mr-1 w-[50%] text-center py-1.5 rounded-sm my-2 hover:border-slate-800"
+                    >
+                      Puma
+                    </a>
+                    <a
+                      href="/adidas"
+                      className="border-1 mr-1 w-[50%] text-center py-1.5 rounded-sm my-2 hover:border-slate-800"
+                    >
+                      Adidas
+                    </a>
+                  </div>
+               
+              )}
+
+              {brand && (
+                <BrandCategory
+                  brand={brand}
+                  handleChange={handleCategoryChange}
+                />
+              )}
+            </AccordionBody>
+          </Accordion>
+          <Accordion open={open === 2} icon={<Icon id={2} open={open} />}>
+            <AccordionHeader className=" text-[17px] tracking-wider font-normal" onClick={() => handleOpen(2)}>
+              Price
+            </AccordionHeader>
+            <AccordionBody>
+              <Price handlePriceChange={handlePriceChange} />
+            </AccordionBody>
+          </Accordion>
+          <Accordion open={open === 3} icon={<Icon id={3} open={open} />}>
+            <AccordionHeader className=" text-[17px] tracking-wider font-normal" onClick={() => handleOpen(3)}>
+              Color
+            </AccordionHeader>
+            <AccordionBody>
+            <Color handleChange={handleCategoryChange} />
+            </AccordionBody>
+          </Accordion>
+        </section>
       </aside>
 
-      {/* Main Content Area */}
       <div className="flex-1 lg:pl-6">
         <Breadcrumb items={breadcrumbItems} />
         <ProductsList result={result} />

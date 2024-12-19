@@ -1,6 +1,29 @@
 
 [
   {
+    "id": "puma8",
+    "img": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/396841/01/sv01/fnd/PNA/fmt/png/Palermo-Vintage-Sneakers",
+    "gallery": [
+      "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/396841/01/sv01/fnd/PNA/fmt/png/Palermo-Vintage-Sneakers",
+      "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/396841/01/sv02/fnd/PNA/fmt/png/Palermo-Vintage-Sneakers",
+      "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/396841/01/bv/fnd/PNA/fmt/png/Palermo-Vintage-Sneakers",
+      "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/396841/01/mod03/fnd/PNA/fmt/png/Palermo-Vintage-Sneakers"
+    ],
+    "title": "Palermo Vintage",
+    "stars": "../data/rating/50.png",
+    "reviews": "(150 reviews)",
+    "shortDes": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+    "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "prevPrice": 0,
+    "salePrice": 9000,
+    "qty": 1,
+    "colors": "Blue",
+    "brand": "Puma",
+    "category": "Men's",
+    "model": "Palermo",
+    "size": ["40", "41", "42", "43", "44"]
+  },
+  {
     "id": "Nb6",
     "img": "https://nb.scene7.com/is/image/NB/wl574evb_nb_03_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440",
     "gallery": [

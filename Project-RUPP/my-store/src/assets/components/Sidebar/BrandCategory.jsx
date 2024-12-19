@@ -42,7 +42,7 @@ function BrandCategory({ brand, handleChange }) {
 
   return (
     <>
-      <h2 className="sidebar-title tracking-wider uppercase font-semibold mt-3">Collection</h2>
+      {/* <h2 className="sidebar-title tracking-wider uppercase font-semibold mt-3">Collection</h2> */}
       <div className="category-container flex flex-col ml-1 mt-3">
         {brandCategories.map(({ value, title }) => (
           <Input
