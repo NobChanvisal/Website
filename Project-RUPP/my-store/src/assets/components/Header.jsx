@@ -316,6 +316,24 @@ export default function Header() {
                     </div>
                   ))}
                 </div>
+                <div className="space-y-6 border-t border-gray-200 px-4 py-6">
+                  <div className="flow-root">
+                    <a
+                      href="#"
+                      className="-m-2 block p-2 font-medium text-gray-900"
+                    >
+                      Sign in
+                    </a>
+                  </div>
+                  <div className="flow-root">
+                    <a
+                      href="#"
+                      className="-m-2 block p-2 font-medium text-gray-900"
+                    >
+                      Create account
+                    </a>
+                  </div>
+                </div>
               </motion.div>
             )}
           </AnimatePresence>
@@ -445,15 +463,21 @@ export default function Header() {
               </PopoverGroup>
 
               <div className="flex items-center justify-end flex-1 lg:max-w-sm">
-                {/* <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
-                  <a href="#" className="text-sm font-medium text-gray-700 hover:text-gray-800">
+                <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
+                  <a
+                    href="#"
+                    className="text-sm font-medium text-gray-700 hover:text-gray-800"
+                  >
                     Sign in
                   </a>
                   <span aria-hidden="true" className="h-6 w-px bg-gray-200" />
-                  <a href="#" className="text-sm font-medium text-gray-700 hover:text-gray-800">
+                  <a
+                    href="#"
+                    className="text-sm font-medium text-gray-700 hover:text-gray-800"
+                  >
                     Create account
                   </a>
-                </div> */}
+                </div>
 
                 {/* <div className="hidden lg:ml-8 lg:flex">
                   <a href="#" className="flex items-center text-gray-700 hover:text-gray-800">
@@ -468,25 +492,21 @@ export default function Header() {
                 </div> */}
 
                 {/* Search */}
-                <div className="flex flex-row border bottom-1 items-center flex-1 px-2 py-2 bg-slate-50 rounded-md  lg:ml-6">
-                  <MagnifyingGlassIcon
-                    aria-hidden="true"
-                    className="h-5 w-5 text-gray-400 group-hover:text-gray-500 cursor-pointer"
-                  />
-                  <input
-                    className=" outline-none border-none bg-transparent pl-1"
-                    type="text"
-                    //   onChange={handleInputChange}
-                    //   value={query}
-                    placeholder="search..."
-                  />
+                <div className="flex lg:ml-6">
+                  <a href="#" className="p-2 text-gray-400 hover:text-gray-500">
+                    <span className="sr-only">Search</span>
+                    <MagnifyingGlassIcon
+                      aria-hidden="true"
+                      className="size-6"
+                    />
+                  </a>
                 </div>
 
                 {/* Cart */}
                 <div className="ml-4 flow-root lg:ml-6 relative">
                   <Link
                     to="/shoppingcart"
-                    className="group -m-2 flex items-center p-2"
+                    className="group -m-2 flex items-center p-2 mr-2"
                   >
                     <ShoppingBagIcon
                       aria-hidden="true"
@@ -496,7 +516,7 @@ export default function Header() {
                     <span className="sr-only">items in cart, view bag</span>
                   </Link>
                   {totalItems > 0 && (
-                    <span className="absolute top-[-3px] right-[-4px] h-4 w-4 text-xs font-semibold text-white bg-red-600 rounded-full flex items-center justify-center">
+                    <span className="absolute top-[-2px] right-[9px] h-4 w-4 text-xs font-semibold text-white bg-red-600 rounded-full flex items-center justify-center">
                       {totalItems}
                     </span>
                   )}
@@ -505,7 +525,7 @@ export default function Header() {
                 <button
                   type="button"
                   onClick={() => setOpen(true)}
-                  className="relative rounded-md pl-2 sm:p-2 text-gray-400 lg:hidden"
+                  className=" rounded-md ml-2 sm:p-2 text-gray-400 lg:hidden"
                 >
                   <span className="absolute" />
                   <span className="sr-only">Open menu</span>

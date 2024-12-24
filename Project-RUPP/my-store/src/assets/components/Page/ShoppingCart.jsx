@@ -1,5 +1,6 @@
 import { useSelector, useDispatch } from "react-redux"; // Import useDispatch
 import { removeFromCart } from "../redux/cartSlice"; // Ensure correct path
+import PayPalButton from "../Category/PaypalButton";
 import Input from "../Category/Input";
 
 export const ShoppingCart = () => {
@@ -17,7 +18,7 @@ export const ShoppingCart = () => {
   );
   const taxRate = 0.01;
   const tax = subtotal * taxRate;
-  const total = subtotal + tax;
+  const total = (subtotal + tax)/100;
 
   return (
     <section className="w-full max-w-5xl mt-40 mx-auto px-10">
@@ -26,19 +27,18 @@ export const ShoppingCart = () => {
           Shopping Cart
         </h2>
         {cartItems.length > 0 && (
-          <div className="w-full pb-1 border-bottom grid grid-cols-7 gap-x-4">
+          <div className="w-full hidden pb-1 border-bottom sm:grid grid-cols-6 gap-x-4">
             <p className="col-span-3">Product</p>
             <p className="pl-3">Qty</p>
             <p>Colors</p>
             <p>Price</p>
-            <p>Total</p>
           </div>
         )}
         {cartItems.length > 0 ? (
           cartItems.map((item) => (
             <div
               key={item.id}
-              className="cart-item w-full border-bottom grid grid-cols-7 gap-x-4 items-center"
+              className="cart-item hidden w-full border-bottom sm:grid grid-cols-6 gap-x-4 items-center"
             >
               <div className="py-3 justify-self-start col-span-3 flex flex-row">
                 <div className="product-img max-w-[180px]">
@@ -50,7 +50,7 @@ export const ShoppingCart = () => {
                 </div>
                 <div className="pro-info pl-5 flex flex-col justify-between">
                   <div>
-                    <p className=" text-sm pb-1">{item.brand}</p>
+                    <p className=" sm:text-sm pb-1">{item.brand}</p>
                     <p>{item.title}</p>
                   </div>
                   <button
@@ -67,14 +67,67 @@ export const ShoppingCart = () => {
                 style={{ backgroundColor: item.colors }}
               ></p>
               <p>${(item.salePrice / 100).toFixed(2)}</p>
-              <p>${((item.qty * item.salePrice) / 100).toFixed(2)}</p>
             </div>
           ))
         ) : (
-          <p className=" mt-10 text-[20px]">Your cart is empty!</p>
+          <div className=" flex flex-column items-center">
+            <p className=" mt-10 text-[20px]">Your cart is empty!</p>
+            <div className="pt-4">
+              <a
+                className=" text-sm uppercase tracking-[1.5px] rounded-md bg-blue-600  py-2.5 px-4 border-none text-center text-white transition-all hover:bg-blue-700"
+                href="/store"
+              >
+                Continue Shopping
+              </a>
+            </div>
+          </div>
+        )}
+        {/* mobile */}
+        {cartItems.length > 0 ? (
+          cartItems.map((item) => (
+            <div
+              key={item.id}
+              className="cart-item sm:hidden w-full flex justify-between border-bottom"
+            >
+              <div className="py-3 justify-self-start col-span-3 flex flex-row">
+                <div className="product-img max-w-[120px]">
+                  <img
+                    className="w-fit h-fit border"
+                    src={item.image}
+                    alt={item.title}
+                  />
+                </div>
+                <div className="pro-info pl-5 flex flex-col justify-between">
+                  <div>
+                    <p className=" sm:text-sm pb-1">{item.brand}</p>
+                    <p>{item.title}</p>
+                    <div className=" text-[#6a6a6a] pt-2">
+                      <p>${(item.salePrice / 100).toFixed(2)}</p>
+
+                      <div className="flex items-center">
+                        <p
+                          className="mr-1 w-5 h-3  border border-black"
+                          style={{ backgroundColor: item.colors }}
+                        ></p>
+                        <p className="">- {item.qty} </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                onClick={() => handleRemove(item.id)} // Pass item ID here
+                className="py-3 uppercase align-self-end underline text-[10px] tracking-[2px] hover:text-red-500"
+              >
+                remove
+              </button>
+            </div>
+          ))
+        ) : (
+          <p className=" mt-10 hidden text-[20px]">Your cart is empty!</p>
         )}
         {cartItems.length > 0 && (
-          <div className=" w-full mt-4 grid grid-cols-2">
+          <div className=" w-full mt-4 grid gap-y-4 sm:grid-cols-2">
             <div className="">
               <h2 className=" font-serif text-uppercase text-[13px]">
                 Shipping Method
@@ -114,11 +167,14 @@ export const ShoppingCart = () => {
                   </div>
                   <div className="flex justify-between font-bold text-uppercase mt-4">
                     <p>Total:</p>
-                    <p>${(total / 100).toFixed(2)}</p>
+                    <p>${(total).toFixed(2)}</p>
                   </div>
-                  <button className="mt-5 w-full uppercase tracking-[2px] bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+                  {/* <button className="mt-5 w-full uppercase tracking-[2px] bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
                     Checkout
-                  </button>
+                  </button> */}
+                  <div className=" pt-3">
+                  <PayPalButton amount={total} />
+                  </div>
                   <div className=" w-full text-center pt-2">
                     <a
                       className=" text-sm uppercase tracking-[1.5px] underline text-center hover:text-slate-400"

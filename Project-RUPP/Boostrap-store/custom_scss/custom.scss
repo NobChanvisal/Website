@@ -1,5 +1,19 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-.font-robotoMono{
+
+.font-robotoMono {
     font-family: "Roboto Mono", serif;
 }
-@import "../node_modules/bootstrap/scss/bootstrap";
+
+.btn-shop-now-dark {
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 1px solid black;
+    color: black;
+    background-color: transparent;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.btn-shop-now-dark:hover{
+    border-color: rgba(0,0,0,0.7);
+}
