@@ -1,7 +1,7 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
-.font-robotoMono {
+.font-robotoMono{
     font-family: "Roboto Mono", serif;
 }
 
@@ -17,3 +17,12 @@
 .btn-shop-now-dark:hover{
     border-color: rgba(0,0,0,0.7);
 }
+.product-cart-hover{
+    
+    transition: all 0.3s ease-in-out;
+}
+.product-cart-hover:hover{
+    transform: scale(1.02);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+

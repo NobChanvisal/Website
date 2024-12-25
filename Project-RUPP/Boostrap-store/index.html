@@ -6,8 +6,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/custom.css" />
   </head>
-  <body>
-    <header class="container-fluid shadow-sm z-3 position-fixed py-3 px-2 bg-white">
+  <body class="font-robotoMono">
+    <header
+      class="container-fluid shadow-sm z-3 position-fixed py-3 px-2 bg-white"
+    >
       <div
         class="container-xl d-flex flex-row justify-content-between align-items-center"
       >
@@ -133,10 +135,10 @@
         alt=""
       />
       <div class="position-absolute bottom-0">
-        <div class="p-5">
+        <div class="p-5 mb-3">
           <h1
-            class="text-uppercase pb-3"
-            style="font-size: 50px; letter-spacing: 2px"
+            class="text-uppercase font-monospace pb-3"
+            style="font-size: 60px; letter-spacing: 2px"
           >
             Iphone 16
           </h1>
@@ -146,19 +148,20 @@
       </div>
     </section>
     <section class="container-xxl my-5">
-      <div class=" text-center d-flex flex-column align-items-center">
-        <h3>Browse by Category</h3>
-        <p class=" w-50 text-light-emphasis">
+      <div class="text-center d-flex flex-column align-items-center">
+        <h3 class="fw-normal mb-3">Browse By Category</h3>
+        <p class="w-50 text-light-emphasis">
           Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
+          industry. Aliquam libero lorem, mattis aliquet orci eget, faucibus
+          feugiat magna.
         </p>
       </div>
       <div class="row">
         <!-- 1 -->
         <div class="col-6 p-2">
-          <div class="p-3 h-100 border border-secondary d-flex flex-column justify-content-between">
+          <div
+            class="p-3 h-100 border border-secondary d-flex flex-column justify-content-between"
+          >
             <div class="d-flex justify-content-center">
               <img
                 class="w-75 object-fit-contain"
@@ -167,8 +170,10 @@
               />
             </div>
             <div>
-              <p class=" text-uppercase">Phone</p>
-              <a href="">View all product</a>
+              <p class="text-uppercase fw-medium">Phone</p>
+              <a class="link-secondary link-underline-opacity-0" href=""
+                >View product</a
+              >
             </div>
           </div>
         </div>
@@ -189,8 +194,10 @@
                   />
                 </div>
                 <div>
-                  <p class=" text-uppercase">Accessories</p>
-                  <a href="">View all product</a>
+                  <p class="text-uppercase fw-medium">Accessories</p>
+                  <a class="link-secondary link-underline-opacity-0" href=""
+                    >View product</a
+                  >
                 </div>
               </div>
             </div>
@@ -206,10 +213,12 @@
                     alt=""
                   />
                 </div>
-                <div></div>
+
                 <div>
-                  <p class=" text-uppercase">Template</p>
-                  <a href="">View all product</a>
+                  <p class="text-uppercase fw-medium">Template</p>
+                  <a class="link-secondary link-underline-opacity-0" href=""
+                    >View product</a
+                  >
                 </div>
               </div>
             </div>
@@ -226,8 +235,10 @@
                   />
                 </div>
                 <div>
-                  <p class=" text-uppercase">Monitor</p>
-                  <a href="">View all product</a>
+                  <p class="text-uppercase fw-medium">Monitor</p>
+                  <a class="link-secondary link-underline-opacity-0" href=""
+                    >View product</a
+                  >
                 </div>
               </div>
             </div>
@@ -244,8 +255,10 @@
                   />
                 </div>
                 <div>
-                  <p class=" text-uppercase">Laptop</p>
-                  <a href="">View all product</a>
+                  <p class="text-uppercase fw-medium">Laptop</p>
+                  <a class="link-secondary link-underline-opacity-0" href=""
+                    >View product</a
+                  >
                 </div>
               </div>
             </div>
@@ -253,7 +266,12 @@
         </div>
       </div>
     </section>
-
+    <section class="container-xxl my-5">
+      <h5 class="fw-normal text-decoration-underline link-offset-3 pb-3">Future Product</h5>
+      <div class="pt-3">
+        <div class="row row-cols-5" id="future-contain"></div>
+      </div>
+    </section>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -264,5 +282,48 @@
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      const futureContain = document.getElementById("future-contain");
+
+      // Fetch the product data
+      fetch("./Data/Datas.json")
+        .then((response) => response.json())
+        .then((data) => {
+          // Access the "Future" array in the JSON data
+          const futurePro = data.Future;
+
+          futurePro.innerHTML = "";
+          futurePro.forEach((product) => {
+            const { id, image, names, rate, price, brand } = product;
+            futureContain.innerHTML += `
+                <div class="col p-2">
+                  <div
+                      class="p-3 h-100 product-cart-hover d-flex flex-column justify-content-between"
+                    >
+                  <div class="d-flex justify-content-center">
+                    <img
+                      class="w-75 object-fit-cover"
+                      src=${image}
+                      alt=${names}
+                    />
+                  </div>
+                  <div class=" pt-4">
+                    <p class="mb-1 text-capitalize" style="font-size: 13px;">${brand}</p>
+                    <p class="fw-medium mb-1 fs-6">${names}</p>
+                    <div class="mb-1">
+                      <img class=" w-25" src=${rate} alt="">
+                    </div>
+                    <p class="m-0" style="font-size: 14px;">$${(price / 100).toFixed(2)}</p>
+                  </div>
+                </div>
+              </div>
+            `;
+          });
+        })
+        .catch((error) => {
+          console.error("Error fetching data:", error);
+        });
+    </script>
   </body>
 </html>

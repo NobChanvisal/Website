@@ -11863,4 +11863,13 @@ textarea.form-control-lg {
   border-color: rgba(0, 0, 0, 0.7);
 }
 
+.product-cart-hover {
+  transition: all 0.3s ease-in-out;
+}
+
+.product-cart-hover:hover {
+  transform: scale(1.02);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
 /*# sourceMappingURL=custom.css.map */
