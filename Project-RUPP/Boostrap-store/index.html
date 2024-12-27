@@ -14,7 +14,12 @@
         class="container-xl d-flex flex-row justify-content-between align-items-center"
       >
         <div class="media-icon d-flex flex-row">
-          <a href="" class="pe-3">
+          <a class="pe-3 link-body-emphasis" href="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>
+            </svg>
+          </a>
+          <a href="" class="pe-3 link-body-emphasis">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -28,7 +33,7 @@
               />
             </svg>
           </a>
-          <a href="#" class="pe-3">
+          <a href="#" class="pe-3 link-body-emphasis">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -42,7 +47,7 @@
               />
             </svg>
           </a>
-          <a href="#">
+          <a class=" link-body-emphasis" href="#">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -65,7 +70,7 @@
           />
         </div>
         <div class="d-flex flex-row">
-          <a class="pe-3" href="#">
+          <a class="pe-3 link-body-emphasis" href="#">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -79,7 +84,7 @@
               />
             </svg>
           </a>
-          <a class="pe-3" href="#">
+          <a class="pe-3 link-body-emphasis" href="#">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -93,7 +98,7 @@
               />
             </svg>
           </a>
-          <a class="pe-3" href="#">
+          <a class="pe-3 link-body-emphasis" href="#">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -109,19 +114,22 @@
           </a>
         </div>
       </div>
-      <nav>
+      <nav class=" mt-2">
         <ul class="nav justify-content-center">
           <li class="nav-item">
-            <a class="nav-link text-uppercase active" href="#">Store</a>
+            <a class="nav-link link-body-emphasis text-uppercase active" href="./Page/Store.html">Store</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-uppercase" href="#">Phone</a>
+            <a class="nav-link link-body-emphasis text-uppercase" href="./Page/Phone.html">Phone</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-uppercase" href="#">Computer</a>
+            <a class="nav-link link-body-emphasis text-uppercase" href="./Page/Tablets.html">Tablets</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-uppercase" href="#">Accessories</a>
+            <a class="nav-link link-body-emphasis text-uppercase" href="./Page/Computer.html">Computer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-body-emphasis text-uppercase" href="./Page/Accessories.html">Accessories</a>
           </li>
         </ul>
       </nav>
@@ -142,7 +150,7 @@
           >
             Iphone 16
           </h1>
-          <p class="fs-5">Designed to be loved</p>
+          <p class="fs-5 mb-4">Designed to be loved</p>
           <a class="btn-shop-now-dark" href="#" role="button">Shop now</a>
         </div>
       </div>
@@ -215,7 +223,7 @@
                 </div>
 
                 <div>
-                  <p class="text-uppercase fw-medium">Template</p>
+                  <p class="text-uppercase fw-medium">Teblets</p>
                   <a class="link-secondary link-underline-opacity-0" href=""
                     >View product</a
                   >
@@ -266,12 +274,297 @@
         </div>
       </div>
     </section>
-    <section class="container-xxl my-5">
-      <h5 class="fw-normal text-decoration-underline link-offset-3 pb-3">Future Product</h5>
+    <section class="container-fluid px-5 mx-auto my-5">
+      <h5 class="fw-normal text-decoration-underline link-offset-3 pb-3">
+        New Arrivals
+      </h5>
+      <div class="pt-3">
+        <div class="row row-cols-5" id="new-arrivals-contain"></div>
+      </div>
+      <div class="d-flex justify-content-center pt-5">
+        <a href="" class="btn btn-outline-dark">View All Product</a>
+      </div>
+    </section>
+
+    <section>
+      <div
+        class="container-fluid flash-deal d-flex justify-content-between align-items-center"
+        style="background-color: #f6f5f2"
+      >
+        <div class="p-5">
+          <h2 class="text-uppercase">End of season sale</h2>
+          <p>With best end of season sale up to 50% off</p>
+          <div class="deal-timer d-flex gap-4">
+            <div
+              class="time-box d-flex flex-column text-center p-4 rounded-3 bg-dark-subtle"
+            >
+              <span id="days">00</span>
+              <small>days</small>
+            </div>
+            <div
+              class="time-box d-flex flex-column text-center p-4 rounded-3 bg-dark-subtle"
+            >
+              <span id="hours">00</span>
+              <small>hours</small>
+            </div>
+            <div
+              class="time-box d-flex flex-column text-center p-4 rounded-3 bg-dark-subtle"
+            >
+              <span id="minutes">00</span>
+              <small>minutes</small>
+            </div>
+            <div
+              class="time-box d-flex flex-column text-center p-4 rounded-3 bg-dark-subtle"
+            >
+              <span id="seconds">00</span>
+              <small>seconds</small>
+            </div>
+          </div>
+          <div class="pt-5">
+            <a href="" class="btn-shop-now-dark">Shop Now</a>
+          </div>
+        </div>
+        <div class="flash-image">
+          <img
+            src="https://asset.kompas.com/crops/2Bf2nfAQvcAkTZMWFpQ8NJRmVkI=/0x0:1163x775/750x500/data/photo/2024/07/13/6691dbe419a72.png"
+            alt="Flash Deal Product"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid px-5 mx-auto my-5">
+      <h5 class="fw-normal text-decoration-underline link-offset-3 pb-3">
+        Future Product
+      </h5>
       <div class="pt-3">
         <div class="row row-cols-5" id="future-contain"></div>
       </div>
+      <div class="d-flex justify-content-center pt-5">
+        <a href="" class="btn btn-outline-dark">View All Product</a>
+      </div>
     </section>
+    <section
+      style="
+        padding: 15px 10px;
+        background: rgb(238, 174, 202);
+        background: radial-gradient(
+          circle,
+          rgba(238, 174, 202, 1) 0%,
+          rgba(148, 187, 233, 1) 100%
+        );
+      "
+    >
+      <div class="d-flex justify-content-center">
+        <div class="d-flex flex-column align-items-start">
+          <div class="pe-4">
+            <p class="mb-1 fs-5 fw-semibold">
+              Get our latest update in your email
+            </p>
+            <p>
+              Subscribe now to get 15% off !!
+              <a
+                class="link-body-emphasis"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+                href=""
+                >Sign in</a
+              >
+            </p>
+          </div>
+          <div
+            class="modal fade"
+            id="staticBackdrop"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+              <div class="modal-content position-relative">
+                <div class="modal-header d-flex justify-content-center">
+                  <div class=" d-flex flex-column align-items-center">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Get in the store member</h1>
+                    <p>register account now to get 15% off</p>
+                    <p class="mb-1 px-4 py-2 bg-body-secondary">Log In</p>
+                  </div>
+                  <button type="button" class="btn-close m-2 p-0 position-absolute top-0 end-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form action="">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Email address</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleFormControlInput1"
+                        placeholder="name@example.com"
+                      />
+                    </div>
+                    <div>
+                      <label for="inputPassword5" class="form-label"
+                        >Password</label
+                      >
+                      <input
+                        type="password"
+                        id="inputPassword5"
+                        class="form-control"
+                        aria-describedby="passwordHelpBlock"
+                      />
+                    </div>
+                    <div class=" mt-3">
+                      <button class="btn btn-danger w-100" type="button">Log in</button>
+                      <p class=" mt-2 text-light-emphasis">Don't have an account <a href="">Sign up</a></p>
+                    </div>
+                  </form>
+                </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Understood</button>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="w-full mt-5 container-fluid">
+      <div class="w-full px-5 py-3 mx-auto">
+        <div class="row row-cols-2">
+          <div class="col">
+            <div class="logo" style="width: 150px">
+              <img
+                class="w-100 h-100 object-fit-contain"
+                src="./image/logo.png"
+                alt="Logo"
+              />
+            </div>
+          </div>
+          <div class="col">
+            <div class="row row-cols-3">
+              <div class="col">
+                <ul class="list-unstyled">
+                  <p class="block mb-2 fs-5">Follow Us</p>
+                  <li>
+                    <a
+                      href=""
+                      class="link-secondary link-underline-opacity-0"
+                    >
+                      Instagram
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="link-secondary link-underline-opacity-0"
+                    >
+                      Facebook
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="link-secondary link-underline-opacity-0"
+                    >
+                      Telegram
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="link-secondary link-underline-opacity-0"
+                    >
+                      Github
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!--  -->
+              <div class="col">
+                <ul class="list-unstyled">
+                  <p class="block mb-2 fs-5">
+                    Product
+                  </p>
+                  <li>
+                    <a
+                      href="#"
+                      class="link-secondary link-underline-opacity-0"
+                    >
+                      Phone
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="link-secondary link-underline-opacity-0"
+                    >
+                      Tablets
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="link-secondary link-underline-opacity-0"
+                    >
+                      Computer
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="link-secondary link-underline-opacity-0"
+                    >
+                    Accessories
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!--  -->
+              <div class="col">
+                <ul class="list-unstyled">
+                  <p class="block mb-2 fs-5">
+                    Resources
+                  </p>
+                  <li>
+                    <a
+                      href="#"
+                      class="link-secondary link-underline-opacity-0"
+                    >
+                      Bootstrap
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="link-secondary link-underline-opacity-0"
+                    >
+                      Html
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="link-secondary link-underline-opacity-0"
+                    >
+                      Javascript
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border-top p-4">
+          <p class="block text-sm text-center text-slate-500 md:mb-0">
+            Copyright © 2024
+            <a href="https://github.com/NobChanvisal">chanvisalnob</a>. All
+            Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -285,45 +578,84 @@
 
     <script>
       const futureContain = document.getElementById("future-contain");
+      const newArrivalsContain = document.getElementById(
+        "new-arrivals-contain"
+      );
+
+      // Function to display products in a container
+      function DisplayProduct(container, products) {
+        container.innerHTML = ""; // Clear container
+        products.forEach((product) => {
+          const { id, image, names, rate, price, brand } = product;
+          container.innerHTML += `
+            <div class="col p-2">
+              <div class="p-3 h-100 product-cart-hover d-flex flex-column justify-content-between">
+                <div class="d-flex justify-content-center">
+                  <img class="w-75 object-fit-cover" src="${image}" alt="${names}" />
+                </div>
+                <div class="pt-4">
+                  <p class="mb-1 text-capitalize" style="font-size: 13px;">${brand}</p>
+                  <p class="fw-medium mb-1 fs-6">${names}</p>
+                  <div class="mb-1">
+                    <img class="w-25" src="${rate}" alt="rating" />
+                  </div>
+                  <p class="m-0" style="font-size: 14px;">$${(
+                    price / 100
+                  ).toFixed(2)}</p>
+                </div>
+              </div>
+            </div>`;
+        });
+      }
 
       // Fetch the product data
       fetch("./Data/Datas.json")
         .then((response) => response.json())
         .then((data) => {
-          // Access the "Future" array in the JSON data
-          const futurePro = data.Future;
+          // Access the "Future" and "New Arrivals" arrays in the JSON data
+          const futureProducts = data.Product.filter(
+            (product) => product.future
+          );
+          const newArrData = data.Product.slice(0, 5); // Get first 5 items
 
-          futurePro.innerHTML = "";
-          futurePro.forEach((product) => {
-            const { id, image, names, rate, price, brand } = product;
-            futureContain.innerHTML += `
-                <div class="col p-2">
-                  <div
-                      class="p-3 h-100 product-cart-hover d-flex flex-column justify-content-between"
-                    >
-                  <div class="d-flex justify-content-center">
-                    <img
-                      class="w-75 object-fit-cover"
-                      src=${image}
-                      alt=${names}
-                    />
-                  </div>
-                  <div class=" pt-4">
-                    <p class="mb-1 text-capitalize" style="font-size: 13px;">${brand}</p>
-                    <p class="fw-medium mb-1 fs-6">${names}</p>
-                    <div class="mb-1">
-                      <img class=" w-25" src=${rate} alt="">
-                    </div>
-                    <p class="m-0" style="font-size: 14px;">$${(price / 100).toFixed(2)}</p>
-                  </div>
-                </div>
-              </div>
-            `;
-          });
+          // Display products in respective sections
+          DisplayProduct(futureContain, futureProducts);
+          DisplayProduct(newArrivalsContain, newArrData);
         })
         .catch((error) => {
           console.error("Error fetching data:", error);
         });
+
+      // Countdown Timer
+      const targetDate = new Date("2025-01-08T23:59:59").getTime();
+
+      function updateTimer() {
+        const now = new Date().getTime();
+        const timeLeft = targetDate - now;
+
+        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+        document.getElementById("days").textContent = days
+          .toString()
+          .padStart(2, "0");
+        document.getElementById("hours").textContent = hours
+          .toString()
+          .padStart(2, "0");
+        document.getElementById("minutes").textContent = minutes
+          .toString()
+          .padStart(2, "0");
+        document.getElementById("seconds").textContent = seconds
+          .toString()
+          .padStart(2, "0");
+      }
+
+      updateTimer();
+      setInterval(updateTimer, 1000);
     </script>
   </body>
 </html>

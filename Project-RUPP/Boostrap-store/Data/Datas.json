@@ -1,58 +1,72 @@
 {
-    "Future": [
+    "Product": [
         {
-            "id": "f1",
+            "id": 7,
+            "image": "https://i.pinimg.com/736x/6e/7b/7b/6e7b7bbde9193671e4ace9c9f6f89bf4.jpg",
+            "names": "Samsung Galaxy Z Flip6",
+            "rate": "./image/rating/45.png",
+            "price": 109999,
+            "brand": "samsung",
+            "category": "phone"
+        },
+        {
+            "id": 1,
+            "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-select-202409-purple_FV1?wid=976&hei=916&fmt=jpeg&qlt=90&.v=1724927052158",
+            "names": "AirPods Max",
+            "rate": "./image/rating/45.png",
+            "price": 54900,
+            "brand": "apple",
+            "category": "accessories"
+        },
+        {
+            "id": 2,
             "image": "https://i.pinimg.com/736x/a0/c1/45/a0c1451ef3f083e0b55da19285a2b4d5.jpg",
             "names": "Iphone 16",
             "rate": "./image/rating/45.png",
             "price": 95900,
             "brand": "apple",
-            "category": "phone"
+            "category": "phone",
+            "future": true
         },
         {
-            "id": "f2",
+            "id": 3,
             "image": "https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/plp-x/tablet/autumn-2024-wearable-launch/view-all/all-huawei-matepad-12-x.jpg",
             "names": "HUAWEI MatePad 12 X",
             "rate": "./image/rating/45.png",
             "price": 59999,
             "brand": "huawei",
-            "category": "template"
+            "category": "template",
+            "future": true
         },
         {
-            "id": "f3",
+            "id": 4,
             "image": "https://i.pinimg.com/736x/40/a0/b0/40a0b0e283a421f02d51315cbd2a7199.jpg",
             "names": "ROG Zephyrus G14",
             "rate": "./image/rating/40.png",
             "price": 104900,
             "brand": "asus",
-            "category": "laptop"
+            "category": "laptop",
+            "future": true
         },
         {
-            "id": "f4",
+            "id": 5,
             "image": "https://image-us.samsung.com/us/smartphones/galaxy-s24/all-gallery/01_E3_TitaniumBlack_Lockup_1600x1200.jpg?$product-details-jpg$",
             "names": "Galaxy S24 Ultra",
             "rate": "./image/rating/45.png",
             "price": 129999,
             "brand": "samsung",
-            "category": "phone"
+            "category": "phone",
+            "future": true
         },
         {
-            "id": "f5",
+            "id": 6,
             "image": "https://i.pinimg.com/736x/6f/23/9a/6f239a9d705c2f256ee609f1be35c367.jpg",
             "names": "AirPods Pro 2",
             "rate": "./image/rating/40.png",
             "price": 24900,
             "brand": "apple",
-            "category": "accessories"
-        }
-    ],
-    "Product": [
-        {
-            "id": 2,
-            "names": "Intermediate Size Basketball",
-            "lastStar": "fa-regular fa-star",
-            "price": 2095,
-            "image": "image/product/basketball.png"
+            "category": "accessories",
+            "future": true
         }
     ]
 }

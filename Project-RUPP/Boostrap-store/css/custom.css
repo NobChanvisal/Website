@@ -11850,17 +11850,17 @@ textarea.form-control-lg {
 }
 
 .btn-shop-now-dark {
-  padding: 8px 20px;
+  padding: 10px 28px;
   border-radius: 20px;
-  border: 1px solid black;
-  color: black;
-  background-color: transparent;
+  border: none;
+  color: white;
+  background-color: black;
   text-transform: uppercase;
   text-decoration: none;
 }
 
 .btn-shop-now-dark:hover {
-  border-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .product-cart-hover {
