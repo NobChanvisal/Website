@@ -1,60 +1,110 @@
 {
     "Product": [
         {
-            "id": 7,
-            "image": "https://i.pinimg.com/736x/6e/7b/7b/6e7b7bbde9193671e4ace9c9f6f89bf4.jpg",
-            "names": "Samsung Galaxy Z Flip6",
-            "rate": "./image/rating/45.png",
-            "price": 109999,
+            "id": 16,
+            "image": "https://www.ais.th/content/dam/ais/consumer/store/devices/oppo/tablet/pad-air-wifi-128-gb/oppo-pad-air-128-gb.png",
+            "names": "OPPO Pad Air",
+            "rate": "/Project-RUPP/Boostrap-store/Data/rating/45.png",
+            "price": 26900,
+            "color": "blue",
+            "brand": "oppo",
+            "category": "template"
+        },
+        {
+            "id": 15,
+            "image": "https://ae-pic-a1.aliexpress-media.com/kf/S068d7addc5bf47e0a3e053fb0a66de32z.png_960x960.png_.avif",
+            "names": "HUAWEI FreeLace Pro 2",
+            "rate": "/Project-RUPP/Boostrap-store/Data/rating/35.png",
+            "price": 7745,
+            "color": "green",
+            "brand": "huawei",
+            "category": "accessories"
+        },
+        {
+            "id": 14,
+            "image": "https://media.currys.biz/i/currysprod/10270696?$l-large$&fmt=auto",
+            "names": "Galaxy Book5 Pro 360",
+            "rate": "/Project-RUPP/Boostrap-store/Data/rating/45.png",
+            "price": 169999,
+            "color": "silver",
             "brand": "samsung",
+            "category": "laptop"
+        },
+        {
+            "id": 13,
+            "image": "https://ae-pic-a1.aliexpress-media.com/kf/S0ed1ff96d0184f59aa537712be2a4ee8h.png_960x960.png_.avif",
+            "names": "OPPO Find X8 Pro",
+            "rate": "/Project-RUPP/Boostrap-store/Data/rating/45.png",
+            "price": 88900,
+            "color": "blue",
+            "brand": "oppo",
             "category": "phone"
+        },
+        {
+            "id": 12,
+            "image": "https://i.pinimg.com/736x/c2/89/1c/c2891cc37158e623096c52da202a6e07.jpg",
+            "names": "Gaming Monitor MSI 27-2K",
+            "rate": "/Project-RUPP/Boostrap-store/Data/rating/35.png",
+            "price": 21999,
+            "brand": "msi",
+            "category": "monitor"
+        },
+        {
+            "id": 11,
+            "image": "https://i.pinimg.com/736x/dd/9d/2d/dd9d2d44ee58fdf9304a2e89cefb742f.jpg",
+            "names": "IPad Pro 13-Inch M4",
+            "rate": "/Project-RUPP/Boostrap-store/Data/rating/40.png",
+            "price": 114899,
+            "brand": "apple",
+            "category": "accessories"
+        },
+        {
+            "id": 10,
+            "image": "https://image.oppo.com/content/dam/oppo/common/mkt/v2-2/enco-air3-en/listpage/enco-air3-600x600.png",
+            "names": "OPPO Enco Air3",
+            "rate": "/Project-RUPP/Boostrap-store/Data/rating/40.png",
+            "price": 3900,
+            "brand": "oppo",
+            "category": "accessories"
+        },
+        {
+            "id": 9,
+            "image": "https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/plp/laptops-20230517/all-laptops/matebook-x-pro-2023-blue.jpg",
+            "names": "MateBook X Pro 2023",
+            "rate": "/Project-RUPP/Boostrap-store/Data/rating/45.png",
+            "price": 160895,
+            "brand": "huawei",
+            "category": "laptop"
+        },
+        
+        {
+            "id": 7,
+            "image": "https://i.pinimg.com/736x/37/ab/64/37ab6495bffcb160ac3db29d079bfad4.jpg",
+            "names": "LED Monitor S2421HN",
+            "rate": "/Project-RUPP/Boostrap-store/Data/rating/40.png",
+            "price": 9999,
+            "brand": "dell",
+            "color": "white",
+            "category": "monitor"
         },
         {
             "id": 1,
             "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-select-202409-purple_FV1?wid=976&hei=916&fmt=jpeg&qlt=90&.v=1724927052158",
             "names": "AirPods Max",
-            "rate": "./image/rating/45.png",
+            "rate": "/Project-RUPP/Boostrap-store/Data/rating/45.png",
             "price": 54900,
             "brand": "apple",
+            "color": "pink",
             "category": "accessories"
         },
         {
             "id": 2,
             "image": "https://i.pinimg.com/736x/a0/c1/45/a0c1451ef3f083e0b55da19285a2b4d5.jpg",
             "names": "Iphone 16",
-            "rate": "./image/rating/45.png",
+            "rate": "/Project-RUPP/Boostrap-store/Data/rating/45.png",
             "price": 95900,
             "brand": "apple",
-            "category": "phone",
-            "future": true
-        },
-        {
-            "id": 3,
-            "image": "https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/plp-x/tablet/autumn-2024-wearable-launch/view-all/all-huawei-matepad-12-x.jpg",
-            "names": "HUAWEI MatePad 12 X",
-            "rate": "./image/rating/45.png",
-            "price": 59999,
-            "brand": "huawei",
-            "category": "template",
-            "future": true
-        },
-        {
-            "id": 4,
-            "image": "https://i.pinimg.com/736x/40/a0/b0/40a0b0e283a421f02d51315cbd2a7199.jpg",
-            "names": "ROG Zephyrus G14",
-            "rate": "./image/rating/40.png",
-            "price": 104900,
-            "brand": "asus",
-            "category": "laptop",
-            "future": true
-        },
-        {
-            "id": 5,
-            "image": "https://image-us.samsung.com/us/smartphones/galaxy-s24/all-gallery/01_E3_TitaniumBlack_Lockup_1600x1200.jpg?$product-details-jpg$",
-            "names": "Galaxy S24 Ultra",
-            "rate": "./image/rating/45.png",
-            "price": 129999,
-            "brand": "samsung",
+            "color": "pink",
             "category": "phone",
             "future": true
         },
@@ -62,11 +112,56 @@
             "id": 6,
             "image": "https://i.pinimg.com/736x/6f/23/9a/6f239a9d705c2f256ee609f1be35c367.jpg",
             "names": "AirPods Pro 2",
-            "rate": "./image/rating/40.png",
+            "rate": "/Project-RUPP/Boostrap-store/Data/rating/35.png",
             "price": 24900,
             "brand": "apple",
             "category": "accessories",
+            "color":"white",
             "future": true
+        },
+        {
+            "id": 4,
+            "image": "https://i.pinimg.com/736x/59/d4/4c/59d44c3c0b84ac34940db16ac7969a0b.jpg",
+            "names": "Samsung Galaxy Z Flip6",
+            "rate": "/Project-RUPP/Boostrap-store/Data/rating/45.png",
+            "price": 109999,
+            "color": "green",
+            "brand": "samsung",
+            "category": "phone",
+            "future": true
+        },
+        {
+            "id": 8,
+            "image": "https://i.pinimg.com/736x/40/a0/b0/40a0b0e283a421f02d51315cbd2a7199.jpg",
+            "names": "ROG Zephyrus G14",
+            "rate": "/Project-RUPP/Boostrap-store/Data/rating/35.png",
+            "price": 104900,
+            "brand": "asus",
+            "color": "white",
+            "category": "laptop",
+            "future": true
+        },
+        {
+            "id": 3,
+            "image": "https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/plp-x/tablet/autumn-2024-wearable-launch/view-all/all-huawei-matepad-12-x.jpg",
+            "names": "HUAWEI MatePad 12 X",
+            "rate": "/Project-RUPP/Boostrap-store/Data/rating/40.png",
+            "price": 59999,
+            "brand": "huawei",
+            "color": "green",
+            "category": "template",
+            "future": true
+        },
+        {
+            "id": 5,
+            "image": "https://image-us.samsung.com/us/smartphones/galaxy-s24/all-gallery/01_E3_TitaniumBlack_Lockup_1600x1200.jpg?$product-details-jpg$",
+            "names": "Galaxy S24 Ultra",
+            "rate": "/Project-RUPP/Boostrap-store/Data/rating/45.png",
+            "price": 129999,
+            "brand": "samsung",
+            "color": "black",
+            "category": "phone"
+            
         }
     ]
 }

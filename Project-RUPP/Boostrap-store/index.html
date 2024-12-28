@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Home-page</title>
     <link rel="stylesheet" href="./css/custom.css" />
   </head>
-  <body class="font-robotoMono">
+  <body class="font-robotoMono" style="background-color: #F7F7F7;">
     <header
       class="container-fluid shadow-sm z-3 position-fixed py-3 px-2 bg-white"
     >
@@ -168,7 +168,7 @@
         <!-- 1 -->
         <div class="col-6 p-2">
           <div
-            class="p-3 h-100 border border-secondary d-flex flex-column justify-content-between"
+            class="p-3 h-100 bg-white border border-secondary d-flex flex-column justify-content-between"
           >
             <div class="d-flex justify-content-center">
               <img
@@ -192,7 +192,7 @@
             <!-- Sub Item 1 -->
             <div class="col p-2">
               <div
-                class="p-3 h-100 border border-secondary d-flex flex-column justify-content-between"
+                class="p-3 h-100 bg-white border border-secondary d-flex flex-column justify-content-between"
               >
                 <div class="d-flex justify-content-center">
                   <img
@@ -212,7 +212,7 @@
             <!-- Sub Item 2 -->
             <div class="col p-2">
               <div
-                class="p-3 h-100 border border-secondary d-flex flex-column justify-content-between"
+                class="p-3 h-100 bg-white border border-secondary d-flex flex-column justify-content-between"
               >
                 <div class="d-flex justify-content-center">
                   <img
@@ -233,7 +233,7 @@
             <!-- Sub Item 3 -->
             <div class="col p-2">
               <div
-                class="p-3 h-100 border border-secondary d-flex flex-column justify-content-between"
+                class="p-3 h-100 bg-white border border-secondary d-flex flex-column justify-content-between"
               >
                 <div class="d-flex justify-content-center">
                   <img
@@ -253,7 +253,7 @@
             <!-- Sub Item 4 -->
             <div class="col p-2">
               <div
-                class="p-3 h-100 border border-secondary d-flex flex-column justify-content-between"
+                class="p-3 h-100 bg-white border border-secondary d-flex flex-column justify-content-between"
               >
                 <div class="d-flex justify-content-center">
                   <img
@@ -288,8 +288,8 @@
 
     <section>
       <div
-        class="container-fluid flash-deal d-flex justify-content-between align-items-center"
-        style="background-color: #f6f5f2"
+        class="container-fluid flash-deal bg-white d-flex justify-content-between align-items-center"
+        
       >
         <div class="p-5">
           <h2 class="text-uppercase">End of season sale</h2>
@@ -326,7 +326,7 @@
         </div>
         <div class="flash-image">
           <img
-            src="https://asset.kompas.com/crops/2Bf2nfAQvcAkTZMWFpQ8NJRmVkI=/0x0:1163x775/750x500/data/photo/2024/07/13/6691dbe419a72.png"
+            src="https://images.samsung.com/is/image/samsung/assets/levant/smartphones/socialimage/GroupKV_GlobalOnline_MO.jpg?imbypass=true"
             alt="Flash Deal Product"
           />
         </div>
@@ -392,27 +392,13 @@
                 </div>
                 <div class="modal-body">
                   <form action="">
-                    <div class="mb-3">
-                      <label for="exampleFormControlInput1" class="form-label"
-                        >Email address</label
-                      >
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="exampleFormControlInput1"
-                        placeholder="name@example.com"
-                      />
+                    <div class="form-floating mb-3">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput">Email address</label>
                     </div>
-                    <div>
-                      <label for="inputPassword5" class="form-label"
-                        >Password</label
-                      >
-                      <input
-                        type="password"
-                        id="inputPassword5"
-                        class="form-control"
-                        aria-describedby="passwordHelpBlock"
-                      />
+                    <div class="form-floating">
+                      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                      <label for="floatingPassword">Password</label>
                     </div>
                     <div class=" mt-3">
                       <button class="btn btn-danger w-100" type="button">Log in</button>
@@ -589,7 +575,7 @@
           const { id, image, names, rate, price, brand } = product;
           container.innerHTML += `
             <div class="col p-2">
-              <div class="p-3 h-100 product-cart-hover d-flex flex-column justify-content-between">
+              <div class="p-3 h-100 bg-white rounded product-cart-hover d-flex flex-column justify-content-between">
                 <div class="d-flex justify-content-center">
                   <img class="w-75 object-fit-cover" src="${image}" alt="${names}" />
                 </div>
