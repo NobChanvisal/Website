@@ -1,6 +1,48 @@
 {
     "Product": [
         {
+            "id": 19,
+            "image": "https://i.pinimg.com/736x/61/30/f0/6130f04bf5195db53f5ce0744da9fc73.jpg",
+            "names": "MacBook Pro 14",
+            "rate": "/Project-RUPP/Boostrap-store/Data/rating/45.png",
+            "price": 159900,
+            "color": "black",
+            "brand": "apple",
+            "category": "computer",
+            "subCategory":"laptop"
+        },
+        {
+            "id": 18,
+            "image": "https://image-us.samsung.com/SamsungUS/home/my-assets/09192024/1_Tab_S10_Plus_Platinum_Silver_Combo_Gallery-1600x1200.jpg?$product-details-jpg$",
+            "names": "Galaxy Tab S10+",
+            "rate": "/Project-RUPP/Boostrap-store/Data/rating/45.png",
+            "price": 84900,
+            "color": "silver",
+            "brand": "samsung",
+            "category": "tablets"
+        },
+        {
+            "id": 17,
+            "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MQDP3?wid=532&hei=582&fmt=png-alpha&.v=1664481446939",
+            "names": "Magic Keyboard iPad(10th)",
+            "rate": "/Project-RUPP/Boostrap-store/Data/rating/40.png",
+            "price": 24900,
+            "color": "white",
+            "brand": "apple",
+            "category": "accessories"
+        },
+        {
+            "id": 21,
+            "image": "https://i.pinimg.com/736x/b2/8f/93/b28f9355678b1a85c82966ac3ba6cac3.jpg",
+            "names": "ASUS VZ239H-W 23",
+            "rate": "/Project-RUPP/Boostrap-store/Data/rating/40.png",
+            "price": 8999,
+            "brand": "asus",
+            "color": "white",
+            "category": "computer",
+            "subCategory":"monitor"
+        },
+        {
             "id": 16,
             "image": "https://www.ais.th/content/dam/ais/consumer/store/devices/oppo/tablet/pad-air-wifi-128-gb/oppo-pad-air-128-gb.png",
             "names": "OPPO Pad Air",
@@ -8,7 +50,7 @@
             "price": 26900,
             "color": "blue",
             "brand": "oppo",
-            "category": "template"
+            "category": "tablets"
         },
         {
             "id": 15,
@@ -28,7 +70,8 @@
             "price": 169999,
             "color": "silver",
             "brand": "samsung",
-            "category": "laptop"
+            "category": "computer",
+            "subCategory": "laptop"
         },
         {
             "id": 13,
@@ -47,7 +90,8 @@
             "rate": "/Project-RUPP/Boostrap-store/Data/rating/35.png",
             "price": 21999,
             "brand": "msi",
-            "category": "monitor"
+            "category": "computer",
+            "subCategory": "monitor"
         },
         {
             "id": 11,
@@ -56,7 +100,7 @@
             "rate": "/Project-RUPP/Boostrap-store/Data/rating/40.png",
             "price": 114899,
             "brand": "apple",
-            "category": "accessories"
+            "category": "tablets"
         },
         {
             "id": 10,
@@ -67,15 +111,6 @@
             "brand": "oppo",
             "category": "accessories"
         },
-        {
-            "id": 9,
-            "image": "https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/plp/laptops-20230517/all-laptops/matebook-x-pro-2023-blue.jpg",
-            "names": "MateBook X Pro 2023",
-            "rate": "/Project-RUPP/Boostrap-store/Data/rating/45.png",
-            "price": 160895,
-            "brand": "huawei",
-            "category": "laptop"
-        },
         
         {
             "id": 7,
@@ -85,7 +120,8 @@
             "price": 9999,
             "brand": "dell",
             "color": "white",
-            "category": "monitor"
+            "category": "computer",
+            "subCategory":"monitor"
         },
         {
             "id": 1,
@@ -96,6 +132,17 @@
             "brand": "apple",
             "color": "pink",
             "category": "accessories"
+        },
+        {
+            "id": 9,
+            "image": "https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/plp/laptops-20230517/all-laptops/matebook-x-pro-2023-blue.jpg",
+            "names": "MateBook X Pro 2023",
+            "rate": "/Project-RUPP/Boostrap-store/Data/rating/45.png",
+            "price": 160895,
+            "color":"black",
+            "brand": "huawei",
+            "category": "computer",
+            "subCategory":"laptop"
         },
         {
             "id": 2,
@@ -131,6 +178,16 @@
             "future": true
         },
         {
+            "id": 17,
+            "image": "https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/plp-x/phones/winter-2024-new-product-launch/phones-new/images/mate-series/shelf-huawei-mate50.png",
+            "names": "HUAWEI Mate 50",
+            "rate": "/Project-RUPP/Boostrap-store/Data/rating/40.png",
+            "price": 49500,
+            "brand": "huawei",
+            "color": "silver",
+            "category": "phone"
+        },
+        {
             "id": 8,
             "image": "https://i.pinimg.com/736x/40/a0/b0/40a0b0e283a421f02d51315cbd2a7199.jpg",
             "names": "ROG Zephyrus G14",
@@ -138,8 +195,20 @@
             "price": 104900,
             "brand": "asus",
             "color": "white",
-            "category": "laptop",
+            "category": "computer",
+            "subCategory":"laptop",
             "future": true
+        },
+        {
+            "id": 22,
+            "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mac-card-40-studio-display-202203?wid=680&hei=528&fmt=p-jpg&qlt=95&.v=1731974953778",
+            "names": "Studio Display",
+            "rate": "/Project-RUPP/Boostrap-store/Data/rating/45.png",
+            "price": 159900,
+            "brand": "apple",
+            "color": "white",
+            "category": "computer",
+            "subCategory":"monitor"
         },
         {
             "id": 3,
@@ -149,7 +218,7 @@
             "price": 59999,
             "brand": "huawei",
             "color": "green",
-            "category": "template",
+            "category": "tablets",
             "future": true
         },
         {

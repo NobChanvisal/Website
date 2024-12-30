@@ -6,7 +6,7 @@
     <title>Store-page</title>
     <link rel="stylesheet" href="../css/custom.css" />
   </head>
-  <body class="font-robotoMono" style="background-color: #f7f7f7">
+  <body class="font-robotoMono"  style="background-color: #f7f7f7">
     <header
       class="container-fluid shadow-sm z-3 position-fixed py-3 px-2 bg-white"
     >
@@ -135,28 +135,28 @@
           <li class="nav-item">
             <a
               class="nav-link link-body-emphasis text-uppercase"
-              href="./Page/Phone.html"
+              href="./Phone.html"
               >Phone</a
             >
           </li>
           <li class="nav-item">
             <a
               class="nav-link link-body-emphasis text-uppercase"
-              href="./Page/Tablets.html"
+              href="./Tablets.html"
               >Tablets</a
             >
           </li>
           <li class="nav-item">
             <a
               class="nav-link link-body-emphasis text-uppercase"
-              href="./Page/Computer.html"
+              href="./Computer.html"
               >Computer</a
             >
           </li>
           <li class="nav-item">
             <a
               class="nav-link link-body-emphasis text-uppercase"
-              href="./Page/Accessories.html"
+              href="./Accessories.html"
               >Accessories</a
             >
           </li>
@@ -167,89 +167,315 @@
       <div class="pt-2">
         <p class="mb-5 mt-2 fs-2 text-center">All Product</p>
       </div>
-      <div
-        class="filter-menu d-flex align-items-center py-3 border-bottom border-top border-secondary"
-      >
-        <!-- dropdownbrand -->
-        <!-- Filter Section -->
-        <div class="pe-2 fw-semibold">Filter By :</div>
-        <div class="d-flex align-items-center">
-          <!-- Brand Filter -->
-          <div class="btn-group">
-            <a
-              class="link-dark link-underline-opacity-0 dropdown-toggle"
-              type="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Brand
-            </a>
-            <ul id="brand-filter" class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" href="#" data-brand="apple">Apple</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#" data-brand="samsung"
-                  >Samsung</a
+      <div class="p-0  d-flex justify-content-between align-items-center">
+        <p class="fw-semibold">Filter By</p>
+        <label
+          for="price-filter"
+          class="form-label pe-2 m-0"
+          style="font-size: 12px"
+          >Showing - <span id="product-lenght"></span> results
+        </label>
+      </div>
+      <div class="row">
+        <aside class="col-2">
+          <div
+            class="filter-menu d-flex flex-column border-top border-secondary"
+          >
+            <!-- Filter Section -->
+            <div class="d-flex flex-column mt-2">
+              <!-- Brand Filter -->
+              <div class="d-block">
+                <p
+                  class="link-dark link-underline-opacity-0 fw-semibold"
                 >
-              </li>
-              <li>
-                <a class="dropdown-item" href="#" data-brand="oppo">Oppo</a>
-              </li>
-              <!-- Add more brands as needed -->
-            </ul>
-          </div>
+                  Brand
+                </p>
+                <div class="ps-2 pt-1 d-flex flex-column" id="brand-filter">
+                  <a
+                    href=""
+                    style="font-size: 14px;"
+                    class="pb-2 link-secondary link-underline-opacity-0"
+                    >All</a
+                  >
+                  <a
+                    href=""
+                    class="pb-2 fs-sm link-secondary link-underline-opacity-0"
+                    data-brand="apple"
+                    >Apple</a
+                  >
+                  <a
+                    href=""
+                    style="font-size: 14px;"
+                    class="pb-2 link-secondary link-underline-opacity-0"
+                    data-brand="samsung"
+                    >Samsung</a
+                  >
+                  <a
+                    href=""
+                    class="pb-2 fs-sm link-secondary link-underline-opacity-0"
+                    data-brand="oppo"
+                    >Oppo</a
+                  >
+                  <a
+                    href=""
+                    class="pb-2 fs-sm link-secondary link-underline-opacity-0"
+                    data-brand="huawei"
+                    >Huawei</a
+                  >
+                  <a
+                    href=""
+                    class="pb-2 fs-sm link-secondary link-underline-opacity-0"
+                    data-brand="dell"
+                    >Dell</a
+                  >
+                  <a
+                    href=""
+                    class="pb-2 fs-sm link-secondary link-underline-opacity-0"
+                    data-brand="asus"
+                    >Asus</a
+                  >
+                  <a
+                    href=""
+                    class="pb-2 fs-sm link-secondary link-underline-opacity-0"
+                    data-brand="msi"
+                    >MSI</a
+                  >
+                </div>
+              </div>
+              <!-- Color Filter -->
+              <div class="d-block mt-3">
+                <a
+                  class="link-dark link-underline-opacity-0 fw-semibold"
+                  type="button"
+                >
+                  Color
+                </a>
+                <div class="d-flex pt-4 ps-2 flex-wrap">
+                  <button
+                    class="color-filter me-3 mt-3 p-2 border border-secondary"
+                    style="
+                      background-image: conic-gradient(
+                        red,
+                        yellow,
+                        green,
+                        blue,
+                        black,
+                        red
+                      );
+                    "
+                  ></button>
+                  <button
+                    class="color-filter me-3 mt-3 p-2 border border-secondary"
+                    style="background-color: #adb5bd"
+                    data-color="silver"
+                  ></button>
+                  <button
+                    class="color-filter me-3 mt-3 p-2 border border-secondary bg-black"
+                    data-color="black"
+                  ></button>
+                  <button
+                    class="color-filter me-3 mt-3 p-2 border border-secondary bg-white"
+                    data-color="white"
+                  ></button>
+                  <button
+                    class="color-filter me-3 mt-3 p-2 border border-secondary"
+                    style="background-color: #e73879"
+                    data-color="pink"
+                  ></button>
+                  <button
+                    class="color-filter me-3 mt-3 p-2 border border-secondary"
+                    style="background-color: #80c4e9"
+                    data-color="blue"
+                  ></button>
+                  <button
+                    class="color-filter me-3 mt-3 p-2 border border-secondary bg-success"
+                    data-color="green"
+                  ></button>
+                </div>
+              </div>
 
-          <!-- Color Filter -->
-          <div class="ms-5 d-flex">
-            <button
-              class="color-filter me-3 p-2 border-1 rounded-pill bg-black"
-              data-color="black"
-            ></button>
-            <button
-              class="color-filter me-3 p-2 border-1 rounded-pill bg-white"
-              data-color="white"
-            ></button>
-            <button
-              class="color-filter me-3 p-2 border-1 rounded-pill"
-              style="background-color: #e73879"
-              data-color="pink"
-            ></button>
+              <!-- Price Filter -->
+              <div class="d-block mt-3">
+                <a
+                  class="link-dark link-underline-opacity-0 fw-semibold"
+                  type="button"
+                >
+                  Price
+                </a>
+                <div class="pt-4 ps-2 d-flex flex-column" id="brand-filter">
+                  <input
+                    type="range"
+                    id="price-filter"
+                    class="form-range"
+                    value="200000"
+                    min="2000"
+                    max="250000"
+                    step="50000"
+                  />
+                  <label
+                    for="price-filter"
+                    class="form-label pe-2 m-0"
+                    style="font-size: 12px"
+                    >0-$<span id="price-value">2000</span>
+                  </label>
+                </div>
+              </div>
+              <!-- On Sale Filter -->
+              <div class="mt-4">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="sale-filter"
+                  />
+                  <label class="form-check-label" for="sale-filter"
+                    >On Sale</label
+                  >
+                </div>
+              </div>
+            </div>
           </div>
-
-          <!-- Price Filter -->
-          <div class="ms-5 d-flex align-items-center">
-            <label for="price-filter" class="form-label pe-2 m-0"
-              >Price:0-$<span id="price-value">2000</span>
-            </label>
-            <input
-              type="range"
-              id="price-filter"
-              class="form-range"
-              value="200000"
-              min="2000"
-              max="200000"
-              step="50000"
-            />
-          </div>
-
-          <!-- On Sale Filter -->
-          <div class="ms-5">
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                id="sale-filter"
+        </aside>
+        <div class="col-10 px-4 my-2">
+          <div class="row row-cols-4" id="all-product"></div>
+        </div>
+      </div>
+    </section>
+    <footer class="w-full mt-5 container-fluid border-1 border-top">
+      <div class="w-full px-5 py-3 mx-auto">
+        <div class="row row-cols-2">
+          <div class="col">
+            <div class="logo" style="width: 150px">
+              <img
+                class="w-100 h-100 object-fit-contain"
+                src="../image/logo.png"
+                alt="Logo"
               />
-              <label class="form-check-label" for="sale-filter">On Sale</label>
+            </div>
+          </div>
+          <div class="col">
+            <div class="row row-cols-3">
+              <div class="col">
+                <ul class="list-unstyled">
+                  <p class="block mb-2 fs-6">Follow Us</p>
+                  <li>
+                    <a
+                      href=""
+                      class=" fs-sm link-secondary link-underline-opacity-0"
+                    >
+                      Instagram
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="fs-sm link-secondary link-underline-opacity-0"
+                    >
+                      Facebook
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="fs-sm link-secondary link-underline-opacity-0"
+                    >
+                      Telegram
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="fs-sm link-secondary link-underline-opacity-0"
+                    >
+                      Github
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!--  -->
+              <div class="col">
+                <ul class="list-unstyled">
+                  <p class="block mb-2 fs-6">
+                    Product
+                  </p>
+                  <li>
+                    <a
+                      href="#"
+                      class="fs-sm link-secondary link-underline-opacity-0"
+                    >
+                      Phone
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="fs-sm link-secondary link-underline-opacity-0"
+                    >
+                      Tablets
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="fs-sm link-secondary link-underline-opacity-0"
+                    >
+                      Computer
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="fs-sm link-secondary link-underline-opacity-0"
+                    >
+                    Accessories
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!--  -->
+              <div class="col">
+                <ul class="list-unstyled">
+                  <p class="block mb-2 fs-6">
+                    Resources
+                  </p>
+                  <li>
+                    <a
+                      href="#"
+                      class="fs-sm link-secondary link-underline-opacity-0"
+                    >
+                      Bootstrap
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="fs-sm link-secondary link-underline-opacity-0"
+                    >
+                      Html
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="fs-sm link-secondary link-underline-opacity-0"
+                    >
+                      Javascript
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
+        <div class="border-top p-4">
+          <p class="block fs-sm text-center">
+            Copyright © 2024
+            <a href="https://github.com/NobChanvisal">chanvisalnob</a>. All
+            Rights Reserved.
+          </p>
+        </div>
       </div>
-      <div class="pt-3">
-        <div class="row row-cols-5" id="all-product"></div>
-      </div>
-    </section>
+    </footer>
     <script src="../javascript/script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
