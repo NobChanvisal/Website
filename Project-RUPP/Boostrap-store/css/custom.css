@@ -4,6 +4,7 @@
  * Copyright 2011-2024 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 :root,
 [data-bs-theme=light] {
@@ -11849,6 +11850,10 @@ textarea.form-control-lg {
   font-family: "Roboto Mono", serif;
 }
 
+.font-Open-Sans {
+  font-family: "Open Sans", serif;
+}
+
 .btn-shop-now-dark {
   padding: 10px 28px;
   border-radius: 20px;
@@ -11874,6 +11879,10 @@ textarea.form-control-lg {
 
 .fs-sm {
   font-size: 14px;
+}
+
+body {
+  font-family: "Open Sans", serif;
 }
 
 /*# sourceMappingURL=custom.css.map */

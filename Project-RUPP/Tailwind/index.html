@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Furniture Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="">
+    <!-- Header -->
+    <header class="bg-white w-full shadow-md z-40 fixed">
+      <div class="px-20 mx-auto flex flex-col sm:flex-row justify-between items-center py-4">
+        <h1 class="text-2xl mb-3 sm:mb-0 font-bold">BagStore</h1>
+        <nav class="space-x-6">
+          <a href="#" class="hover:text-gray-900">Store</a>
+          <a href="#" class="hover:text-gray-900">Travel</a>
+          <a href="#" class="hover:text-gray-900">School</a>
+          <a href="#" class="hover:text-gray-900">Sports</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gray-80">
+      <div class="pt-20 px-20 mx-auto flex flex-col md:flex-row items-center">
+        <div class="text-center md:text-left md:w-1/2 space-y-4">
+          <p>Amazing Product</p>
+          <h2 class="text-4xl font-bold uppercase">Backpage</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a auctor
+            leo. Cras nec ultrices massa. Nam blandit ac leo ut blandit. Donec
+            condimentum vel nulla vitae molestie.
+          </p>
+          <a
+            href="#"
+            class="inline-block bg-gray-800 text-white px-6 py-2 rounded hover:bg-gray-900"
+            >Shop Now</a
+          >
+        </div>
+        <div class="mt-8 pl-4 md:mt-0 md:w-1/2">
+          <img
+            src="https://i.pinimg.com/736x/6e/aa/1d/6eaa1de5986cea3ed0c62d0416b3b7e7.jpg"
+            alt="bag"
+            class="rounded-md mx-auto"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Featured Products -->
+    <section class="py-12">
+      <div class="px-6 lg:px-20 mx-auto">
+        <h3 class="text-2xl font-bold mb-6">New Arrivals</h3>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6"
+        >
+          <!-- Product 1 -->
+          <div class="flex flex-col items-center">
+            <div class="py-5 border bg-white w-full">
+              <img
+                src="https://i.pinimg.com/736x/ff/8e/fa/ff8efa5e54f2dad384257c3a592684f0.jpg"
+                alt="Men Waterproof Casual"
+                class="mx-auto object-contain"
+              />
+            </div>
+            <div class="pt-2 text-center">
+              <p class="font-semibold text-black">Men Waterproof Casual</p>
+              <p>$10.99</p>
+              <p class="text-[#578E7E]">★★★★☆</p>
+            </div>
+          </div>
+
+
+          <div class="flex flex-col items-center">
+            <div class="py-5 border bg-white w-full">
+              <img
+                src="https://johnny-urban.de/cdn/shop/files/Reiserucksack-Damen-Allen-Large-Travel-sand-JOHN00489.jpg?v=1722932453&width=900"
+                alt="Reiserucksack 'Allen Large Travel'"
+                class="mx-auto object-contain"
+              />
+            </div>
+            <div class="pt-2 text-center">
+              <p class="font-semibold text-black">
+                Reiserucksack "Allen Large Travel"
+              </p>
+              <p>$30.00</p>
+              <p class="text-[#578E7E]">★★★★☆</p>
+            </div>
+          </div>
+
+
+          <div class="flex flex-col items-center">
+            <div class="py-5 border bg-white w-full">
+              <img
+                src="https://i.pinimg.com/736x/7d/89/02/7d8902b673977afa2ebb4074e883323f.jpg"
+                alt="Brasilia 9.5 Sporttas S"
+                class="mx-auto object-contain"
+              />
+            </div>
+            <div class="pt-2 text-center">
+              <p class="font-semibold text-black">Brasilia 9.5 Sporttas S</p>
+              <p>$49.99</p>
+              <p class="text-[#578E7E]">★★★★★</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <div class="py-5 border bg-white w-full">
+              <img
+                src="https://i.pinimg.com/736x/2d/71/7e/2d717ec78d4d733fa22af0ca90f5da52.jpg"
+                alt="Carhartt WIP Otley"
+                class="mx-auto  object-contain"
+              />
+            </div>
+            <div class="pt-2 text-center">
+              <p class="font-semibold text-black">Carhartt WIP Otley</p>
+              <p>$35.99</p>
+              <p class="text-[#578E7E]">★★★★☆</p>
+            </div>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="py-5 border bg-white w-full">
+              <img
+                src="https://i.pinimg.com/736x/2c/3a/60/2c3a6087f8daec8714f7515929e0f107.jpg"
+                alt="Jansport Superbreak Plus"
+                class="mx-auto object-contain"
+              />
+            </div>
+            <div class="pt-2 text-center">
+              <p class="font-semibold text-black">Jansport Superbreak Plus</p>
+              <p>$25.00</p>
+              <p class="text-[#578E7E]">★★★★☆</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Discount Banner -->
+    <section class="py-12">
+      <div
+        class="px-6 lg:px-20 mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 "
+      >
+        <div class="w-full flex border-2">
+          <div class="bg-white flex">
+            <div>
+              <img
+                src="https://target.scene7.com/is/image/Target/GUEST_1657ce92-d720-4e60-9e09-9a18d0c740ce"
+                alt="Jansport Backpack"
+                class="object-cover w-40 h-40 md:w-48 md:h-48"
+              />
+            </div>
+            <div class="p-8">
+              <h2 class="text-2xl font-bold mb-2 text-gray-800">
+                Jansport Cool Student 17.5
+              </h2>
+              <p class="text-gray-600 mb-6">
+                With the best flash sale up to 50% off!
+              </p>
+              <div data-id="countdown-1" class="flex space-x-4 mb-6">
+                <div class="text-center">
+                  <div class="text-3xl text-gray-800 days">00</div>
+                  <p class="text-sm text-gray-500">days</p>
+                </div>
+                <div class="text-center">
+                  <div class="text-3xl font-boldtext-gray-800 hours">00</div>
+                  <p class="text-sm text-gray-500">hours</p>
+                </div>
+                <div class="text-center">
+                  <div class="text-3xl text-gray-800 minutes">00</div>
+                  <p class="text-sm text-gray-500">minutes</p>
+                </div>
+                <div class="text-center">
+                  <div class="text-3xl text-gray-800 seconds">00</div>
+                  <p class="text-sm text-gray-500">seconds</p>
+                </div>
+              </div>
+              <button
+                class="bg-black text-white py-2 px-4 rounded hover:bg-gray-800"
+              >
+                Shop Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full flex border-2">
+          <div class="bg-white flex">
+            <div>
+              <img
+                src="https://www.firstshop.co.za/cdn/shop/products/90xb06l0-bbp000-bags-cases-and-sleeves-34314273915044.png?v=1657718770&width=640"
+                alt="ASUS ROG Bag"
+                class="object-cover w-40 h-40 md:w-48 md:h-48"
+              />
+            </div>
+            <div class="p-8">
+              <h2 class="text-2xl font-bold mb-2 text-gray-800">
+                ASUS ROG RANGER BP2701
+              </h2>
+              <p class="text-gray-600 mb-6">
+                With the best flash sale up to 50% off!
+              </p>
+              <div data-id="countdown-2" class="flex space-x-4 mb-6">
+                <div class="text-center">
+                  <div class="text-3xl text-gray-800 days">00</div>
+                  <p class="text-sm text-gray-500">days</p>
+                </div>
+                <div class="text-center">
+                  <div class="text-3xl text-gray-800 hours">00</div>
+                  <p class="text-sm text-gray-500">hours</p>
+                </div>
+                <div class="text-center">
+                  <div class="text-3xl text-gray-800 minutes">00</div>
+                  <p class="text-sm text-gray-500">minutes</p>
+                </div>
+                <div class="text-center">
+                  <div class="text-3xl text-gray-800 seconds">00</div>
+                  <p class="text-sm text-gray-500">seconds</p>
+                </div>
+              </div>
+              <button
+                class="bg-black text-white py-2 px-4 rounded hover:bg-gray-800"
+              >
+                Shop Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Featured Products -->
+    <section class="py-12">
+      <div class="px-6 lg:px-20 mx-auto">
+        <h3 class="text-2xl font-bold mb-6">Featured Products</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+          <div>
+            <div class="py-5 border bg-white">
+              <img
+                src="https://i.pinimg.com/736x/25/e0/e2/25e0e2c9c3c7ee9d68606428e58e4e77.jpg"
+                alt="Product image"
+                class="mx-auto"
+              />
+            </div>
+            <div class="pt-2 text-center">
+              <p class="font-semibold text-black">Male Portable Trendy</p>
+              <p>$15.99</p>
+              <p class="text-[#578E7E]">★★★★☆</p>
+            </div>
+          </div>
+          <div>
+            <div class="py-5 border bg-white">
+              <img
+                src="https://i.pinimg.com/736x/83/f0/50/83f05002ee4ae48472b7f809fd4721ad.jpg"
+                alt="Product image"
+                class="mx-auto"
+              />
+            </div>
+            <div class="pt-2 text-center">
+              <p class="font-semibold text-black">Zara Black Backpack</p>
+              <p>$55.00</p>
+              <p class="text-[#578E7E]">★★★★★</p>
+            </div>
+          </div>
+          <div>
+            <div class="py-5 border bg-white">
+              <img
+                src="https://i.pinimg.com/736x/74/6b/67/746b67fdc060278dfa1913ebb6a9bd92.jpg"
+                alt="Product image"
+                class="mx-auto"
+              />
+            </div>
+            <div class="pt-2 text-center">
+              <p class="font-semibold text-black">Vera Bradley Chancery</p>
+              <p>$18.00</p>
+              <p class="text-[#578E7E]">★★★★☆</p>
+            </div>
+          </div>
+          <div>
+            <div class="py-5 border bg-white">
+              <img
+                src="https://i.pinimg.com/736x/ba/74/1d/ba741d28dd6013c4379a9006aa88ca04.jpg"
+                alt="Product image"
+                class="mx-auto"
+              />
+            </div>
+            <div class="pt-2 text-center">
+              <p class="font-semibold text-black">Soccer Ball Storage Bag</p>
+              <p>$10.00</p>
+              <p class="text-[#578E7E]">★★★★☆</p>
+            </div>
+          </div>
+          <div>
+            <div class="py-5 border bg-white">
+              <img
+                src="https://i.pinimg.com/736x/ba/24/b9/ba24b98c8fd77b4c0ddbe8cea5257a8e.jpg"
+                alt="Product image"
+                class="mx-auto"
+              />
+            </div>
+            <div class="pt-2 text-center">
+              <p class="font-semibold text-black">Lacoste Men's Classic</p>
+              <p>$49.99</p>
+              <p class="text-[#578E7E]">★★★★☆</p>
+            </div>
+          </div>
+          <div>
+            <div class="py-5 border bg-white">
+              <img
+                src="https://glamaholiclifestyle.com/cdn/shop/files/NylonBackpackweb-8.jpg?v=1687881575&width=1500"
+                alt="Product image"
+                class="mx-auto"
+              />
+            </div>
+            <div class="pt-2 text-center">
+              <p class="font-semibold text-black">Nylon Backpack</p>
+              <p>$25.00</p>
+              <p class="text-[#578E7E]">★★★★☆</p>
+            </div>
+          </div>
+          <div>
+            <div class="py-5 border bg-white">
+              <img
+                src="https://i.pinimg.com/736x/a4/31/13/a431137cc4dd4e55dc9638bb025488a7.jpg"
+                alt="Product image"
+                class="mx-auto"
+              />
+            </div>
+            <div class="pt-2 text-center">
+              <p class="font-semibold text-black">Adidas shoes bag</p>
+              <p>$15.00</p>
+              <p class="text-[#578E7E]">★★★★☆</p>
+            </div>
+          </div>
+          <div>
+            <div class="py-5 border bg-white">
+              <img
+                src="https://i.pinimg.com/736x/2f/9b/bd/2f9bbdd5779199134b1f453b4ec28bb4.jpg"
+                alt="Product image"
+                class="mx-auto"
+              />
+            </div>
+            <div class="pt-2 text-center">
+              <p class="font-semibold text-black">Contrast Waterproof Nylon</p>
+              <p>$20.00</p>
+              <p class="text-[#578E7E]">★★★★☆</p>
+            </div>
+          </div>
+          <div>
+            <div class="py-5 border bg-white">
+              <img
+                src="https://i.pinimg.com/736x/ef/e4/3d/efe43d7e9e6ecb050cc19a3bbd10c6e2.jpg"
+                alt="Product image"
+                class="mx-auto"
+              />
+            </div>
+            <div class="pt-2 text-center">
+              <p class="font-semibold text-black">Sac Gotbag</p>
+              <p>$24.99</p>
+              <p class="text-[#578E7E]">★★★★☆</p>
+            </div>
+          </div>
+          <div>
+            <div class="py-5 border bg-white">
+              <img
+                src="https://i.pinimg.com/736x/78/35/32/783532815d6a0629e0fd472b8110c7c5.jpg"
+                alt="Product image"
+                class="mx-auto"
+              />
+            </div>
+            <div class="pt-2 text-center">
+              <p class="font-semibold text-black">
+                PUMA Evercat Accelerator Duffel
+              </p>
+              <p>$20.00</p>
+              <p class="text-[#578E7E]">★★★★☆</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="bg-whiterounded-lg border-t-2">
+      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <a
+            href="https://flowbite.com/"
+            class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+          >
+            <span class="self-center text-2xl font-semibold whitespace-nowrap"
+              >BagStore</span
+            >
+          </a>
+          <ul
+            class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0"
+          >
+            <li>
+              <a href="#" class="hover:underline me-4 md:me-6">About</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline me-4 md:me-6"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:underline">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <hr class="my-6 border-t-1 border-gray-200 sm:mx-auto" />
+        <span class="block text-sm text-gray-500 sm:text-center"
+          >© 2025
+          <a href="https://flowbite.com/" class="hover:underline"
+            >chanvisalnob</a
+          >. All Rights Reserved.</span
+        >
+      </div>
+    </footer>
+
+    <script>
+      // Countdown Timer Logic for Multiple Products
+      const targetDate = new Date("2025-01-31T23:59:59").getTime();
+
+      function updateCountdown() {
+        const now = new Date().getTime();
+        const timeLeft = targetDate - now;
+
+        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+        document
+          .querySelectorAll("[data-id^='countdown']")
+          .forEach((countdown) => {
+            countdown.querySelector(".days").innerText =
+              days < 10 ? `0${days}` : days;
+            countdown.querySelector(".hours").innerText =
+              hours < 10 ? `0${hours}` : hours;
+            countdown.querySelector(".minutes").innerText =
+              minutes < 10 ? `0${minutes}` : minutes;
+            countdown.querySelector(".seconds").innerText =
+              seconds < 10 ? `0${seconds}` : seconds;
+          });
+
+        if (timeLeft < 0) {
+          clearInterval(countdownInterval);
+          document
+            .querySelectorAll("[data-id^='countdown']")
+            .forEach((countdown) => {
+              countdown.innerHTML = "Deal Expired!";
+            });
+        }
+      }
+
+      const countdownInterval = setInterval(updateCountdown, 1000);
+    </script>
+  </body>
+</html>

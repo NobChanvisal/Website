@@ -1,8 +1,12 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 .font-robotoMono{
     font-family: "Roboto Mono", serif;
+}
+.font-Open-Sans{
+    font-family: "Open Sans", serif;
 }
 
 .btn-shop-now-dark {
@@ -18,7 +22,6 @@
     background-color: rgba(0,0,0,0.8);
 }
 .product-cart-hover{
-    
     transition: all 0.3s ease-in-out;
 }
 .product-cart-hover:hover{
@@ -27,5 +30,8 @@
 }
 .fs-sm{
     font-size: 14px;
+}
+body{
+    font-family: "Open Sans", serif;
 }
 
