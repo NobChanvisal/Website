@@ -27,8 +27,8 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="container py-4">
               <div class="row">
                 <div class="col-lg-6">
-                  <div class="row">
-                    <div class="col-2 px-0">
+                  <div class="row mb-2">
+                    <div class="col-2 px-0 ">
                       <div class="d-flex flex-column align-items-center" id="productGallery">
                         <!-- Dynamically Render Thumbnails -->
                         ${gallery
