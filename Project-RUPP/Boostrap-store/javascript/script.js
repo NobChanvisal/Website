@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <p class="mb-1 text-capitalize" style="font-size: 13px;">${brand}</p>
               <p class="fw-medium mb-1 fs-6">${names}</p>
               <div class="mb-1">
-                <img class="w-25" src="${rate}" alt="rating" />
+                <img class="w-25" src=".${rate}" alt="rating" />
               </div>
               <p class="m-0" style="font-size: 14px;">$${(price/100).toFixed(
                 2

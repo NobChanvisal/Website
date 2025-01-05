@@ -10,7 +10,7 @@
         "https://static.independent.co.uk/2024/11/07/11/Macbook-pro-m4-review-hero-indybest.jpg"
       ],
       "names": "MacBook Pro 14",
-      "rate": "/Project-RUPP/Boostrap-store/Data/rating/45.png",
+      "rate": "./Data/rating/45.png",
       "price": 159900,
       "color": "black",
       "brand": "apple",
@@ -28,7 +28,7 @@
 
       ],
       "names": "Galaxy Tab S10+",
-      "rate": "/Project-RUPP/Boostrap-store/Data/rating/45.png",
+      "rate": "./Data/rating/45.png",
       "price": 84900,
       "color": "silver",
       "brand": "samsung",
@@ -44,7 +44,7 @@
         "https://expercom.com/cdn/shop/products/MQDP3_AV2.jpg?v=1666117077&width=1445"
       ],
       "names": "Magic Keyboard iPad(10th)",
-      "rate": "/Project-RUPP/Boostrap-store/Data/rating/40.png",
+      "rate": "./Data/rating/40.png",
       "price": 24900,
       "color": "white",
       "brand": "apple",
@@ -60,7 +60,7 @@
         "https://i5.walmartimages.com/asr/3394ea78-5de7-4278-81fe-cf9e7441d1cf.7c0579568739744e0c323953023a78ba.jpeg"
       ],
       "names": "ASUS VZ239H-W 23",
-      "rate": "/Project-RUPP/Boostrap-store/Data/rating/40.png",
+      "rate": "./Data/rating/40.png",
       "price": 8999,
       "brand": "asus",
       "color": "white",
@@ -77,7 +77,7 @@
         "https://www.oppo.com/content/dam/oppo/product-asset-library/accessory/oppo-pad-air/global/v2/assets/module-technology/module-technology-imgs-img2-purple-1920.png"
       ],
       "names": "OPPO Pad Air",
-      "rate": "/Project-RUPP/Boostrap-store/Data/rating/45.png",
+      "rate": "./Data/rating/45.png",
       "price": 26900,
       "color": "blue",
       "brand": "oppo",
@@ -93,7 +93,7 @@
         "https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/headphones/freelace-pro-2/image/huawei-freelace-pro-2-denoiser-creative-shot-3-pc-2x.jpg"
       ],
       "names": "HUAWEI FreeLace Pro 2",
-      "rate": "/Project-RUPP/Boostrap-store/Data/rating/35.png",
+      "rate": "./Data/rating/35.png",
       "price": 7745,
       "color": "green",
       "brand": "huawei",
@@ -109,7 +109,7 @@
         "https://www.beckie-khmer.com/storage/galleris/pqxFMdf7UreO09wpqLwIjFU861KKbTBLRYFQjHko.jpeg"
       ],
       "names": "Galaxy Book5 Pro 360",
-      "rate": "/Project-RUPP/Boostrap-store/Data/rating/45.png",
+      "rate": "./Data/rating/45.png",
       "price": 169999,
       "color": "silver",
       "brand": "samsung",
@@ -126,7 +126,7 @@
         "https://www.gizmochina.com/wp-content/uploads/2024/10/Oppo-Find-X8-Pro-blue-2.png"
       ],
       "names": "OPPO Find X8 Pro",
-      "rate": "/Project-RUPP/Boostrap-store/Data/rating/45.png",
+      "rate": "./Data/rating/45.png",
       "price": 88900,
       "color": "blue",
       "brand": "oppo",
@@ -142,7 +142,7 @@
         "https://asset.msi.com/resize/image/global/product/product_17000991327608403fc06abe5994175fd07d425fbc.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png"
       ],
       "names": "Gaming Monitor MSI 27-2K",
-      "rate": "/Project-RUPP/Boostrap-store/Data/rating/35.png",
+      "rate": "./Data/rating/35.png",
       "price": 21999,
       "brand": "msi",
       "category": "computer",
@@ -158,7 +158,7 @@
         "https://www.nfm.com/dw/image/v2/BDFM_PRD/on/demandware.static/-/Sites-nfm-master-catalog/default/dwf8c8593a/images/066/54/66543026-6.jpg?sw=1000&sh=1000&sm=fit"
       ],
       "names": "IPad Pro 13-Inch M4",
-      "rate": "/Project-RUPP/Boostrap-store/Data/rating/40.png",
+      "rate": "./Data/rating/40.png",
       "price": 114899,
       "brand": "apple",
       "category": "tablets"
@@ -172,7 +172,7 @@
         
       ],
       "names": "OPPO Enco Air3",
-      "rate": "/Project-RUPP/Boostrap-store/Data/rating/40.png",
+      "rate": "./Data/rating/40.png",
       "price": 3900,
       "brand": "oppo",
       "category": "accessories"
@@ -187,7 +187,7 @@
         "https://s.alicdn.com/@sc04/kf/Hf6f5d9d97e9e48f5844f7bb5f16e03d4X.jpg_720x720q50.jpg"
       ],
       "names": "LED Monitor S2421HN",
-      "rate": "/Project-RUPP/Boostrap-store/Data/rating/40.png",
+      "rate": "./Data/rating/40.png",
       "price": 9999,
       "brand": "dell",
       "color": "white",
@@ -204,7 +204,7 @@
         "https://www.xlineparts.com/storage/images/products/1729510244_2848.jpg"
       ],
       "names": "AirPods Max",
-      "rate": "/Project-RUPP/Boostrap-store/Data/rating/45.png",
+      "rate": "./Data/rating/45.png",
       "price": 54900,
       "brand": "apple",
       "color": "pink",
@@ -220,7 +220,7 @@
         
       ],
       "names": "MateBook X Pro 2023",
-      "rate": "/Project-RUPP/Boostrap-store/Data/rating/45.png",
+      "rate": "./Data/rating/45.png",
       "price": 160895,
       "color": "black",
       "brand": "huawei",
@@ -237,7 +237,7 @@
         "https://i.pinimg.com/736x/ec/6a/c9/ec6ac9cdf6408890d8a38d473fd0e3cb.jpg"
       ],
       "names": "Iphone 16",
-      "rate": "/Project-RUPP/Boostrap-store/Data/rating/45.png",
+      "rate": "./Data/rating/45.png",
       "price": 95900,
       "brand": "apple",
       "color": "pink",
@@ -254,7 +254,7 @@
         "https://hmnstudio.com/cdn/shop/files/Pro2_3a4a110d-198e-47e7-b1e6-109cc6d080e6.jpg?v=1705902385"
       ],
       "names": "AirPods Pro 2",
-      "rate": "/Project-RUPP/Boostrap-store/Data/rating/35.png",
+      "rate": "./Data/rating/35.png",
       "price": 24900,
       "brand": "apple",
       "category": "accessories",
@@ -271,7 +271,7 @@
         "https://i5.walmartimages.com/seo/Dteck-Samsung-Galaxy-Z-Flip-6-Case-Hinge-Protection-Silicone-PC-Hybrid-Shockproof-Rugged-Samsugn-6-Green_98a01186-1d6c-4fd9-a779-76e8587729ac.9518ce83e59b42b21dcdb055e62ecfc1.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"
       ],
       "names": "Samsung Galaxy Z Flip6",
-      "rate": "/Project-RUPP/Boostrap-store/Data/rating/45.png",
+      "rate": "./Data/rating/45.png",
       "price": 109999,
       "color": "green",
       "brand": "samsung",
@@ -288,7 +288,7 @@
         "https://consumer.huawei.com/dam/content/dam/huawei-cbg-site/common/mkt/pdp/phones/mate50/img/kv/sp-2.jpg"
       ],
       "names": "HUAWEI Mate 50",
-      "rate": "/Project-RUPP/Boostrap-store/Data/rating/40.png",
+      "rate": "./Data/rating/40.png",
       "price": 49500,
       "brand": "huawei",
       "color": "silver",
@@ -303,7 +303,7 @@
         "https://dlcdnwebimgs.asus.com/files/media/59679AA3-66F7-4DBB-BA4C-1A13376F5B4C/v1/images/large/1x/section9img.png"
       ],
       "names": "ROG Zephyrus G14",
-      "rate": "/Project-RUPP/Boostrap-store/Data/rating/35.png",
+      "rate": "./Data/rating/35.png",
       "price": 104900,
       "brand": "asus",
       "color": "white",
@@ -321,7 +321,7 @@
         "https://www.macitynet.it/wp-content/uploads/2022/03/apple-studio-display-renders-anticipazioni.jpg"
       ],
       "names": "Studio Display",
-      "rate": "/Project-RUPP/Boostrap-store/Data/rating/45.png",
+      "rate": "./Data/rating/45.png",
       "price": 159900,
       "brand": "apple",
       "color": "white",
@@ -338,7 +338,7 @@
         "https://consumer.huawei.com/dam/content/dam/huawei-cbg-site/ecommerce/my/2024newlaunch/oct/banksy/pcp/features/matepad-12-X-Features-wap-3.jpg"
       ],
       "names": "HUAWEI MatePad 12 X",
-      "rate": "/Project-RUPP/Boostrap-store/Data/rating/40.png",
+      "rate": "./Data/rating/40.png",
       "price": 59999,
       "brand": "huawei",
       "color": "green",
@@ -355,7 +355,7 @@
         "https://youget.pt/161107-large_default/samsung-galaxy-s24-ultra-5g-1tb12gb-dual-sim-titanium-black.jpg"
       ],
       "names": "Galaxy S24 Ultra",
-      "rate": "/Project-RUPP/Boostrap-store/Data/rating/45.png",
+      "rate": "./Data/rating/45.png",
       "price": 129999,
       "brand": "samsung",
       "color": "black",

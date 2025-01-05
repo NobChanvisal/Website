@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div class="col-lg-6">
                   <h1 class="h4 text-capitalize">${names}</h1>
                   <div class="d-flex align-items-center">
-                    <img src="${rate}" alt="Rating" class="me-2"style="width: 90px;" />
+                    <img src=".${rate}" alt="Rating" class="me-2"style="width: 90px;" />
                     <a href="#" class="text-decoration-none">(5 reviews)</a>
                   </div>
                   <p class="mt-1 fs-5">$${(price / 100).toFixed(2)}</p>
