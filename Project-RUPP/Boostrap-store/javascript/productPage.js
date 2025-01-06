@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
                   </div>
 
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 mt-4 mt-sm-0">
                   <h1 class="h4 text-capitalize">${names}</h1>
                   <div class="d-flex align-items-center">
                     <img src=".${rate}" alt="Rating" class="me-2"style="width: 90px;" />
