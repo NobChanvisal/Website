@@ -342,8 +342,8 @@
       "price": 59999,
       "brand": "huawei",
       "color": "green",
-      "category": "tablets",
-      "future": true
+      "category": "tablets"
+    
     },
     {
       "id": 1,
